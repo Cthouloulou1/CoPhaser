@@ -1,5 +1,5 @@
 # Project
-This repo contains the CoPhaser model for single cell phase inference from scRNA-seq.
+This repo contains the CoPhaser model for single cell phase inference from scRNA-seq. This is a branch of the same repo by gityves
 
 # Installation
 Expected running time in the order of a few minutes (depend on your internet connection).
