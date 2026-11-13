@@ -42,6 +42,8 @@ def parse_args():
                    help="donor phases shared across tissues (scripts/gtex_shared_phase.py), passed to "
                         "gtex_train.py; with a frozen clock a donor's phase does not depend on which donors "
                         "are drawn, so one table serves every replicate")
+    p.add_argument("--covariate-encoder-detach", action="store_true",
+                   help="passed to gtex_train.py: only the generative model trains the covariate effects")
     p.add_argument("--subset", default="all", choices=list(SUBSETS))
     p.add_argument("--epochs", type=int, default=300)
     p.add_argument("--jobs", type=int, default=10)
@@ -100,6 +102,8 @@ def main():
             cmd += clock_args(args.clock, tissue, learned, args.human_dir)
             if args.phase_table is not None:
                 cmd += ["--phase-table", str(args.phase_table.resolve())]
+            if args.covariate_encoder_detach:
+                cmd += ["--covariate-encoder-detach"]
             if SUBSETS[args.subset]:
                 cmd += ["--keep-hardy"] + SUBSETS[args.subset]
             jobs.append((f"{tissue} boot{b}", cmd, out))

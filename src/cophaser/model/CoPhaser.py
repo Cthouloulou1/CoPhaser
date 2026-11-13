@@ -189,6 +189,11 @@ class CoPhaser(nn.Module):
         # step 6: covariates also shift the phase of each gene's rhythm (opt-in)
         self.covariate_phase = False
         self.covariate_phase_reference = None
+        # if True, the covariate corrections of the rhythmic encoder input (mean shift,
+        # log-amplitude) are detached: the covariate effects are then trained by the
+        # generative model only, not by the losses on the encoder output (phase prior,
+        # entropy, KL of theta, MI when f is not detached). Opt-in, default off.
+        self.covariate_encoder_detach = False
 
     @property
     def n_covariates(self) -> int:
@@ -522,6 +527,7 @@ class CoPhaser(nn.Module):
         covariate_amplitude: bool = False,
         covariate_phase: bool = False,
         covariate_phase_reference: str = None,
+        covariate_encoder_detach: bool = None,
     ):
         """
         Load anndata object and extract the gene expression matrix, library size, for rhythmic genes and variable genes.
@@ -558,7 +564,14 @@ class CoPhaser(nn.Module):
             The covariates also delay each gene's rhythm (see add_covariates).
         covariate_phase_reference: str, optional
             Rhythmic gene with delay 0 (default: amplitude-weighted mean of the rhythmic genes).
+        covariate_encoder_detach: bool, optional
+            If True, the covariate effects removed from the rhythmic encoder input are
+            detached there, so that only the generative model trains them (the losses on
+            the encoder output no longer leak into the effects). Default None: keep the
+            model's current setting (False for a new model, saved in checkpoints).
         """
+        if covariate_encoder_detach is not None:
+            self.covariate_encoder_detach = bool(covariate_encoder_detach)
         adata = adata.copy()
         (
             self.library_size,
@@ -768,6 +781,12 @@ class CoPhaser(nn.Module):
         covariate_log_amp = self.covariate_log_amplitude(covariates)
         if covariate_log_amp is not None:
             covariate_log_amp = covariate_log_amp[:, self.rhythmic_gene_indices]
+        if getattr(self, "covariate_encoder_detach", False):
+            # the effects are learned from the generative model only
+            if covariate_shift is not None:
+                covariate_shift = covariate_shift.detach()
+            if covariate_log_amp is not None:
+                covariate_log_amp = covariate_log_amp.detach()
 
         # rhythmic space
         f, theta, mu, kappa, x_projected, f_g1 = self.rhythmic_encoder.forward(
@@ -1322,6 +1341,7 @@ class CoPhaser(nn.Module):
                 "covariate_amplitude": getattr(self, "covariate_amplitude", False),
                 "covariate_phase": getattr(self, "covariate_phase", False),
                 "covariate_phase_reference": getattr(self, "covariate_phase_reference", None),
+                "covariate_encoder_detach": getattr(self, "covariate_encoder_detach", False),
             },
             file_path,
         )
@@ -1345,6 +1365,7 @@ class CoPhaser(nn.Module):
         model.covariate_amplitude = bool(checkpoint.get("covariate_amplitude", False))
         model.covariate_phase = bool(checkpoint.get("covariate_phase", False))
         model.covariate_phase_reference = checkpoint.get("covariate_phase_reference")
+        model.covariate_encoder_detach = bool(checkpoint.get("covariate_encoder_detach", False))
         if model.covariate_spec is not None:
             model._build_covariate_layers()  # so that their weights can be loaded
         model.load_state_dict(checkpoint["state_dict"])

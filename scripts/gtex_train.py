@@ -120,6 +120,9 @@ def parse_args():
                    help="covariates also delay each gene's rhythm (step 6; relative delays)")
     p.add_argument("--covariate-phase-reference", default=None,
                    help="clock gene with delay 0 (default: amplitude-weighted mean of the clock genes)")
+    p.add_argument("--covariate-encoder-detach", action="store_true",
+                   help="detach the covariate corrections of the rhythmic encoder input, so that only the "
+                        "generative model trains the effects (no leak of the phase prior / entropy losses)")
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--threads", type=int, default=8)
     p.add_argument("--outdir", type=Path, default=None)
@@ -300,7 +303,8 @@ def train_tissue(path, args, outdir):
                        covariate_reference={"sex": "male"} if "sex" in covs else None,
                        covariate_amplitude=args.covariate_amplitude and bool(covs),
                        covariate_phase=args.covariate_phase and bool(covs),
-                       covariate_phase_reference=args.covariate_phase_reference)
+                       covariate_phase_reference=args.covariate_phase_reference,
+                       covariate_encoder_detach=args.covariate_encoder_detach)
 
     kw = dict(CYCLE_TRAINER_DEFAULTS["circadian"]["trainer"], adam_betas=(0.9, args.adam_beta2))
     if args.no_reference or args.freeze_decoder or args.human_reference_from_chiral or args.reference_from_model:
@@ -388,6 +392,7 @@ def train_tissue(path, args, outdir):
             summary.update({f"{k}_{kk}": v for kk, v in e.items()})
     summary["keep_hardy"] = args.keep_hardy
     summary["bootstrap_seed"] = args.bootstrap_seed
+    summary["covariate_encoder_detach"] = bool(args.covariate_encoder_detach)
     summary["reference_from_model"] = str(args.reference_from_model) if args.reference_from_model else None
     if has_chiral:
         hardy = ad.obs["hardy"].astype(str).to_numpy()
