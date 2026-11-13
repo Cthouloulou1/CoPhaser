@@ -1,0 +1,16 @@
+{
+  "tissues": "None",
+  "clocks": "['human']",
+  "human_dir": "/workspaces/eyerly/CoPhaser/reference/human_chiral",
+  "subsets": "['all', 'fast']",
+  "seeds": "[0, 1]",
+  "epochs": "300",
+  "jobs": "10",
+  "threads": "6",
+  "exp10": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy",
+  "outdir": "results/gtex/exp12h_phase_human",
+  "fixed_phases": "True",
+  "covariate_phase": "True",
+  "extra": "[]",
+  "learned_clocks": {}
+}

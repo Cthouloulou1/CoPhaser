@@ -1,0 +1,17 @@
+tissue_file,clock,subset,grid_prior_aligned_h,grid_final_noz_aligned_h,grid_final_z_aligned_h,chiral_median_abs_error_h
+adipose_subcutaneous,human,all,3.08,2.9,2.97,5.29
+adipose_subcutaneous,human,fast,2.03,2.85,1.97,4.71
+artery_tibial,human,all,2.32,2.45,2.21,4.93
+artery_tibial,human,fast,2.09,2.54,1.79,4.21
+lung,human,all,2.98,3.23,2.98,5.06
+lung,human,fast,2.79,3.26,3.18,4.73
+muscle_skeletal,human,all,3.18,3.19,3.21,5.59
+muscle_skeletal,human,fast,1.78,2.41,1.86,3.7
+nerve_tibial,human,all,2.64,2.51,2.55,5.32
+nerve_tibial,human,fast,1.79,2.09,2.05,5.08
+skin_not_sun_exposed_suprapubic,human,all,3.36,3.45,3.16,5.2
+skin_not_sun_exposed_suprapubic,human,fast,2.91,3.18,2.84,4.93
+skin_sun_exposed_lower_leg,human,all,3.22,3.22,3.03,5.5
+skin_sun_exposed_lower_leg,human,fast,2.94,3.16,2.9,5.03
+thyroid,human,all,2.42,2.32,2.13,4.95
+thyroid,human,fast,1.5,2.07,1.69,2.19

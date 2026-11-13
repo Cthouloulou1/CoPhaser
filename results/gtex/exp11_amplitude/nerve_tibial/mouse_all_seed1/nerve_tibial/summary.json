@@ -1,0 +1,219 @@
+{
+  "tissue": "Nerve - Tibial",
+  "file": "nerve_tibial",
+  "n_samples": 619,
+  "n_context_genes": 2010,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 12,
+  "train_seconds": 182.8,
+  "epochs": 300,
+  "rhythmic_likelihood_weight": 0.224021597668895,
+  "non_rhythmic_likelihood_weight": 0.224021597668895,
+  "decoder_frozen": true,
+  "final_elbo": 3138.4167994449012,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[1]",
+    "hardy[2]",
+    "hardy[3]",
+    "hardy[4]",
+    "hardy__missing"
+  ],
+  "grid_prior_kappa_median": 50.0,
+  "grid_prior_aligned_h": 3.913905389248698,
+  "MI_weight": 50,
+  "entropy_weight_factor": 50,
+  "grid_refresh_every": 10,
+  "grid_refresh_use_z": false,
+  "decoder_phase_from_grid": true,
+  "grid_refresh_log": [
+    [
+      10,
+      0.25,
+      50.0
+    ],
+    [
+      20,
+      0.25,
+      50.0
+    ],
+    [
+      30,
+      0.0,
+      50.0
+    ],
+    [
+      40,
+      0.0,
+      50.0
+    ],
+    [
+      50,
+      0.0,
+      50.0
+    ],
+    [
+      60,
+      0.0,
+      50.0
+    ],
+    [
+      70,
+      0.25,
+      50.0
+    ],
+    [
+      80,
+      0.0,
+      50.0
+    ],
+    [
+      90,
+      0.0,
+      50.0
+    ],
+    [
+      100,
+      0.0,
+      50.0
+    ],
+    [
+      110,
+      0.0,
+      50.0
+    ],
+    [
+      120,
+      0.0,
+      50.0
+    ],
+    [
+      130,
+      0.25,
+      50.0
+    ],
+    [
+      140,
+      0.25,
+      50.0
+    ],
+    [
+      150,
+      0.0,
+      50.0
+    ],
+    [
+      160,
+      0.0,
+      50.0
+    ],
+    [
+      170,
+      0.0,
+      50.0
+    ],
+    [
+      180,
+      0.0,
+      50.0
+    ],
+    [
+      190,
+      0.0,
+      50.0
+    ],
+    [
+      200,
+      0.0,
+      50.0
+    ],
+    [
+      210,
+      0.0,
+      50.0
+    ],
+    [
+      220,
+      0.0,
+      50.0
+    ],
+    [
+      230,
+      0.0,
+      50.0
+    ],
+    [
+      240,
+      0.0,
+      50.0
+    ],
+    [
+      250,
+      0.0,
+      50.0
+    ],
+    [
+      260,
+      0.0,
+      50.0
+    ],
+    [
+      270,
+      0.0,
+      50.0
+    ],
+    [
+      280,
+      0.0,
+      50.0
+    ],
+    [
+      290,
+      0.0,
+      50.0
+    ]
+  ],
+  "phase_prior_anneal_epochs": 100000,
+  "phase_prior_weight": 2.0,
+  "phase_prior_kappa": "auto",
+  "grid_final_noz_aligned_h": 4.907366687151322,
+  "grid_final_z_aligned_h": 4.717345146555651,
+  "keep_hardy": null,
+  "reference_from_model": null,
+  "encoder_hardy0_n": 327,
+  "encoder_hardy0_median_abs_error_h": 5.484474662277761,
+  "encoder_hardy1-2_n": 185,
+  "encoder_hardy1-2_median_abs_error_h": 5.94924697233169,
+  "encoder_hardy3-4_n": 98,
+  "encoder_hardy3-4_median_abs_error_h": 5.429998899211684,
+  "grid_final_noz_hardy0_n": 327,
+  "grid_final_noz_hardy0_median_abs_error_h": 4.267262413259818,
+  "grid_final_noz_hardy1-2_n": 185,
+  "grid_final_noz_hardy1-2_median_abs_error_h": 5.995571141703542,
+  "grid_final_noz_hardy3-4_n": 98,
+  "grid_final_noz_hardy3-4_median_abs_error_h": 5.1747018247194525,
+  "chiral_sign": -1,
+  "chiral_offset_h": -5.548070650569978,
+  "chiral_median_abs_error_h": 5.705657127861407,
+  "chiral_mean_abs_error_h": 5.782616724147113,
+  "chiral_resultant": 0.04526114819485709,
+  "chiral_n": 610,
+  "chiral_eval_on": "all samples",
+  "total_seconds": 199.1
+}

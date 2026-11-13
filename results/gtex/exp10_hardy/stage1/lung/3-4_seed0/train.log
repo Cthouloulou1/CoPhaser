@@ -1,0 +1,6 @@
+[lung] 95 samples, 2009 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+[lung] grid phase prior: kappa median 50.00, anneal 50 epochs, weight 2.0; vs CHIRAL 3.95 h
+[lung] likelihood weights: rhythmic 0.218, non-rhythmic 0.218; decoder unfrozen at epoch 10
+[lung] done in 95.0 s; vs CHIRAL: median |diff| 5.25 h (grid with trained decoder: 4.72 h)
+
+All done. Outputs in /workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/lung/3-4_seed0

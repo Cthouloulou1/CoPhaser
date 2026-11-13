@@ -1,0 +1,14 @@
+{
+  "tissues": "None",
+  "replicates": "40",
+  "clock": "human",
+  "human_dir": "/workspaces/eyerly/CoPhaser/reference/human_chiral",
+  "phase_table": "results/gtex/exp14_shared_phase/donor_phases.csv",
+  "subset": "all",
+  "epochs": "300",
+  "jobs": "10",
+  "threads": "6",
+  "exp10": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy",
+  "outdir": "results/gtex/exp15_bootstrap_shared",
+  "learned_clocks": {}
+}

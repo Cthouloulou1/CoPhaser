@@ -1,0 +1,34 @@
+22:47:39 start: 32 jobs, 10 at a time
+22:49:49 artery_tibial human all seed0 finished rc=0 in 130 s
+22:49:51 artery_tibial human all seed1 finished rc=0 in 132 s
+22:50:02 adipose_subcutaneous human all seed0 finished rc=0 in 143 s
+22:50:27 adipose_subcutaneous human all seed1 finished rc=0 in 168 s
+22:50:46 muscle_skeletal human all seed0 finished rc=0 in 187 s
+22:50:58 lung human all seed0 finished rc=0 in 199 s
+22:51:11 lung human all seed1 finished rc=0 in 212 s
+22:51:15 nerve_tibial human all seed1 finished rc=0 in 216 s
+22:51:18 muscle_skeletal human all seed1 finished rc=0 in 219 s
+22:51:45 nerve_tibial human all seed0 finished rc=0 in 246 s
+22:52:57 skin_sun_exposed_lower_leg human all seed1 finished rc=0 in 150 s
+22:53:07 thyroid human all seed1 finished rc=0 in 130 s
+22:53:09 adipose_subcutaneous human fast seed1 finished rc=0 in 114 s
+22:53:13 skin_not_sun_exposed_suprapubic human all seed0 finished rc=0 in 204 s
+22:53:13 skin_sun_exposed_lower_leg human all seed0 finished rc=0 in 191 s
+22:53:19 thyroid human all seed0 finished rc=0 in 153 s
+22:53:21 skin_not_sun_exposed_suprapubic human all seed1 finished rc=0 in 209 s
+22:53:22 adipose_subcutaneous human fast seed0 finished rc=0 in 131 s
+22:53:35 artery_tibial human fast seed0 finished rc=0 in 138 s
+22:53:56 artery_tibial human fast seed1 finished rc=0 in 131 s
+22:54:52 lung human fast seed0 finished rc=0 in 115 s
+22:55:01 lung human fast seed1 finished rc=0 in 113 s
+22:55:08 skin_not_sun_exposed_suprapubic human fast seed1 finished rc=0 in 106 s
+22:55:19 nerve_tibial human fast seed1 finished rc=0 in 120 s
+22:55:22 skin_not_sun_exposed_suprapubic human fast seed0 finished rc=0 in 121 s
+22:55:24 nerve_tibial human fast seed0 finished rc=0 in 131 s
+22:55:32 muscle_skeletal human fast seed0 finished rc=0 in 143 s
+22:55:39 muscle_skeletal human fast seed1 finished rc=0 in 146 s
+22:55:56 skin_sun_exposed_lower_leg human fast seed0 finished rc=0 in 140 s
+22:56:32 skin_sun_exposed_lower_leg human fast seed1 finished rc=0 in 156 s
+22:57:10 thyroid human fast seed0 finished rc=0 in 138 s
+22:57:25 thyroid human fast seed1 finished rc=0 in 144 s
+22:57:25 collected 32 summaries. All done.

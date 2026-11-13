@@ -1,0 +1,12 @@
+{
+  "human_tissue_median_aligned_h": 3.030394097063329,
+  "human_shared_median_aligned_h": 2.0973539395961334,
+  "mouse_tissue_median_aligned_h": 3.384355340400181,
+  "mouse_shared_median_aligned_h": 2.991783677863105,
+  "half_tissue_median_aligned_h": 3.030333646771153,
+  "half_shared_median_aligned_h": 2.179958009885068,
+  "n_donors": 929,
+  "n_train_donors": 444,
+  "split_seed": 0,
+  "dispersion": 0.1
+}

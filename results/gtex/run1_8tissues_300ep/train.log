@@ -1,0 +1,20 @@
+[adipose_subcutaneous] 663 samples, 2012 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+[adipose_subcutaneous] done in 138.0 s; vs CHIRAL: median |diff| 4.79 h
+[artery_tibial] 663 samples, 2008 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+[artery_tibial] done in 125.2 s; vs CHIRAL: median |diff| 5.53 h
+[lung] 578 samples, 2011 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+[lung] done in 194.1 s; vs CHIRAL: median |diff| 4.38 h
+[muscle_skeletal] 803 samples, 2009 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+Warning: 2 optimizer step(s) were skipped because the loss was not finite. The run finished, but check it before trusting it.
+[muscle_skeletal] done in 158.5 s; vs CHIRAL: median |diff| 5.48 h
+[nerve_tibial] 619 samples, 2010 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+Warning: 1 optimizer step(s) were skipped because the loss was not finite. The run finished, but check it before trusting it.
+[nerve_tibial] done in 180.3 s; vs CHIRAL: median |diff| 5.68 h
+[skin_not_sun_exposed_suprapubic] 604 samples, 2012 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+[skin_not_sun_exposed_suprapubic] done in 199.7 s; vs CHIRAL: median |diff| 5.61 h
+[skin_sun_exposed_lower_leg] 701 samples, 2011 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+[skin_sun_exposed_lower_leg] done in 147.8 s; vs CHIRAL: median |diff| 5.37 h
+[thyroid] 653 samples, 2007 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+[thyroid] done in 133.6 s; vs CHIRAL: median |diff| 5.22 h
+
+All done. Outputs in results/gtex/run1_8tissues_300ep

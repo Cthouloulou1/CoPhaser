@@ -1,0 +1,7 @@
+[muscle_skeletal] 234 samples, 2007 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+  clock from /workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/muscle_skeletal/3-4_seed0/muscle_skeletal/model.pt: 14 genes
+[muscle_skeletal] grid phase prior: kappa median 1.71, anneal 100000 epochs, weight 2.0; vs CHIRAL 2.75 h
+[muscle_skeletal] likelihood weights: rhythmic 0.22, non-rhythmic 0.22; decoder frozen
+[muscle_skeletal] done in 113.5 s; vs CHIRAL: median |diff| 5.10 h (grid with trained decoder: 3.08 h)
+
+All done. Outputs in results/gtex/exp11b_fixed_phases/muscle_skeletal/learned_fast_seed0

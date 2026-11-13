@@ -1,0 +1,219 @@
+{
+  "tissue": "Muscle - Skeletal",
+  "file": "muscle_skeletal",
+  "n_samples": 803,
+  "n_context_genes": 2009,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 14,
+  "train_seconds": 150.4,
+  "epochs": 300,
+  "rhythmic_likelihood_weight": 0.21659293673170615,
+  "non_rhythmic_likelihood_weight": 0.21659293673170615,
+  "decoder_frozen": true,
+  "final_elbo": 3093.4036395733174,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[1]",
+    "hardy[2]",
+    "hardy[3]",
+    "hardy[4]",
+    "hardy__missing"
+  ],
+  "grid_prior_kappa_median": 1.572799723069884,
+  "grid_prior_aligned_h": 4.084223726087814,
+  "MI_weight": 50,
+  "entropy_weight_factor": 50,
+  "grid_refresh_every": 10,
+  "grid_refresh_use_z": false,
+  "decoder_phase_from_grid": true,
+  "grid_refresh_log": [
+    [
+      10,
+      0.75,
+      1.65
+    ],
+    [
+      20,
+      0.25,
+      1.63
+    ],
+    [
+      30,
+      0.0,
+      1.64
+    ],
+    [
+      40,
+      0.0,
+      1.65
+    ],
+    [
+      50,
+      0.0,
+      1.64
+    ],
+    [
+      60,
+      0.0,
+      1.64
+    ],
+    [
+      70,
+      0.0,
+      1.64
+    ],
+    [
+      80,
+      0.0,
+      1.63
+    ],
+    [
+      90,
+      0.0,
+      1.64
+    ],
+    [
+      100,
+      0.0,
+      1.67
+    ],
+    [
+      110,
+      0.0,
+      1.65
+    ],
+    [
+      120,
+      0.25,
+      1.65
+    ],
+    [
+      130,
+      0.25,
+      1.62
+    ],
+    [
+      140,
+      0.25,
+      1.66
+    ],
+    [
+      150,
+      0.25,
+      1.72
+    ],
+    [
+      160,
+      0.25,
+      1.84
+    ],
+    [
+      170,
+      0.25,
+      2.01
+    ],
+    [
+      180,
+      0.25,
+      2.35
+    ],
+    [
+      190,
+      0.25,
+      2.31
+    ],
+    [
+      200,
+      0.25,
+      2.4
+    ],
+    [
+      210,
+      0.25,
+      2.57
+    ],
+    [
+      220,
+      0.25,
+      2.62
+    ],
+    [
+      230,
+      0.25,
+      2.64
+    ],
+    [
+      240,
+      0.25,
+      2.7
+    ],
+    [
+      250,
+      0.0,
+      2.53
+    ],
+    [
+      260,
+      0.25,
+      2.53
+    ],
+    [
+      270,
+      0.25,
+      2.86
+    ],
+    [
+      280,
+      0.0,
+      3.06
+    ],
+    [
+      290,
+      0.0,
+      3.03
+    ]
+  ],
+  "phase_prior_anneal_epochs": 100000,
+  "phase_prior_weight": 2.0,
+  "phase_prior_kappa": "auto",
+  "grid_final_noz_aligned_h": 4.327013223776737,
+  "grid_final_z_aligned_h": 4.49755584308882,
+  "keep_hardy": null,
+  "reference_from_model": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/muscle_skeletal/3-4_seed0/muscle_skeletal/model.pt",
+  "encoder_hardy0_n": 421,
+  "encoder_hardy0_median_abs_error_h": 5.410614699724264,
+  "encoder_hardy1-2_n": 234,
+  "encoder_hardy1-2_median_abs_error_h": 5.720963683530867,
+  "encoder_hardy3-4_n": 133,
+  "encoder_hardy3-4_median_abs_error_h": 6.336185415117482,
+  "grid_final_noz_hardy0_n": 421,
+  "grid_final_noz_hardy0_median_abs_error_h": 4.631558579836129,
+  "grid_final_noz_hardy1-2_n": 234,
+  "grid_final_noz_hardy1-2_median_abs_error_h": 3.599297016191846,
+  "grid_final_noz_hardy3-4_n": 133,
+  "grid_final_noz_hardy3-4_median_abs_error_h": 5.156039881433314,
+  "chiral_sign": 1,
+  "chiral_offset_h": 4.0303364276927764,
+  "chiral_median_abs_error_h": 5.598070563929534,
+  "chiral_mean_abs_error_h": 5.772224736148559,
+  "chiral_resultant": 0.050564411558458304,
+  "chiral_n": 788,
+  "chiral_eval_on": "all samples",
+  "total_seconds": 167.2
+}

@@ -1,0 +1,7 @@
+[adipose_subcutaneous] 663 samples, 2012 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+  clock from /workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/adipose_subcutaneous/0_seed0/adipose_subcutaneous/model.pt: 14 genes
+[adipose_subcutaneous] grid phase prior: kappa median 1.73, anneal 50 epochs, weight 2.0; vs CHIRAL 4.18 h
+[adipose_subcutaneous] likelihood weights: rhythmic 0.227, non-rhythmic 0.227; decoder frozen
+[adipose_subcutaneous] done in 128.7 s; vs CHIRAL: median |diff| 4.23 h (grid with trained decoder: 4.05 h)
+
+All done. Outputs in /workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage2/adipose_subcutaneous/0_seed0

@@ -1,0 +1,219 @@
+{
+  "tissue": "Skin - Sun Exposed (Lower leg)",
+  "file": "skin_sun_exposed_lower_leg",
+  "n_samples": 701,
+  "n_context_genes": 2011,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 14,
+  "train_seconds": 149.3,
+  "epochs": 300,
+  "rhythmic_likelihood_weight": 0.22042079807226367,
+  "non_rhythmic_likelihood_weight": 0.22042079807226367,
+  "decoder_frozen": true,
+  "final_elbo": 3079.163152521307,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[1]",
+    "hardy[2]",
+    "hardy[3]",
+    "hardy[4]",
+    "hardy__missing"
+  ],
+  "grid_prior_kappa_median": 1.0947705298972865,
+  "grid_prior_aligned_h": 3.535086160281609,
+  "MI_weight": 50,
+  "entropy_weight_factor": 50,
+  "grid_refresh_every": 10,
+  "grid_refresh_use_z": false,
+  "decoder_phase_from_grid": true,
+  "grid_refresh_log": [
+    [
+      10,
+      0.75,
+      1.34
+    ],
+    [
+      20,
+      0.25,
+      1.33
+    ],
+    [
+      30,
+      0.0,
+      1.35
+    ],
+    [
+      40,
+      0.0,
+      1.34
+    ],
+    [
+      50,
+      0.0,
+      1.33
+    ],
+    [
+      60,
+      0.0,
+      1.32
+    ],
+    [
+      70,
+      0.0,
+      1.3
+    ],
+    [
+      80,
+      0.25,
+      1.28
+    ],
+    [
+      90,
+      0.25,
+      1.25
+    ],
+    [
+      100,
+      0.25,
+      1.24
+    ],
+    [
+      110,
+      0.25,
+      1.24
+    ],
+    [
+      120,
+      0.25,
+      1.24
+    ],
+    [
+      130,
+      0.25,
+      1.25
+    ],
+    [
+      140,
+      0.25,
+      1.26
+    ],
+    [
+      150,
+      0.25,
+      1.23
+    ],
+    [
+      160,
+      0.25,
+      1.21
+    ],
+    [
+      170,
+      0.25,
+      1.24
+    ],
+    [
+      180,
+      0.0,
+      1.26
+    ],
+    [
+      190,
+      0.25,
+      1.32
+    ],
+    [
+      200,
+      0.25,
+      1.4
+    ],
+    [
+      210,
+      0.25,
+      1.47
+    ],
+    [
+      220,
+      0.25,
+      1.57
+    ],
+    [
+      230,
+      0.25,
+      1.69
+    ],
+    [
+      240,
+      0.25,
+      1.74
+    ],
+    [
+      250,
+      0.25,
+      1.86
+    ],
+    [
+      260,
+      0.25,
+      2.03
+    ],
+    [
+      270,
+      0.25,
+      1.8
+    ],
+    [
+      280,
+      0.25,
+      1.81
+    ],
+    [
+      290,
+      0.25,
+      1.79
+    ]
+  ],
+  "phase_prior_anneal_epochs": 100000,
+  "phase_prior_weight": 2.0,
+  "phase_prior_kappa": "auto",
+  "grid_final_noz_aligned_h": 4.446263396804371,
+  "grid_final_z_aligned_h": 3.848482380004274,
+  "keep_hardy": null,
+  "reference_from_model": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/skin_sun_exposed_lower_leg/3-4_seed1/skin_sun_exposed_lower_leg/model.pt",
+  "encoder_hardy0_n": 351,
+  "encoder_hardy0_median_abs_error_h": 5.582522719844182,
+  "encoder_hardy1-2_n": 220,
+  "encoder_hardy1-2_median_abs_error_h": 5.116582049497602,
+  "encoder_hardy3-4_n": 119,
+  "encoder_hardy3-4_median_abs_error_h": 5.366789882443963,
+  "grid_final_noz_hardy0_n": 351,
+  "grid_final_noz_hardy0_median_abs_error_h": 4.2070167344969365,
+  "grid_final_noz_hardy1-2_n": 220,
+  "grid_final_noz_hardy1-2_median_abs_error_h": 4.927749884772785,
+  "grid_final_noz_hardy3-4_n": 119,
+  "grid_final_noz_hardy3-4_median_abs_error_h": 4.403040183791959,
+  "chiral_sign": -1,
+  "chiral_offset_h": 7.782208713831769,
+  "chiral_median_abs_error_h": 5.455967233162239,
+  "chiral_mean_abs_error_h": 5.7246270951233535,
+  "chiral_resultant": 0.06073940619827298,
+  "chiral_n": 690,
+  "chiral_eval_on": "all samples",
+  "total_seconds": 160.6
+}

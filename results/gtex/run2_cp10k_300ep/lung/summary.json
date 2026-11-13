@@ -1,0 +1,42 @@
+{
+  "tissue": "Lung",
+  "file": "lung",
+  "n_samples": 578,
+  "n_context_genes": 2011,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 12,
+  "train_seconds": 183.8,
+  "epochs": 300,
+  "final_elbo": 28364.853949652777,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[1]",
+    "hardy[2]",
+    "hardy[3]",
+    "hardy[4]",
+    "hardy__missing"
+  ],
+  "chiral_sign": -1,
+  "chiral_offset_h": 2.9579997800136777,
+  "chiral_median_abs_error_h": 4.793084537402809,
+  "chiral_mean_abs_error_h": 5.164058165045052,
+  "chiral_resultant": 0.17037205056972432,
+  "chiral_n": 574,
+  "total_seconds": 188.2
+}

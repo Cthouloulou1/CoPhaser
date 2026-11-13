@@ -1,0 +1,42 @@
+{
+  "tissue": "Muscle - Skeletal",
+  "file": "muscle_skeletal",
+  "n_samples": 803,
+  "n_context_genes": 2009,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 12,
+  "train_seconds": 176.2,
+  "epochs": 300,
+  "final_elbo": 29052.197115384617,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[1]",
+    "hardy[2]",
+    "hardy[3]",
+    "hardy[4]",
+    "hardy__missing"
+  ],
+  "chiral_sign": 1,
+  "chiral_offset_h": 5.312419607303289,
+  "chiral_median_abs_error_h": 4.460122438656844,
+  "chiral_mean_abs_error_h": 5.237732929206092,
+  "chiral_resultant": 0.15386064795109006,
+  "chiral_n": 788,
+  "total_seconds": 181.3
+}

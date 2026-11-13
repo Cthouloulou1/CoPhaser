@@ -1,0 +1,18 @@
+/workspaces/eyerly/CoPhaser/scripts/aorta_check.py:126: Pandas4Warning: Starting with pandas version 4.0 all arguments of max will be keyword-only.
+  ad.obs["celltype"] = np.where(S.max(1) > 0, S.idxmax(1), "Other")
+cell types: {'SMC': 18965, 'Fibroblast': 1981, 'Endothelial': 221, 'Immune': 196, 'Other': 11}
+cells per cell type and ZT:
+ zt             0     6     12    18
+celltype                           
+Endothelial    51    60    53    57
+Fibroblast    452   564   462   503
+Immune         51    40    44    61
+Other           3     2     5     1
+SMC          3875  4413  4284  6393
+21374 cells after QC (99.3% kept); per ZT: {0: 4432, 6: 5079, 12: 4848, 18: 7015}
+24 rhythmic genes: ['Bhlhe41', np.str_('Bmal1'), np.str_('Ciart'), np.str_('Clock'), np.str_('Cry1'), np.str_('Cry2'), 'Csnk1a1', 'Csnk1d', 'Csnk1e', np.str_('Dbp'), 'Fbxo21', 'Fbxo3', 'Hlf', 'Nampt', 'Nfil3', np.str_('Npas2'), np.str_('Nr1d1'), np.str_('Nr1d2'), np.str_('Per1'), np.str_('Per2'), np.str_('Per3'), np.str_('Rora'), 'Rorc', np.str_('Tef')]
+covariates: ['celltype[Endothelial]', 'celltype[Fibroblast]', 'celltype[Immune]', 'celltype[Other]', 'mito']
+/workspaces/eyerly/CoPhaser/src/cophaser/model/decoder_prior.py:47: UserWarning: Gene ARNTL was not found in the model's genes, prior not loaded
+  warnings.warn(
+{"n_cells": 21374, "n_rhythmic": 24, "epochs": 200, "adam_beta2": 0.999, "z_input": "raw", "seed": 2, "covariates": ["celltype", "mito"], "covariate_columns": ["celltype[Endothelial]", "celltype[Fibroblast]", "celltype[Immune]", "celltype[Other]", "mito"], "train_seconds": 542.6, "final_elbo": 1323.167, "encoder_mad_notebook_h": 1.829, "encoder_median_error_mean_offset_h": 1.831, "grid_mad_notebook_h": 1.879, "grid_median_error_mean_offset_h": 1.901, "theta_resultant": 0.082, "lambda_median": 1.108, "encoder_input_abs_mean_per_gene_median": 0.206, "encoder_input_sd_per_gene_median": 0.387, "celltype_W_c_vs_observed": {"Endothelial": {"n_cells": 221, "pearson_r": 0.6791051500471565, "slope": 0.2418780089286309}, "Fibroblast": {"n_cells": 1981, "pearson_r": 0.5585256980624033, "slope": 0.2277873086979675}, "Immune": {"n_cells": 196, "pearson_r": 0.6276568321525303, "slope": 0.17245635646257448}, "Other": {"n_cells": 11, "pearson_r": 0.6960207468013033, "slope": 0.22519681310177417}}}
+All done. Outputs in results/aorta/cov_celltype+mito_seed2

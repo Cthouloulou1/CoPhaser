@@ -1,0 +1,2085 @@
+tissue_file,subset,covariate,kind,gene,mean,sd,n_runs,sign_agreement
+adipose_subcutaneous,all,age (per 10 y),log_amp,ARNTL,0.34510784548628265,0.07933098633169484,4,1.0
+adipose_subcutaneous,all,age (per 10 y),log_amp,CIART,0.1873992784741206,0.2574265590766378,4,0.75
+adipose_subcutaneous,all,age (per 10 y),log_amp,CLOCK,-0.01935601768843659,0.28801539907961476,2,0.5
+adipose_subcutaneous,all,age (per 10 y),log_amp,CRY1,-0.2708213646616985,0.03906542566593022,2,1.0
+adipose_subcutaneous,all,age (per 10 y),log_amp,CRY2,-0.36897238906143015,0.8223803579825458,2,0.5
+adipose_subcutaneous,all,age (per 10 y),log_amp,DBP,0.07558888524609644,0.2666455650861713,4,0.5
+adipose_subcutaneous,all,age (per 10 y),log_amp,NPAS2,0.11896496662613405,0.07756926519868845,2,1.0
+adipose_subcutaneous,all,age (per 10 y),log_amp,NR1D1,0.06462277115139665,0.3025105235314401,4,0.75
+adipose_subcutaneous,all,age (per 10 y),log_amp,NR1D2,-0.044243357018067773,0.1603494520162203,2,0.5
+adipose_subcutaneous,all,age (per 10 y),log_amp,PER1,0.1592524270635158,0.07955464304884667,2,1.0
+adipose_subcutaneous,all,age (per 10 y),log_amp,PER2,-0.0462654359195568,0.5970435084369743,4,0.25
+adipose_subcutaneous,all,age (per 10 y),log_amp,PER3,-0.15930417546606607,0.28414593268509375,4,0.5
+adipose_subcutaneous,all,age (per 10 y),log_amp,TEF,0.003070242946785053,0.046660008949733094,4,0.5
+adipose_subcutaneous,all,age (per 10 y),mesor,ARNTL,0.00962304479133542,0.052983231439565424,4,0.75
+adipose_subcutaneous,all,age (per 10 y),mesor,CIART,0.04332863936028998,0.02489322168052103,4,1.0
+adipose_subcutaneous,all,age (per 10 y),mesor,CLOCK,0.014850278261696215,0.017683655160579015,4,0.75
+adipose_subcutaneous,all,age (per 10 y),mesor,CRY1,-0.1004274870604765,0.1691422616993827,4,0.75
+adipose_subcutaneous,all,age (per 10 y),mesor,CRY2,-0.029816401331851136,0.018672949812869384,4,1.0
+adipose_subcutaneous,all,age (per 10 y),mesor,DBP,-0.030417699083513414,0.012516759428184658,4,1.0
+adipose_subcutaneous,all,age (per 10 y),mesor,NPAS2,0.06644224478939995,0.09758440785615533,4,0.75
+adipose_subcutaneous,all,age (per 10 y),mesor,NR1D1,0.20009971863489362,0.21805312309637465,4,0.75
+adipose_subcutaneous,all,age (per 10 y),mesor,NR1D2,0.004103178101002805,0.008536194541908767,4,0.75
+adipose_subcutaneous,all,age (per 10 y),mesor,PER1,0.03977915973554011,0.02138066137322125,4,1.0
+adipose_subcutaneous,all,age (per 10 y),mesor,PER2,-0.09107233203372427,0.13771212536104088,4,0.5
+adipose_subcutaneous,all,age (per 10 y),mesor,PER3,-0.08637012639947464,0.132407150968151,4,1.0
+adipose_subcutaneous,all,age (per 10 y),mesor,RORA,-0.020736007380963244,0.028767100861028627,4,1.0
+adipose_subcutaneous,all,age (per 10 y),mesor,TEF,0.0036410288932868847,0.03151814683703093,4,0.5
+adipose_subcutaneous,all,hardy[1],log_amp,ARNTL,0.38780074,0.8622548863060465,4,0.75
+adipose_subcutaneous,all,hardy[1],log_amp,CIART,0.1171028925,0.9306820135921471,4,0.5
+adipose_subcutaneous,all,hardy[1],log_amp,CLOCK,0.3231962,0.3176955814552352,2,1.0
+adipose_subcutaneous,all,hardy[1],log_amp,CRY1,-0.08380476999999997,0.8827540431058664,2,0.5
+adipose_subcutaneous,all,hardy[1],log_amp,CRY2,-0.07140249000000004,0.7135522999133685,2,0.5
+adipose_subcutaneous,all,hardy[1],log_amp,DBP,-0.2515022575,0.8928519147587797,4,0.5
+adipose_subcutaneous,all,hardy[1],log_amp,NPAS2,0.329647805,0.5880026978419114,2,0.5
+adipose_subcutaneous,all,hardy[1],log_amp,NR1D1,0.4753875675,0.4894686960586246,4,0.75
+adipose_subcutaneous,all,hardy[1],log_amp,NR1D2,-0.50455881,0.3447992530786924,2,1.0
+adipose_subcutaneous,all,hardy[1],log_amp,PER1,0.471023485,0.0002959312589943504,2,1.0
+adipose_subcutaneous,all,hardy[1],log_amp,PER2,0.293514038,0.4132784285112866,4,0.5
+adipose_subcutaneous,all,hardy[1],log_amp,PER3,-0.3027650275,0.9523089987565379,4,0.75
+adipose_subcutaneous,all,hardy[1],log_amp,TEF,-0.6645599025,0.40563638408114966,4,1.0
+adipose_subcutaneous,all,hardy[1],mesor,ARNTL,0.07011044824999998,0.30765559388043073,4,0.5
+adipose_subcutaneous,all,hardy[1],mesor,CIART,-0.48857820625,0.35522835176653794,4,1.0
+adipose_subcutaneous,all,hardy[1],mesor,CLOCK,0.1156877204,0.24214880332357874,4,0.75
+adipose_subcutaneous,all,hardy[1],mesor,CRY1,-0.037532394,0.3461995820254293,4,0.5
+adipose_subcutaneous,all,hardy[1],mesor,CRY2,0.061376652500000003,0.11378578302027642,4,0.75
+adipose_subcutaneous,all,hardy[1],mesor,DBP,0.060115418999999996,0.7433924291106256,4,0.75
+adipose_subcutaneous,all,hardy[1],mesor,NPAS2,0.13936154999999997,0.5249494819779921,4,0.5
+adipose_subcutaneous,all,hardy[1],mesor,NR1D1,-0.32349853,0.3701862308237089,4,0.75
+adipose_subcutaneous,all,hardy[1],mesor,NR1D2,-0.212011651,0.1910868486000457,4,1.0
+adipose_subcutaneous,all,hardy[1],mesor,PER1,-0.3395958525,0.12180359153291946,4,1.0
+adipose_subcutaneous,all,hardy[1],mesor,PER2,0.2432978275,0.3220459575919962,4,0.75
+adipose_subcutaneous,all,hardy[1],mesor,PER3,-0.20974825749999998,0.6000243084706811,4,0.5
+adipose_subcutaneous,all,hardy[1],mesor,RORA,0.050464948925,0.03926248630135147,4,1.0
+adipose_subcutaneous,all,hardy[1],mesor,TEF,-0.215337998,0.14522982764411146,4,1.0
+adipose_subcutaneous,all,hardy[2],log_amp,ARNTL,0.7346500975,0.33025724822620217,4,1.0
+adipose_subcutaneous,all,hardy[2],log_amp,CIART,0.9202929125,0.481726809902055,4,1.0
+adipose_subcutaneous,all,hardy[2],log_amp,CLOCK,-0.004366365000000011,0.5861253859064035,2,0.5
+adipose_subcutaneous,all,hardy[2],log_amp,CRY1,-0.121168941,0.08596857026034202,2,1.0
+adipose_subcutaneous,all,hardy[2],log_amp,CRY2,0.176451488,0.39509289039938705,2,0.5
+adipose_subcutaneous,all,hardy[2],log_amp,DBP,-0.026531252500000005,0.39305761851551907,4,0.75
+adipose_subcutaneous,all,hardy[2],log_amp,NPAS2,0.06389030999999999,0.3937919100885261,2,0.5
+adipose_subcutaneous,all,hardy[2],log_amp,NR1D1,0.12254893500000003,0.8206836883609392,4,0.25
+adipose_subcutaneous,all,hardy[2],log_amp,NR1D2,1.53008455,0.18521184280008943,2,1.0
+adipose_subcutaneous,all,hardy[2],log_amp,PER1,1.2922923,0.14377305197017973,2,1.0
+adipose_subcutaneous,all,hardy[2],log_amp,PER2,0.017776296075000003,0.389952107403451,4,0.25
+adipose_subcutaneous,all,hardy[2],log_amp,PER3,0.128706026,1.1159601712950649,4,0.25
+adipose_subcutaneous,all,hardy[2],log_amp,TEF,0.11495713050000003,0.8938053418901242,4,0.5
+adipose_subcutaneous,all,hardy[2],mesor,ARNTL,-0.1089455365,0.19978566236009804,4,0.75
+adipose_subcutaneous,all,hardy[2],mesor,CIART,0.20896665,0.022809533465737525,4,1.0
+adipose_subcutaneous,all,hardy[2],mesor,CLOCK,-0.05240418225,0.03874606070887511,4,1.0
+adipose_subcutaneous,all,hardy[2],mesor,CRY1,-0.01196171,0.13905288836793073,4,0.5
+adipose_subcutaneous,all,hardy[2],mesor,CRY2,0.17680492,0.05784547737694105,4,1.0
+adipose_subcutaneous,all,hardy[2],mesor,DBP,0.486612475,0.19836348318190175,4,1.0
+adipose_subcutaneous,all,hardy[2],mesor,NPAS2,0.0488854265,0.22519861022208765,4,0.5
+adipose_subcutaneous,all,hardy[2],mesor,NR1D1,0.12500524764999998,0.09582799157902305,4,0.75
+adipose_subcutaneous,all,hardy[2],mesor,NR1D2,0.11585940575,0.07200463101003766,4,1.0
+adipose_subcutaneous,all,hardy[2],mesor,PER1,0.05840853225,0.09094340403705439,4,0.75
+adipose_subcutaneous,all,hardy[2],mesor,PER2,0.17608401029999998,0.3192127726279847,4,0.75
+adipose_subcutaneous,all,hardy[2],mesor,PER3,0.1320247375,0.48844865275835886,4,0.5
+adipose_subcutaneous,all,hardy[2],mesor,RORA,0.07027464375,0.030204565354092137,4,1.0
+adipose_subcutaneous,all,hardy[2],mesor,TEF,0.033507899650000006,0.06777500555440974,4,0.75
+adipose_subcutaneous,all,hardy[3],log_amp,ARNTL,0.30458864350000003,0.2816742925759928,4,0.75
+adipose_subcutaneous,all,hardy[3],log_amp,CIART,0.09801748250000002,0.8388944858999328,4,0.5
+adipose_subcutaneous,all,hardy[3],log_amp,CLOCK,-0.03910818499999999,0.5293379514362956,2,0.5
+adipose_subcutaneous,all,hardy[3],log_amp,CRY1,-0.40130716499999997,0.13411624315193904,2,1.0
+adipose_subcutaneous,all,hardy[3],log_amp,CRY2,0.17299808,0.05657941779721846,2,1.0
+adipose_subcutaneous,all,hardy[3],log_amp,DBP,0.394235475,1.106267070315435,4,0.75
+adipose_subcutaneous,all,hardy[3],log_amp,NPAS2,0.217382543,0.3413598390259535,2,0.5
+adipose_subcutaneous,all,hardy[3],log_amp,NR1D1,0.19162441,0.8960167583878094,4,0.25
+adipose_subcutaneous,all,hardy[3],log_amp,NR1D2,0.70735964,0.34598276598263566,2,1.0
+adipose_subcutaneous,all,hardy[3],log_amp,PER1,-0.034839703,0.2222919383353106,2,0.5
+adipose_subcutaneous,all,hardy[3],log_amp,PER2,0.1178358,0.4710416448321952,4,0.5
+adipose_subcutaneous,all,hardy[3],log_amp,PER3,0.2871302325,0.6579230168203527,4,0.5
+adipose_subcutaneous,all,hardy[3],log_amp,TEF,0.2774684975,0.3139474551047136,4,0.75
+adipose_subcutaneous,all,hardy[3],mesor,ARNTL,-0.15538298625000002,0.1840262177673832,4,1.0
+adipose_subcutaneous,all,hardy[3],mesor,CIART,0.15488438000000002,0.3599135715712861,4,0.75
+adipose_subcutaneous,all,hardy[3],mesor,CLOCK,-0.04391601325,0.07930207757951871,4,0.75
+adipose_subcutaneous,all,hardy[3],mesor,CRY1,-0.09760664124999999,0.2502745771949329,4,0.75
+adipose_subcutaneous,all,hardy[3],mesor,CRY2,0.09675751,0.07618446268981141,4,1.0
+adipose_subcutaneous,all,hardy[3],mesor,DBP,0.245775525,0.34536532843317413,4,0.75
+adipose_subcutaneous,all,hardy[3],mesor,NPAS2,0.041363426841249995,0.2996893177206582,4,0.5
+adipose_subcutaneous,all,hardy[3],mesor,NR1D1,0.1836922285,0.2156508777826469,4,0.75
+adipose_subcutaneous,all,hardy[3],mesor,NR1D2,0.17331801075,0.13255817593816682,4,0.75
+adipose_subcutaneous,all,hardy[3],mesor,PER1,0.0429278325,0.038089493305534954,4,1.0
+adipose_subcutaneous,all,hardy[3],mesor,PER2,0.12584674099999998,0.39011386358273725,4,0.5
+adipose_subcutaneous,all,hardy[3],mesor,PER3,0.08997959999999999,0.4638431698156836,4,0.5
+adipose_subcutaneous,all,hardy[3],mesor,RORA,0.095268035,0.03696209639108104,4,1.0
+adipose_subcutaneous,all,hardy[3],mesor,TEF,0.13126463500000002,0.20229724898943838,4,0.75
+adipose_subcutaneous,all,hardy[4],log_amp,ARNTL,0.084266275,0.6853408996116325,4,0.5
+adipose_subcutaneous,all,hardy[4],log_amp,CIART,0.609547801125,0.5715413140932238,4,1.0
+adipose_subcutaneous,all,hardy[4],log_amp,CLOCK,0.37369994999999995,0.948075125054046,2,0.5
+adipose_subcutaneous,all,hardy[4],log_amp,CRY1,0.479881735,0.04542836507111001,2,1.0
+adipose_subcutaneous,all,hardy[4],log_amp,CRY2,-0.699504065,1.8388926108416983,2,0.5
+adipose_subcutaneous,all,hardy[4],log_amp,DBP,0.3169782985,0.5594722558577011,4,0.75
+adipose_subcutaneous,all,hardy[4],log_amp,NPAS2,-0.4373068,0.2229378987647008,2,1.0
+adipose_subcutaneous,all,hardy[4],log_amp,NR1D1,-0.21667625499999998,0.6014134511904267,4,0.75
+adipose_subcutaneous,all,hardy[4],log_amp,NR1D2,0.32619135,0.20332155457305798,2,1.0
+adipose_subcutaneous,all,hardy[4],log_amp,PER1,0.8763561,0.5199798810909707,2,1.0
+adipose_subcutaneous,all,hardy[4],log_amp,PER2,-0.173843895,0.6317718199571969,4,0.75
+adipose_subcutaneous,all,hardy[4],log_amp,PER3,0.33615156395,0.9513029255078191,4,0.5
+adipose_subcutaneous,all,hardy[4],log_amp,TEF,0.25985383,0.5391795737435855,4,0.5
+adipose_subcutaneous,all,hardy[4],mesor,ARNTL,-0.2497920175,0.12234964425536277,4,1.0
+adipose_subcutaneous,all,hardy[4],mesor,CIART,0.0271185065,0.15951995911342828,4,0.75
+adipose_subcutaneous,all,hardy[4],mesor,CLOCK,-0.06484014825000001,0.07767099286944745,4,0.75
+adipose_subcutaneous,all,hardy[4],mesor,CRY1,0.33170513,0.2398073258743729,4,1.0
+adipose_subcutaneous,all,hardy[4],mesor,CRY2,0.039447226,0.14306001227866044,4,0.75
+adipose_subcutaneous,all,hardy[4],mesor,DBP,0.03707780025,0.186283965749028,4,0.75
+adipose_subcutaneous,all,hardy[4],mesor,NPAS2,-0.1341482,0.15402375585921457,4,0.75
+adipose_subcutaneous,all,hardy[4],mesor,NR1D1,-0.1280044925,0.351642333376009,4,0.5
+adipose_subcutaneous,all,hardy[4],mesor,NR1D2,0.06691206325,0.04135114167559647,4,1.0
+adipose_subcutaneous,all,hardy[4],mesor,PER1,0.04805664075,0.05348070178289294,4,0.75
+adipose_subcutaneous,all,hardy[4],mesor,PER2,0.3539571,0.04630430194816028,4,1.0
+adipose_subcutaneous,all,hardy[4],mesor,PER3,0.22760392699999998,0.19808904780514625,4,0.75
+adipose_subcutaneous,all,hardy[4],mesor,RORA,0.122682002,0.09719233214803902,4,1.0
+adipose_subcutaneous,all,hardy[4],mesor,TEF,-0.0513485955,0.10571765380588724,4,0.75
+adipose_subcutaneous,all,hardy__missing,log_amp,ARNTL,0.44146174499999996,0.995685163156088,4,0.5
+adipose_subcutaneous,all,hardy__missing,log_amp,CIART,0.57833288,0.2768668068897365,4,1.0
+adipose_subcutaneous,all,hardy__missing,log_amp,CLOCK,0.53672847,0.33778292947382643,2,1.0
+adipose_subcutaneous,all,hardy__missing,log_amp,CRY1,-0.6078331100000001,0.27075004100334354,2,1.0
+adipose_subcutaneous,all,hardy__missing,log_amp,CRY2,-0.188843765,0.47615260376236573,2,0.5
+adipose_subcutaneous,all,hardy__missing,log_amp,DBP,0.5312864500000001,0.7915905016669182,4,0.75
+adipose_subcutaneous,all,hardy__missing,log_amp,NPAS2,0.1930764625,0.19916379144841842,2,1.0
+adipose_subcutaneous,all,hardy__missing,log_amp,NR1D1,0.16694398250000003,0.8601145446403964,4,0.5
+adipose_subcutaneous,all,hardy__missing,log_amp,NR1D2,0.334395425,1.2372917334096196,2,0.5
+adipose_subcutaneous,all,hardy__missing,log_amp,PER1,0.6335444,0.2483066980426525,2,1.0
+adipose_subcutaneous,all,hardy__missing,log_amp,PER2,0.0332635825,0.33012695755589067,4,0.5
+adipose_subcutaneous,all,hardy__missing,log_amp,PER3,0.06729420000000003,0.9760472662090807,4,0.5
+adipose_subcutaneous,all,hardy__missing,log_amp,TEF,-0.03858912000000002,0.8436545683464699,4,0.25
+adipose_subcutaneous,all,hardy__missing,mesor,ARNTL,-0.352538994,0.35675276077790036,4,0.75
+adipose_subcutaneous,all,hardy__missing,mesor,CIART,0.050297915,0.21648417226760241,4,0.75
+adipose_subcutaneous,all,hardy__missing,mesor,CLOCK,-0.13980339,0.047471949748657545,4,1.0
+adipose_subcutaneous,all,hardy__missing,mesor,CRY1,-0.034678805,0.15051565061054936,4,0.75
+adipose_subcutaneous,all,hardy__missing,mesor,CRY2,0.1729313525,0.04264396163799464,4,1.0
+adipose_subcutaneous,all,hardy__missing,mesor,DBP,0.6718938375,0.09305080522717482,4,1.0
+adipose_subcutaneous,all,hardy__missing,mesor,NPAS2,-0.20501370000000002,0.2921167984851729,4,0.75
+adipose_subcutaneous,all,hardy__missing,mesor,NR1D1,-0.33163584999999995,0.21286897096390367,4,1.0
+adipose_subcutaneous,all,hardy__missing,mesor,NR1D2,0.05113339975,0.07772378503659949,4,0.75
+adipose_subcutaneous,all,hardy__missing,mesor,PER1,-0.16816333875,0.08103165422660089,4,1.0
+adipose_subcutaneous,all,hardy__missing,mesor,PER2,0.48667354250000006,0.10222506503243006,4,1.0
+adipose_subcutaneous,all,hardy__missing,mesor,PER3,0.2141584175,0.5503206110174998,4,0.5
+adipose_subcutaneous,all,hardy__missing,mesor,RORA,-0.110855987,0.057041336623157045,4,1.0
+adipose_subcutaneous,all,hardy__missing,mesor,TEF,0.297052005,0.08440693904312467,4,1.0
+adipose_subcutaneous,all,sex (F vs M),log_amp,ARNTL,0.12621647500000002,0.3508350767227818,4,0.5
+adipose_subcutaneous,all,sex (F vs M),log_amp,CIART,-0.011561122499999982,0.3682368296652021,4,0.25
+adipose_subcutaneous,all,sex (F vs M),log_amp,CLOCK,-0.24678607,0.4803857621475493,2,0.5
+adipose_subcutaneous,all,sex (F vs M),log_amp,CRY1,-0.38603465000000003,0.039578110045895315,2,1.0
+adipose_subcutaneous,all,sex (F vs M),log_amp,CRY2,0.10175833499999999,0.486337911259933,2,0.5
+adipose_subcutaneous,all,sex (F vs M),log_amp,DBP,-0.10434445750000002,0.6646138922525915,4,0.5
+adipose_subcutaneous,all,sex (F vs M),log_amp,NPAS2,-0.41545313500000003,0.19811939119707203,2,1.0
+adipose_subcutaneous,all,sex (F vs M),log_amp,NR1D1,-0.0017468024999999915,0.3861437393972429,4,0.75
+adipose_subcutaneous,all,sex (F vs M),log_amp,NR1D2,0.5382902350000001,0.05356328917740639,2,1.0
+adipose_subcutaneous,all,sex (F vs M),log_amp,PER1,0.998101825,0.01073766395969109,2,1.0
+adipose_subcutaneous,all,sex (F vs M),log_amp,PER2,-0.2378514025,0.24242430790402078,4,0.75
+adipose_subcutaneous,all,sex (F vs M),log_amp,PER3,0.5045062575000001,1.3803373910484384,4,0.25
+adipose_subcutaneous,all,sex (F vs M),log_amp,TEF,0.08889856825,0.16884613244638827,4,0.75
+adipose_subcutaneous,all,sex (F vs M),mesor,ARNTL,0.10949492224999999,0.163075941586973,4,0.75
+adipose_subcutaneous,all,sex (F vs M),mesor,CIART,-0.06873796575,0.0839986980343504,4,0.75
+adipose_subcutaneous,all,sex (F vs M),mesor,CLOCK,0.050731375424999996,0.08456571538699141,4,0.75
+adipose_subcutaneous,all,sex (F vs M),mesor,CRY1,0.06304805925,0.12531207421180263,4,0.5
+adipose_subcutaneous,all,sex (F vs M),mesor,CRY2,-0.004034881074999998,0.06664715297853946,4,0.25
+adipose_subcutaneous,all,sex (F vs M),mesor,DBP,-0.027066981750000003,0.1614480183917715,4,0.5
+adipose_subcutaneous,all,sex (F vs M),mesor,NPAS2,-0.04500306775,0.09242749601581363,4,0.5
+adipose_subcutaneous,all,sex (F vs M),mesor,NR1D1,0.00019653274999999887,0.16903843575065966,4,0.75
+adipose_subcutaneous,all,sex (F vs M),mesor,NR1D2,0.01714540125,0.028206624280567753,4,0.75
+adipose_subcutaneous,all,sex (F vs M),mesor,PER1,0.03678187625,0.043099232112422135,4,0.75
+adipose_subcutaneous,all,sex (F vs M),mesor,PER2,-0.0375408985,0.133512360957531,4,0.75
+adipose_subcutaneous,all,sex (F vs M),mesor,PER3,0.039871034250000006,0.23291407145748527,4,0.25
+adipose_subcutaneous,all,sex (F vs M),mesor,RORA,0.0018126335000000003,0.024254497338420826,4,0.5
+adipose_subcutaneous,all,sex (F vs M),mesor,TEF,0.006388851999999999,0.027163962326195255,4,0.5
+adipose_subcutaneous,fast,age (per 10 y),log_amp,ARNTL,0.3025024583027166,0.32337503883889557,4,0.75
+adipose_subcutaneous,fast,age (per 10 y),log_amp,CIART,0.5803607455153086,0.4886868356279188,4,0.75
+adipose_subcutaneous,fast,age (per 10 y),log_amp,CLOCK,0.153574744637215,0.17094860109920723,2,1.0
+adipose_subcutaneous,fast,age (per 10 y),log_amp,CRY1,0.18054356378027858,0.23645690160990337,2,1.0
+adipose_subcutaneous,fast,age (per 10 y),log_amp,CRY2,-0.3415715130176882,0.25464434332105745,2,1.0
+adipose_subcutaneous,fast,age (per 10 y),log_amp,DBP,-0.15421950070393395,0.536064021115578,4,0.5
+adipose_subcutaneous,fast,age (per 10 y),log_amp,NPAS2,-0.054072903198435086,0.2163556917525149,2,0.5
+adipose_subcutaneous,fast,age (per 10 y),log_amp,NR1D1,-0.33111841883551346,0.3807319934540003,4,0.75
+adipose_subcutaneous,fast,age (per 10 y),log_amp,NR1D2,-0.34981043449404525,0.9652819251141327,2,0.5
+adipose_subcutaneous,fast,age (per 10 y),log_amp,PER1,-0.16542930236094983,0.0880587242394109,2,1.0
+adipose_subcutaneous,fast,age (per 10 y),log_amp,PER2,0.0630326860476646,0.1995190293551372,4,0.5
+adipose_subcutaneous,fast,age (per 10 y),log_amp,PER3,-0.48842382204042734,0.3282564723548151,4,1.0
+adipose_subcutaneous,fast,age (per 10 y),log_amp,TEF,-0.21917105839656992,0.5696526255499572,4,0.5
+adipose_subcutaneous,fast,age (per 10 y),mesor,ARNTL,0.0067198486795242846,0.16820554744338767,4,0.25
+adipose_subcutaneous,fast,age (per 10 y),mesor,CIART,0.1158716873976601,0.19528455393196398,4,0.5
+adipose_subcutaneous,fast,age (per 10 y),mesor,CLOCK,-0.0053956616412151135,0.0323887605481575,4,0.5
+adipose_subcutaneous,fast,age (per 10 y),mesor,CRY1,-0.027215455201223274,0.015120877907362919,4,1.0
+adipose_subcutaneous,fast,age (per 10 y),mesor,CRY2,-0.0181239567608418,0.06342857773961783,4,0.75
+adipose_subcutaneous,fast,age (per 10 y),mesor,DBP,-0.06948933068473413,0.07916591694607164,4,0.75
+adipose_subcutaneous,fast,age (per 10 y),mesor,NPAS2,0.02088059691893137,0.07687549303937868,4,0.25
+adipose_subcutaneous,fast,age (per 10 y),mesor,NR1D1,-0.15082322609990284,0.15002096163011278,4,0.75
+adipose_subcutaneous,fast,age (per 10 y),mesor,NR1D2,-0.04731017380997084,0.08804352749208746,4,0.75
+adipose_subcutaneous,fast,age (per 10 y),mesor,PER1,0.005932874297762179,0.062070886291190945,4,0.75
+adipose_subcutaneous,fast,age (per 10 y),mesor,PER2,-0.03331813057292678,0.0594648755914413,4,0.75
+adipose_subcutaneous,fast,age (per 10 y),mesor,PER3,-0.06123460361585343,0.049973474082559075,4,1.0
+adipose_subcutaneous,fast,age (per 10 y),mesor,RORA,-0.014245933153612727,0.05118751624401831,4,0.75
+adipose_subcutaneous,fast,age (per 10 y),mesor,TEF,-0.029728662738665538,0.09618441586460426,4,0.75
+adipose_subcutaneous,fast,hardy[2],log_amp,ARNTL,-0.07044875250000002,0.47876050884916665,4,0.5
+adipose_subcutaneous,fast,hardy[2],log_amp,CIART,0.2071660025,0.7233722925279401,4,0.5
+adipose_subcutaneous,fast,hardy[2],log_amp,CLOCK,0.295042915,0.18765749181097577,2,1.0
+adipose_subcutaneous,fast,hardy[2],log_amp,CRY1,-0.681522695,0.19052082172644133,2,1.0
+adipose_subcutaneous,fast,hardy[2],log_amp,CRY2,0.202968975,0.09372503101835736,2,1.0
+adipose_subcutaneous,fast,hardy[2],log_amp,DBP,0.5967003235,0.5422495142543485,4,0.75
+adipose_subcutaneous,fast,hardy[2],log_amp,NPAS2,-0.39011396,0.002293656408270412,2,1.0
+adipose_subcutaneous,fast,hardy[2],log_amp,NR1D1,-0.070795415,0.28726510676182865,4,0.5
+adipose_subcutaneous,fast,hardy[2],log_amp,NR1D2,0.53073455,1.1616472530805748,2,0.5
+adipose_subcutaneous,fast,hardy[2],log_amp,PER1,0.78294056,0.7695652968945853,2,1.0
+adipose_subcutaneous,fast,hardy[2],log_amp,PER2,0.0929480375,0.7302320289886175,4,0.5
+adipose_subcutaneous,fast,hardy[2],log_amp,PER3,-0.28962423,0.14746452556344752,4,1.0
+adipose_subcutaneous,fast,hardy[2],log_amp,TEF,0.23307010499999997,0.6047574382169817,4,0.5
+adipose_subcutaneous,fast,hardy[2],mesor,ARNTL,-0.2766299285,0.21868759624749412,4,1.0
+adipose_subcutaneous,fast,hardy[2],mesor,CIART,0.272582445,0.4221795767553495,4,0.75
+adipose_subcutaneous,fast,hardy[2],mesor,CLOCK,-0.071006137175,0.059934599440189466,4,1.0
+adipose_subcutaneous,fast,hardy[2],mesor,CRY1,0.0625553955,0.17101031564001828,4,0.5
+adipose_subcutaneous,fast,hardy[2],mesor,CRY2,0.079148323125,0.08479194010196138,4,0.75
+adipose_subcutaneous,fast,hardy[2],mesor,DBP,0.2714031875,0.14692354196141438,4,1.0
+adipose_subcutaneous,fast,hardy[2],mesor,NPAS2,-0.12336443575,0.21721874668634694,4,0.75
+adipose_subcutaneous,fast,hardy[2],mesor,NR1D1,0.367439285,0.20956776519792678,4,1.0
+adipose_subcutaneous,fast,hardy[2],mesor,NR1D2,0.1555274935,0.19500109089511106,4,0.75
+adipose_subcutaneous,fast,hardy[2],mesor,PER1,0.2219611475,0.08494557513829522,4,1.0
+adipose_subcutaneous,fast,hardy[2],mesor,PER2,0.147373327,0.1130673253545547,4,1.0
+adipose_subcutaneous,fast,hardy[2],mesor,PER3,0.121117231575,0.19730797008773654,4,1.0
+adipose_subcutaneous,fast,hardy[2],mesor,RORA,0.1011682375,0.029409923937988885,4,1.0
+adipose_subcutaneous,fast,hardy[2],mesor,TEF,0.227201234,0.09429951306820385,4,1.0
+adipose_subcutaneous,fast,sex (F vs M),log_amp,ARNTL,-0.024232158500000003,0.368050372656847,4,0.5
+adipose_subcutaneous,fast,sex (F vs M),log_amp,CIART,0.241190147,0.4088627593654809,4,0.5
+adipose_subcutaneous,fast,sex (F vs M),log_amp,CLOCK,-0.062298021,0.06923191136401358,2,1.0
+adipose_subcutaneous,fast,sex (F vs M),log_amp,CRY1,-0.13372744150000002,0.10667745029035379,2,1.0
+adipose_subcutaneous,fast,sex (F vs M),log_amp,CRY2,-0.259595345,0.2073713743120155,2,1.0
+adipose_subcutaneous,fast,sex (F vs M),log_amp,DBP,0.7122028025,0.3800336678402685,4,1.0
+adipose_subcutaneous,fast,sex (F vs M),log_amp,NPAS2,-0.378242475,0.3759500432932031,2,1.0
+adipose_subcutaneous,fast,sex (F vs M),log_amp,NR1D1,-0.015374217500000037,0.6256555223277784,4,0.75
+adipose_subcutaneous,fast,sex (F vs M),log_amp,NR1D2,0.62235217,0.24841330146098414,2,1.0
+adipose_subcutaneous,fast,sex (F vs M),log_amp,PER1,0.23679951999999999,0.06952955523563199,2,1.0
+adipose_subcutaneous,fast,sex (F vs M),log_amp,PER2,0.3052761375,0.5057109608312709,4,0.75
+adipose_subcutaneous,fast,sex (F vs M),log_amp,PER3,0.09372443284999998,0.58013582321167,4,0.75
+adipose_subcutaneous,fast,sex (F vs M),log_amp,TEF,0.421665275,0.1994774402341322,4,1.0
+adipose_subcutaneous,fast,sex (F vs M),mesor,ARNTL,0.011037040750000001,0.11450685133705707,4,0.5
+adipose_subcutaneous,fast,sex (F vs M),mesor,CIART,-0.350876235,0.07396707310802444,4,1.0
+adipose_subcutaneous,fast,sex (F vs M),mesor,CLOCK,0.01982229825,0.049114565359175265,4,0.75
+adipose_subcutaneous,fast,sex (F vs M),mesor,CRY1,0.01164388375,0.042592731052000066,4,0.5
+adipose_subcutaneous,fast,sex (F vs M),mesor,CRY2,-0.01763907975,0.018286653206931118,4,0.75
+adipose_subcutaneous,fast,sex (F vs M),mesor,DBP,-0.11311705450000001,0.04093464104305124,4,1.0
+adipose_subcutaneous,fast,sex (F vs M),mesor,NPAS2,-0.0591577095,0.09850082413727704,4,0.75
+adipose_subcutaneous,fast,sex (F vs M),mesor,NR1D1,-0.29235490500000005,0.21785579442332714,4,1.0
+adipose_subcutaneous,fast,sex (F vs M),mesor,NR1D2,-0.142250235,0.1290306762971655,4,1.0
+adipose_subcutaneous,fast,sex (F vs M),mesor,PER1,-0.053368579750000006,0.04344455032507661,4,1.0
+adipose_subcutaneous,fast,sex (F vs M),mesor,PER2,0.019497180500000003,0.0682710206021121,4,0.75
+adipose_subcutaneous,fast,sex (F vs M),mesor,PER3,-0.067271096625,0.11442277405335714,4,0.5
+adipose_subcutaneous,fast,sex (F vs M),mesor,RORA,-0.022414872000000002,0.037069094474735755,4,0.75
+adipose_subcutaneous,fast,sex (F vs M),mesor,TEF,-0.09702198125,0.02019536305783433,4,1.0
+artery_tibial,all,age (per 10 y),log_amp,ARNTL,-0.19549117310222808,0.27142027208646874,4,0.75
+artery_tibial,all,age (per 10 y),log_amp,CIART,0.11570043583220174,0.09851471568659793,4,1.0
+artery_tibial,all,age (per 10 y),log_amp,CLOCK,-0.008037959148873678,0.2143401590596572,4,0.25
+artery_tibial,all,age (per 10 y),log_amp,CRY1,0.1401682766989903,0.12410258396179025,2,1.0
+artery_tibial,all,age (per 10 y),log_amp,CRY2,0.32585917747062126,0.1324917465540813,2,1.0
+artery_tibial,all,age (per 10 y),log_amp,DBP,-0.13954239959784717,0.09550702545905704,4,1.0
+artery_tibial,all,age (per 10 y),log_amp,NPAS2,-0.05094278056721738,0.18009382262785506,4,0.75
+artery_tibial,all,age (per 10 y),log_amp,NR1D1,-0.28628112214967666,0.27090222816627185,4,0.75
+artery_tibial,all,age (per 10 y),log_amp,NR1D2,0.40333557589947205,0.39681829142075664,4,1.0
+artery_tibial,all,age (per 10 y),log_amp,PER1,0.021115372916727514,0.05099312492571621,2,0.5
+artery_tibial,all,age (per 10 y),log_amp,PER2,0.13247349954036586,0.14351841968285609,4,0.75
+artery_tibial,all,age (per 10 y),log_amp,PER3,0.01732285721078703,0.3392578043140693,4,0.25
+artery_tibial,all,age (per 10 y),log_amp,TEF,0.07977852744210234,0.07647324813324421,4,0.75
+artery_tibial,all,age (per 10 y),mesor,ARNTL,-0.06279458576633672,0.055077759364876765,4,1.0
+artery_tibial,all,age (per 10 y),mesor,CIART,-0.004734104312073971,0.055411324169462414,4,0.5
+artery_tibial,all,age (per 10 y),mesor,CLOCK,-0.02784125352846624,0.016628650716614908,4,1.0
+artery_tibial,all,age (per 10 y),mesor,CRY1,-0.010918703023517199,0.09106014080737439,4,0.5
+artery_tibial,all,age (per 10 y),mesor,CRY2,0.030076956768276385,0.03594737110277884,4,1.0
+artery_tibial,all,age (per 10 y),mesor,DBP,0.026751200123650228,0.12768926674114262,4,0.5
+artery_tibial,all,age (per 10 y),mesor,NPAS2,-0.030997850190054223,0.05467134902451841,4,0.75
+artery_tibial,all,age (per 10 y),mesor,NR1D1,-0.10133919213585924,0.0555686362303364,4,1.0
+artery_tibial,all,age (per 10 y),mesor,NR1D2,-0.03848958119036398,0.02771338828267257,4,1.0
+artery_tibial,all,age (per 10 y),mesor,PER1,0.027667483733765378,0.023573813675496973,4,1.0
+artery_tibial,all,age (per 10 y),mesor,PER2,0.1072079525367331,0.04779078107685696,4,1.0
+artery_tibial,all,age (per 10 y),mesor,PER3,0.014741186225977223,0.09763684062256223,4,0.5
+artery_tibial,all,age (per 10 y),mesor,RORA,0.007171387343929156,0.015853219508100435,4,0.5
+artery_tibial,all,age (per 10 y),mesor,TEF,-0.009111292260594575,0.07553041985518488,4,0.5
+artery_tibial,all,hardy[1],log_amp,ARNTL,0.06224042000000002,0.8112617101858397,4,0.5
+artery_tibial,all,hardy[1],log_amp,CIART,1.3584662399999998,0.5343071788138154,4,1.0
+artery_tibial,all,hardy[1],log_amp,CLOCK,-0.378663295,0.3781122984489467,4,0.75
+artery_tibial,all,hardy[1],log_amp,CRY1,-0.59157551,0.5726548673745113,2,1.0
+artery_tibial,all,hardy[1],log_amp,CRY2,-0.010010116,0.13545606200986357,2,0.5
+artery_tibial,all,hardy[1],log_amp,DBP,0.4111789925,0.7945356679352978,4,0.75
+artery_tibial,all,hardy[1],log_amp,NPAS2,-0.20395839000000002,0.6489794087318129,4,0.75
+artery_tibial,all,hardy[1],log_amp,NR1D1,0.6976408197499999,0.8700865086972316,4,0.75
+artery_tibial,all,hardy[1],log_amp,NR1D2,0.4151373125,0.8002706295110239,4,0.5
+artery_tibial,all,hardy[1],log_amp,PER1,0.7673999499999999,0.27790392516142165,2,1.0
+artery_tibial,all,hardy[1],log_amp,PER2,-0.779622257,0.7559735955314966,4,1.0
+artery_tibial,all,hardy[1],log_amp,PER3,-0.07538032550000001,0.36306856596629233,4,0.75
+artery_tibial,all,hardy[1],log_amp,TEF,0.69416403,0.24367392114788622,4,1.0
+artery_tibial,all,hardy[1],mesor,ARNTL,-0.1415805815,0.380802576442124,4,0.75
+artery_tibial,all,hardy[1],mesor,CIART,-0.344718145,0.23918107785048293,4,1.0
+artery_tibial,all,hardy[1],mesor,CLOCK,-0.011210377500000004,0.0833379606383815,4,0.75
+artery_tibial,all,hardy[1],mesor,CRY1,0.13846389,0.20965233829030988,4,0.75
+artery_tibial,all,hardy[1],mesor,CRY2,0.1270776475,0.0705770345879212,4,1.0
+artery_tibial,all,hardy[1],mesor,DBP,0.43233632,0.13185486448610587,4,1.0
+artery_tibial,all,hardy[1],mesor,NPAS2,-0.31067497,0.35274757554400826,4,0.75
+artery_tibial,all,hardy[1],mesor,NR1D1,0.07868429500000002,0.4019066776252131,4,0.5
+artery_tibial,all,hardy[1],mesor,NR1D2,-0.1779148225,0.11607782178189432,4,1.0
+artery_tibial,all,hardy[1],mesor,PER1,-0.22729889,0.06080795492951833,4,1.0
+artery_tibial,all,hardy[1],mesor,PER2,-0.18356447,0.43858156736285686,4,0.5
+artery_tibial,all,hardy[1],mesor,PER3,0.09196076749999998,0.2850667557147686,4,0.5
+artery_tibial,all,hardy[1],mesor,RORA,-0.021351599500000006,0.09039999771064097,4,0.75
+artery_tibial,all,hardy[1],mesor,TEF,-0.025595725249999996,0.13419882476880587,4,0.5
+artery_tibial,all,hardy[2],log_amp,ARNTL,0.447208575,0.2279492359932526,4,1.0
+artery_tibial,all,hardy[2],log_amp,CIART,0.4895783,1.1589473420716951,4,0.75
+artery_tibial,all,hardy[2],log_amp,CLOCK,-0.06277926500000003,0.5077587163914177,4,0.25
+artery_tibial,all,hardy[2],log_amp,CRY1,-0.104575205,0.0054863213070736215,2,1.0
+artery_tibial,all,hardy[2],log_amp,CRY2,-0.08204685000000002,0.3817665127564127,2,0.5
+artery_tibial,all,hardy[2],log_amp,DBP,-0.07582889999999999,0.4845376782449125,4,0.5
+artery_tibial,all,hardy[2],log_amp,NPAS2,0.1558198425,0.5337410652718384,4,0.75
+artery_tibial,all,hardy[2],log_amp,NR1D1,0.10128141349999999,0.26734802335002966,4,0.5
+artery_tibial,all,hardy[2],log_amp,NR1D2,0.5396311965,0.44215119523951063,4,1.0
+artery_tibial,all,hardy[2],log_amp,PER1,0.570856385,0.01722245539713921,2,1.0
+artery_tibial,all,hardy[2],log_amp,PER2,-0.4636715325,0.3173541758814358,4,1.0
+artery_tibial,all,hardy[2],log_amp,PER3,-0.14361040725,0.12992449339706422,4,1.0
+artery_tibial,all,hardy[2],log_amp,TEF,0.8869763325,0.5140088988838204,4,1.0
+artery_tibial,all,hardy[2],mesor,ARNTL,-0.01204847925,0.17940805763419926,4,0.5
+artery_tibial,all,hardy[2],mesor,CIART,0.0282314125,0.1352867269491612,4,0.5
+artery_tibial,all,hardy[2],mesor,CLOCK,-0.03097663675,0.048801342133845,4,0.75
+artery_tibial,all,hardy[2],mesor,CRY1,-0.02805788574999999,0.2538985783945805,4,0.25
+artery_tibial,all,hardy[2],mesor,CRY2,0.16955455,0.02653049287489021,4,1.0
+artery_tibial,all,hardy[2],mesor,DBP,0.205701965,0.31556560072980755,4,0.75
+artery_tibial,all,hardy[2],mesor,NPAS2,-0.11020769249999998,0.303416043918219,4,0.5
+artery_tibial,all,hardy[2],mesor,NR1D1,0.2360294275,0.1532928330061697,4,1.0
+artery_tibial,all,hardy[2],mesor,NR1D2,0.0339966565,0.0788207801533164,4,0.75
+artery_tibial,all,hardy[2],mesor,PER1,0.08211956375,0.03018896299603587,4,1.0
+artery_tibial,all,hardy[2],mesor,PER2,0.02923413775,0.24355171528650058,4,0.5
+artery_tibial,all,hardy[2],mesor,PER3,0.128393184,0.25173314736846897,4,0.75
+artery_tibial,all,hardy[2],mesor,RORA,0.10009163625,0.06316070127104767,4,1.0
+artery_tibial,all,hardy[2],mesor,TEF,0.038057084250000005,0.07390310498320506,4,0.75
+artery_tibial,all,hardy[3],log_amp,ARNTL,0.55986124,0.1570865751591996,4,1.0
+artery_tibial,all,hardy[3],log_amp,CIART,0.37624959324999996,0.41172782824997484,4,1.0
+artery_tibial,all,hardy[3],log_amp,CLOCK,-0.1727637175,0.37200818187874735,4,0.5
+artery_tibial,all,hardy[3],log_amp,CRY1,-0.276829718,0.4055315118302466,2,0.5
+artery_tibial,all,hardy[3],log_amp,CRY2,-0.431398273,0.7016002960225016,2,0.5
+artery_tibial,all,hardy[3],log_amp,DBP,0.07063460675000002,0.5961288928458222,4,0.75
+artery_tibial,all,hardy[3],log_amp,NPAS2,0.012129877499999997,0.4430336698003024,4,0.5
+artery_tibial,all,hardy[3],log_amp,NR1D1,0.018407492500000004,0.4175120594502755,4,0.5
+artery_tibial,all,hardy[3],log_amp,NR1D2,0.3066691325,0.26639236347173856,4,0.75
+artery_tibial,all,hardy[3],log_amp,PER1,0.37740415,0.13804725480952168,2,1.0
+artery_tibial,all,hardy[3],log_amp,PER2,-0.34937009500000005,0.253797633351587,4,1.0
+artery_tibial,all,hardy[3],log_amp,PER3,-0.059118124999999994,0.20646307168202202,4,0.5
+artery_tibial,all,hardy[3],log_amp,TEF,0.1503164975,0.33687724404079716,4,0.5
+artery_tibial,all,hardy[3],mesor,ARNTL,-0.09812373499999999,0.16317233733545158,4,0.75
+artery_tibial,all,hardy[3],mesor,CIART,-0.008996721250000006,0.14668420841799526,4,0.5
+artery_tibial,all,hardy[3],mesor,CLOCK,-0.06629061125,0.08262957829793018,4,0.75
+artery_tibial,all,hardy[3],mesor,CRY1,-0.0489637675,0.07096753227834071,4,0.75
+artery_tibial,all,hardy[3],mesor,CRY2,0.11721353225,0.0914511195170801,4,1.0
+artery_tibial,all,hardy[3],mesor,DBP,-0.08778404000000001,0.2977452164978252,4,0.5
+artery_tibial,all,hardy[3],mesor,NPAS2,-0.179224085,0.28039000863501307,4,0.75
+artery_tibial,all,hardy[3],mesor,NR1D1,0.03332220249999998,0.40991567147513164,4,0.5
+artery_tibial,all,hardy[3],mesor,NR1D2,-0.03088453385,0.11170003212637358,4,0.75
+artery_tibial,all,hardy[3],mesor,PER1,0.10213901724999999,0.04060050240262648,4,1.0
+artery_tibial,all,hardy[3],mesor,PER2,-0.004049368500000008,0.40034266898534066,4,0.5
+artery_tibial,all,hardy[3],mesor,PER3,0.07967718575,0.16984739953372383,4,0.75
+artery_tibial,all,hardy[3],mesor,RORA,0.1809434075,0.04399264019369782,4,1.0
+artery_tibial,all,hardy[3],mesor,TEF,0.056628234,0.02599241308664239,4,1.0
+artery_tibial,all,hardy[4],log_amp,ARNTL,-0.00368173125000003,0.7043914396676055,4,0.25
+artery_tibial,all,hardy[4],log_amp,CIART,0.8055420055,0.5520356822613633,4,1.0
+artery_tibial,all,hardy[4],log_amp,CLOCK,0.23740128042500003,0.3190853705699584,4,0.75
+artery_tibial,all,hardy[4],log_amp,CRY1,-0.50819017,0.4357719204487558,2,1.0
+artery_tibial,all,hardy[4],log_amp,CRY2,0.014907396999999996,0.1254977315464165,2,0.5
+artery_tibial,all,hardy[4],log_amp,DBP,-0.2579283,0.6465591008215709,4,0.5
+artery_tibial,all,hardy[4],log_amp,NPAS2,0.019662520000000017,0.6303086668354064,4,0.5
+artery_tibial,all,hardy[4],log_amp,NR1D1,-0.14972540574999998,0.29309576954826716,4,0.75
+artery_tibial,all,hardy[4],log_amp,NR1D2,0.39752516,0.050482900800398384,4,1.0
+artery_tibial,all,hardy[4],log_amp,PER1,0.19155409,0.09762905948116986,2,1.0
+artery_tibial,all,hardy[4],log_amp,PER2,-0.1933781115,0.1914045441116348,4,0.75
+artery_tibial,all,hardy[4],log_amp,PER3,-0.38987194950000004,0.38093127151698164,4,1.0
+artery_tibial,all,hardy[4],log_amp,TEF,0.156816773,0.3986389739116027,4,0.75
+artery_tibial,all,hardy[4],mesor,ARNTL,-0.103158997,0.1887859003502748,4,0.5
+artery_tibial,all,hardy[4],mesor,CIART,0.07306032175,0.09217901457427982,4,0.75
+artery_tibial,all,hardy[4],mesor,CLOCK,-0.08696190637500001,0.0686861548174857,4,1.0
+artery_tibial,all,hardy[4],mesor,CRY1,-0.1420000675,0.16466399282779975,4,0.75
+artery_tibial,all,hardy[4],mesor,CRY2,0.1629802515,0.09142242408922868,4,1.0
+artery_tibial,all,hardy[4],mesor,DBP,-0.11833852,0.2779528348306824,4,0.5
+artery_tibial,all,hardy[4],mesor,NPAS2,-0.2224917675,0.21827299678053497,4,0.75
+artery_tibial,all,hardy[4],mesor,NR1D1,0.032409997499999996,0.3637000477221839,4,0.5
+artery_tibial,all,hardy[4],mesor,NR1D2,-0.06958340075,0.07653814672446373,4,1.0
+artery_tibial,all,hardy[4],mesor,PER1,0.11420230649999999,0.04229176201743289,4,1.0
+artery_tibial,all,hardy[4],mesor,PER2,0.1886162785,0.15892312765471003,4,1.0
+artery_tibial,all,hardy[4],mesor,PER3,0.01540450325,0.3393713889503725,4,0.5
+artery_tibial,all,hardy[4],mesor,RORA,0.0701956795,0.08156349710160381,4,0.75
+artery_tibial,all,hardy[4],mesor,TEF,0.137473265,0.08949218837332992,4,1.0
+artery_tibial,all,hardy__missing,log_amp,ARNTL,0.6452473599999999,0.5604573131448349,4,0.75
+artery_tibial,all,hardy__missing,log_amp,CIART,-0.438046025,0.6843083643888328,4,0.75
+artery_tibial,all,hardy__missing,log_amp,CLOCK,-0.80139543675,1.0426046485317169,4,0.75
+artery_tibial,all,hardy__missing,log_amp,CRY1,-0.6852617,0.21978816231858345,2,1.0
+artery_tibial,all,hardy__missing,log_amp,CRY2,-0.29836898700000003,0.40392458479994253,2,1.0
+artery_tibial,all,hardy__missing,log_amp,DBP,0.1297261325,0.5500176811873725,4,0.75
+artery_tibial,all,hardy__missing,log_amp,NPAS2,0.676120855,0.4708283401040203,4,1.0
+artery_tibial,all,hardy__missing,log_amp,NR1D1,0.5304054800000001,0.6569572979050672,4,0.75
+artery_tibial,all,hardy__missing,log_amp,NR1D2,0.260126711625,0.9385541423148093,4,0.5
+artery_tibial,all,hardy__missing,log_amp,PER1,0.47129531999999996,1.5414241653446272,2,0.5
+artery_tibial,all,hardy__missing,log_amp,PER2,-1.4836767499999999,0.6858579498225588,4,1.0
+artery_tibial,all,hardy__missing,log_amp,PER3,-0.92156880125,0.6468600974482716,4,1.0
+artery_tibial,all,hardy__missing,log_amp,TEF,0.0016227549999999757,0.9125829178426734,4,0.5
+artery_tibial,all,hardy__missing,mesor,ARNTL,0.07432104249999999,0.26491696773489615,4,0.5
+artery_tibial,all,hardy__missing,mesor,CIART,-0.3361113225,0.19214329599981333,4,1.0
+artery_tibial,all,hardy__missing,mesor,CLOCK,-0.07568346875,0.038510781276724394,4,1.0
+artery_tibial,all,hardy__missing,mesor,CRY1,-0.32038434,0.26933209438128547,4,1.0
+artery_tibial,all,hardy__missing,mesor,CRY2,0.0029317367499999986,0.043235248166126145,4,0.5
+artery_tibial,all,hardy__missing,mesor,DBP,0.45101016625,0.3606094704244918,4,1.0
+artery_tibial,all,hardy__missing,mesor,NPAS2,-0.014898400250000006,0.176459054817822,4,0.5
+artery_tibial,all,hardy__missing,mesor,NR1D1,0.18072120375,0.5659139029319422,4,0.75
+artery_tibial,all,hardy__missing,mesor,NR1D2,0.077016336,0.12021737308781398,4,0.75
+artery_tibial,all,hardy__missing,mesor,PER1,-0.201462796,0.11705039643418384,4,1.0
+artery_tibial,all,hardy__missing,mesor,PER2,-0.2768553425,0.19281874716965605,4,1.0
+artery_tibial,all,hardy__missing,mesor,PER3,0.08840450125,0.31083943302237704,4,0.75
+artery_tibial,all,hardy__missing,mesor,RORA,-0.189481195,0.024778653520537264,4,1.0
+artery_tibial,all,hardy__missing,mesor,TEF,0.20905294,0.05232511951490921,4,1.0
+artery_tibial,all,sex (F vs M),log_amp,ARNTL,0.1762150275,0.25166491109264444,4,0.75
+artery_tibial,all,sex (F vs M),log_amp,CIART,0.10841605262500001,0.3817187832309667,4,0.5
+artery_tibial,all,sex (F vs M),log_amp,CLOCK,-0.08011129674999999,0.07713982020981491,4,0.75
+artery_tibial,all,sex (F vs M),log_amp,CRY1,-0.1425076345,0.17137123942816654,2,1.0
+artery_tibial,all,sex (F vs M),log_amp,CRY2,0.20265081000000001,0.09677026415328317,2,1.0
+artery_tibial,all,sex (F vs M),log_amp,DBP,-0.1913869025,0.2823833213030756,4,0.75
+artery_tibial,all,sex (F vs M),log_amp,NPAS2,-0.100234998,0.20412606392271965,4,0.75
+artery_tibial,all,sex (F vs M),log_amp,NR1D1,-0.21510316000000002,0.18929777224162772,4,1.0
+artery_tibial,all,sex (F vs M),log_amp,NR1D2,-0.059393909999999994,0.6231063351501855,4,0.75
+artery_tibial,all,sex (F vs M),log_amp,PER1,0.220740975,0.5343957023943599,2,0.5
+artery_tibial,all,sex (F vs M),log_amp,PER2,-0.11344430749999998,0.24977917564291854,4,0.75
+artery_tibial,all,sex (F vs M),log_amp,PER3,-0.145103145,0.21199991117418462,4,0.75
+artery_tibial,all,sex (F vs M),log_amp,TEF,0.312580845,0.22787996056982934,4,1.0
+artery_tibial,all,sex (F vs M),mesor,ARNTL,0.063870828875,0.05444849107214425,4,0.75
+artery_tibial,all,sex (F vs M),mesor,CIART,0.024043578000000003,0.04198671578077406,4,0.75
+artery_tibial,all,sex (F vs M),mesor,CLOCK,0.037740320875,0.038235645608305315,4,1.0
+artery_tibial,all,sex (F vs M),mesor,CRY1,0.03719515725,0.1278363569788644,4,0.5
+artery_tibial,all,sex (F vs M),mesor,CRY2,0.03467854575,0.038210986813996685,4,1.0
+artery_tibial,all,sex (F vs M),mesor,DBP,0.011675360349999999,0.15247112333364168,4,0.75
+artery_tibial,all,sex (F vs M),mesor,NPAS2,0.005970679,0.10362264119404159,4,0.25
+artery_tibial,all,sex (F vs M),mesor,NR1D1,0.057013566,0.05578278010596253,4,0.75
+artery_tibial,all,sex (F vs M),mesor,NR1D2,0.044917218,0.08262505799415291,4,0.75
+artery_tibial,all,sex (F vs M),mesor,PER1,0.11118236249999999,0.012028739459063234,4,1.0
+artery_tibial,all,sex (F vs M),mesor,PER2,-0.016617317275000005,0.18277000744949612,4,0.5
+artery_tibial,all,sex (F vs M),mesor,PER3,-0.05832930275,0.011605221277957649,4,1.0
+artery_tibial,all,sex (F vs M),mesor,RORA,0.031119900000000002,0.048540909606724164,4,0.75
+artery_tibial,all,sex (F vs M),mesor,TEF,0.0279124495,0.013351751292589935,4,1.0
+artery_tibial,fast,age (per 10 y),log_amp,ARNTL,0.04081507502194789,0.04217877639871552,4,0.75
+artery_tibial,fast,age (per 10 y),log_amp,CIART,0.07900193369703096,0.29504904974073914,4,0.75
+artery_tibial,fast,age (per 10 y),log_amp,CLOCK,0.032975417847913434,0.12891697818426331,4,0.5
+artery_tibial,fast,age (per 10 y),log_amp,CRY1,0.047511033958829954,0.15050929182403985,2,0.5
+artery_tibial,fast,age (per 10 y),log_amp,CRY2,0.6377360356747253,0.6396625567269766,2,1.0
+artery_tibial,fast,age (per 10 y),log_amp,DBP,0.039882946523624355,0.18112314788972855,4,0.75
+artery_tibial,fast,age (per 10 y),log_amp,NPAS2,-0.1016977632452031,0.2897875211526502,4,0.5
+artery_tibial,fast,age (per 10 y),log_amp,NR1D1,-0.06018942308898657,0.16237462619257012,4,0.5
+artery_tibial,fast,age (per 10 y),log_amp,NR1D2,0.2228163417868709,0.3575831152897171,4,0.75
+artery_tibial,fast,age (per 10 y),log_amp,PER1,-0.13472164447086638,0.09729287295693957,2,1.0
+artery_tibial,fast,age (per 10 y),log_amp,PER2,-0.1169794246270574,0.11502804111276367,4,0.75
+artery_tibial,fast,age (per 10 y),log_amp,PER3,0.20605719771889577,0.16353696209060037,4,1.0
+artery_tibial,fast,age (per 10 y),log_amp,TEF,0.1546034000401138,0.27945179331104697,4,0.75
+artery_tibial,fast,age (per 10 y),mesor,ARNTL,0.11160868034823906,0.011198565080465527,4,1.0
+artery_tibial,fast,age (per 10 y),mesor,CIART,-0.03968636929292457,0.08292347634059581,4,0.75
+artery_tibial,fast,age (per 10 y),mesor,CLOCK,-0.011307527332814487,0.02187191814175331,4,0.75
+artery_tibial,fast,age (per 10 y),mesor,CRY1,-0.009478387028905598,0.06339117690030824,4,0.5
+artery_tibial,fast,age (per 10 y),mesor,CRY2,-0.043452626712652154,0.03592348677976856,4,0.75
+artery_tibial,fast,age (per 10 y),mesor,DBP,-0.06570655863174493,0.12746354593989148,4,0.75
+artery_tibial,fast,age (per 10 y),mesor,NPAS2,0.03962726331754494,0.12245522733277943,4,0.5
+artery_tibial,fast,age (per 10 y),mesor,NR1D1,-0.017819785512343794,0.07129034694905627,4,0.25
+artery_tibial,fast,age (per 10 y),mesor,NR1D2,-0.02732933112343726,0.03624879135582239,4,0.75
+artery_tibial,fast,age (per 10 y),mesor,PER1,0.051827527195279784,0.03302890556531059,4,1.0
+artery_tibial,fast,age (per 10 y),mesor,PER2,0.026045630590127752,0.1006804662134481,4,0.5
+artery_tibial,fast,age (per 10 y),mesor,PER3,-0.058769509179453755,0.022279464259661572,4,1.0
+artery_tibial,fast,age (per 10 y),mesor,RORA,0.04595423482456557,0.024333482907640935,4,1.0
+artery_tibial,fast,age (per 10 y),mesor,TEF,-0.04310428890818591,0.060564525665643264,4,1.0
+artery_tibial,fast,hardy[2],log_amp,ARNTL,-0.15482862325,0.13017404454522846,4,1.0
+artery_tibial,fast,hardy[2],log_amp,CIART,0.19129048499999998,0.6874481405433052,4,0.5
+artery_tibial,fast,hardy[2],log_amp,CLOCK,-0.0221432425,0.26542934810007507,4,0.5
+artery_tibial,fast,hardy[2],log_amp,CRY1,-0.225384628,0.2408182703526866,2,1.0
+artery_tibial,fast,hardy[2],log_amp,CRY2,0.1342754,0.41839791085520495,2,0.5
+artery_tibial,fast,hardy[2],log_amp,DBP,0.52281731,1.2680808360808131,4,0.5
+artery_tibial,fast,hardy[2],log_amp,NPAS2,-0.031819137500000004,0.10628179030655772,4,0.5
+artery_tibial,fast,hardy[2],log_amp,NR1D1,0.1697822075,0.790470744609885,4,0.5
+artery_tibial,fast,hardy[2],log_amp,NR1D2,0.815865335,0.16453497111560073,4,1.0
+artery_tibial,fast,hardy[2],log_amp,PER1,0.7733258999999999,0.23530109514832265,2,1.0
+artery_tibial,fast,hardy[2],log_amp,PER2,0.2699219225,0.5126474449348988,4,0.5
+artery_tibial,fast,hardy[2],log_amp,PER3,0.2178396075,0.6364013503485973,4,0.5
+artery_tibial,fast,hardy[2],log_amp,TEF,0.70684088,0.7196769147989786,4,0.75
+artery_tibial,fast,hardy[2],mesor,ARNTL,-0.0231615525,0.19182378729470034,4,0.5
+artery_tibial,fast,hardy[2],mesor,CIART,0.34104310250000003,0.10002950930821777,4,1.0
+artery_tibial,fast,hardy[2],mesor,CLOCK,0.04376744756,0.031140978261898326,4,1.0
+artery_tibial,fast,hardy[2],mesor,CRY1,0.0729899975,0.17163688915217623,4,0.5
+artery_tibial,fast,hardy[2],mesor,CRY2,0.11497549750000001,0.01990931149419349,4,1.0
+artery_tibial,fast,hardy[2],mesor,DBP,0.21132201750000001,0.13955642872380486,4,1.0
+artery_tibial,fast,hardy[2],mesor,NPAS2,0.05470357,0.1642926549458291,4,0.5
+artery_tibial,fast,hardy[2],mesor,NR1D1,0.31003442425,0.44942951667373154,4,0.5
+artery_tibial,fast,hardy[2],mesor,NR1D2,0.127861771,0.09175504933530255,4,1.0
+artery_tibial,fast,hardy[2],mesor,PER1,0.29524257,0.05571973332888927,4,1.0
+artery_tibial,fast,hardy[2],mesor,PER2,0.16829974325,0.1455044308379924,4,1.0
+artery_tibial,fast,hardy[2],mesor,PER3,0.13855425500000002,0.15033662958529004,4,0.75
+artery_tibial,fast,hardy[2],mesor,RORA,0.08249705299999999,0.02307804165439223,4,1.0
+artery_tibial,fast,hardy[2],mesor,TEF,0.24666307,0.07969346279107005,4,1.0
+artery_tibial,fast,sex (F vs M),log_amp,ARNTL,0.0007537837500000005,0.24832403232835024,4,0.75
+artery_tibial,fast,sex (F vs M),log_amp,CIART,-0.12091900235,0.6810765173452258,4,0.75
+artery_tibial,fast,sex (F vs M),log_amp,CLOCK,-0.21314837825000002,0.2808724487736229,4,0.75
+artery_tibial,fast,sex (F vs M),log_amp,CRY1,0.074825309,0.0061591192672370105,2,1.0
+artery_tibial,fast,sex (F vs M),log_amp,CRY2,0.45048487499999995,0.9819138261337453,2,0.5
+artery_tibial,fast,sex (F vs M),log_amp,DBP,-0.12447511499999997,0.7273845806007413,4,0.5
+artery_tibial,fast,sex (F vs M),log_amp,NPAS2,-0.2606557325,0.6156243948962279,4,0.5
+artery_tibial,fast,sex (F vs M),log_amp,NR1D1,-0.1694562025,0.4285330744019243,4,0.75
+artery_tibial,fast,sex (F vs M),log_amp,NR1D2,0.0777367085,0.2956132971123661,4,0.5
+artery_tibial,fast,sex (F vs M),log_amp,PER1,0.542322215,0.28552761813598776,2,1.0
+artery_tibial,fast,sex (F vs M),log_amp,PER2,0.29565599,0.8512237920215109,4,0.5
+artery_tibial,fast,sex (F vs M),log_amp,PER3,-0.0022049999999999847,0.24227103059079058,4,0.25
+artery_tibial,fast,sex (F vs M),log_amp,TEF,0.3936034605,1.0200807900456745,4,0.75
+artery_tibial,fast,sex (F vs M),mesor,ARNTL,0.0292315215,0.1506873904610227,4,0.75
+artery_tibial,fast,sex (F vs M),mesor,CIART,0.10359817625000001,0.13805011756783567,4,0.75
+artery_tibial,fast,sex (F vs M),mesor,CLOCK,0.01949713555,0.023449864974515643,4,0.75
+artery_tibial,fast,sex (F vs M),mesor,CRY1,-0.114749682675,0.10239798822148143,4,0.75
+artery_tibial,fast,sex (F vs M),mesor,CRY2,0.06209630675,0.031432811436251845,4,1.0
+artery_tibial,fast,sex (F vs M),mesor,DBP,0.294155665,0.2062610591440466,4,1.0
+artery_tibial,fast,sex (F vs M),mesor,NPAS2,0.04091223075000001,0.11765001341801866,4,0.75
+artery_tibial,fast,sex (F vs M),mesor,NR1D1,0.31302326999999996,0.17848235900696868,4,1.0
+artery_tibial,fast,sex (F vs M),mesor,NR1D2,0.12998508775,0.10552061581709032,4,0.75
+artery_tibial,fast,sex (F vs M),mesor,PER1,0.17179630499999998,0.07215101103226967,4,1.0
+artery_tibial,fast,sex (F vs M),mesor,PER2,0.07698974375,0.34225224596486586,4,0.5
+artery_tibial,fast,sex (F vs M),mesor,PER3,-0.010795706000000002,0.2083173119977697,4,0.5
+artery_tibial,fast,sex (F vs M),mesor,RORA,0.039634127625,0.03651241919493988,4,0.75
+artery_tibial,fast,sex (F vs M),mesor,TEF,0.17689907925,0.0863735346833396,4,1.0
+lung,all,age (per 10 y),log_amp,ARNTL,-0.05958407984237235,0.79029872441543,4,0.75
+lung,all,age (per 10 y),log_amp,CIART,-0.4914230171835562,0.6076004256602451,4,0.75
+lung,all,age (per 10 y),log_amp,CLOCK,-0.00551792257109901,0.6525396455118436,2,0.5
+lung,all,age (per 10 y),log_amp,CRY1,0.4999499464847704,0.5622550268359522,4,1.0
+lung,all,age (per 10 y),log_amp,DBP,0.11973623293165425,0.40099325978794953,4,0.5
+lung,all,age (per 10 y),log_amp,NPAS2,-0.1883758780404649,0.355893168301246,4,0.75
+lung,all,age (per 10 y),log_amp,NR1D1,-0.1831991558805664,0.39135914223457896,4,0.5
+lung,all,age (per 10 y),log_amp,NR1D2,-0.23236363445417518,0.18166204429275098,4,1.0
+lung,all,age (per 10 y),log_amp,PER1,-0.36512731596314685,0.35684553256624474,2,1.0
+lung,all,age (per 10 y),log_amp,PER2,-0.02488640749597866,0.330029413671772,4,0.5
+lung,all,age (per 10 y),log_amp,PER3,-0.38254017323566913,0.30272399728913546,4,1.0
+lung,all,age (per 10 y),log_amp,RORA,-0.523501056347863,0.04673275167404138,2,1.0
+lung,all,age (per 10 y),log_amp,TEF,-0.24380915480316306,0.4612867196130039,4,0.75
+lung,all,age (per 10 y),mesor,ARNTL,0.015810644539169867,0.05050039406399716,4,0.5
+lung,all,age (per 10 y),mesor,CIART,-0.07624942362965934,0.1032739879163354,4,1.0
+lung,all,age (per 10 y),mesor,CLOCK,0.0049061289422616255,0.03138324765477355,4,0.75
+lung,all,age (per 10 y),mesor,CRY1,0.12483382301291167,0.09316403976580764,4,1.0
+lung,all,age (per 10 y),mesor,CRY2,-0.0004436459685461941,0.020142175437995374,4,0.75
+lung,all,age (per 10 y),mesor,DBP,-0.04907893643574166,0.020191426316586464,4,1.0
+lung,all,age (per 10 y),mesor,NPAS2,-0.09897250042153827,0.07484501038483764,4,1.0
+lung,all,age (per 10 y),mesor,NR1D1,-0.13919194963764786,0.18835938351448783,4,0.75
+lung,all,age (per 10 y),mesor,NR1D2,-0.037491515340893025,0.01817509347918377,4,1.0
+lung,all,age (per 10 y),mesor,PER1,-0.036629783478355785,0.042017308972391296,4,1.0
+lung,all,age (per 10 y),mesor,PER2,-0.050764468433475964,0.15953423080193993,4,0.75
+lung,all,age (per 10 y),mesor,PER3,-0.06737337119114756,0.11254456367545512,4,0.75
+lung,all,age (per 10 y),mesor,RORA,-0.02589394094819887,0.042594394285458775,4,0.75
+lung,all,age (per 10 y),mesor,TEF,-0.029205421390988754,0.057229473339837994,4,0.75
+lung,all,hardy[1],log_amp,ARNTL,-0.4229109775,0.4546610400878329,4,0.75
+lung,all,hardy[1],log_amp,CIART,0.45854611,0.9162368751069302,4,0.75
+lung,all,hardy[1],log_amp,CLOCK,-0.12777282,0.5137237538444227,2,0.5
+lung,all,hardy[1],log_amp,CRY1,-0.49124779500000004,0.614775300840072,4,0.75
+lung,all,hardy[1],log_amp,DBP,0.35558691750000004,0.8267902687633781,4,0.75
+lung,all,hardy[1],log_amp,NPAS2,-0.09320968250000003,1.1042196451983004,4,0.75
+lung,all,hardy[1],log_amp,NR1D1,0.33939387,0.8346581857212749,4,0.5
+lung,all,hardy[1],log_amp,NR1D2,0.20697652849999998,0.24457291417508123,4,1.0
+lung,all,hardy[1],log_amp,PER1,0.39194845500000003,0.2928954869481885,2,1.0
+lung,all,hardy[1],log_amp,PER2,-0.22251713925,0.33442500230633665,4,0.75
+lung,all,hardy[1],log_amp,PER3,-0.6186291500000001,0.06126637669414115,4,1.0
+lung,all,hardy[1],log_amp,RORA,0.201305105,0.3715618800305156,2,0.5
+lung,all,hardy[1],log_amp,TEF,-0.19607003499999998,0.397680356986046,4,0.75
+lung,all,hardy[1],mesor,ARNTL,0.243270715,0.09850459705972527,4,1.0
+lung,all,hardy[1],mesor,CIART,-0.0878467075,0.14412782270274446,4,0.75
+lung,all,hardy[1],mesor,CLOCK,0.024460573025,0.04454013451033106,4,0.5
+lung,all,hardy[1],mesor,CRY1,0.378733401,0.2543661969775488,4,1.0
+lung,all,hardy[1],mesor,CRY2,0.1337492775,0.06583282700212884,4,1.0
+lung,all,hardy[1],mesor,DBP,0.322255155,0.06002907378804957,4,1.0
+lung,all,hardy[1],mesor,NPAS2,-0.12217920675,0.12528498402949598,4,0.75
+lung,all,hardy[1],mesor,NR1D1,0.1946547525,0.21546267752257625,4,0.75
+lung,all,hardy[1],mesor,NR1D2,-0.1542076875,0.024758093403587415,4,1.0
+lung,all,hardy[1],mesor,PER1,0.08572096075,0.10012154674178189,4,0.75
+lung,all,hardy[1],mesor,PER2,0.111263062,0.08729038426676825,4,1.0
+lung,all,hardy[1],mesor,PER3,-0.045457272124999996,0.23027158433771783,4,0.75
+lung,all,hardy[1],mesor,RORA,0.280192185,0.06258185392398262,4,1.0
+lung,all,hardy[1],mesor,TEF,-0.3467272375,0.15925776396466002,4,1.0
+lung,all,hardy[2],log_amp,ARNTL,0.1801215,0.6561886233111187,4,0.5
+lung,all,hardy[2],log_amp,CIART,0.9822060575,0.4310731778626848,4,1.0
+lung,all,hardy[2],log_amp,CLOCK,0.552138835,0.465299122782984,2,1.0
+lung,all,hardy[2],log_amp,CRY1,-0.20736046,0.7318132393423629,4,0.5
+lung,all,hardy[2],log_amp,DBP,0.7140415,0.7528385163513797,4,0.75
+lung,all,hardy[2],log_amp,NPAS2,-0.1787994955,0.8797098386776081,4,0.75
+lung,all,hardy[2],log_amp,NR1D1,0.1134874375,0.5504298217139147,4,0.25
+lung,all,hardy[2],log_amp,NR1D2,0.9624461149999999,0.33909550388116055,4,1.0
+lung,all,hardy[2],log_amp,PER1,1.192474,0.4025809221095556,2,1.0
+lung,all,hardy[2],log_amp,PER2,-0.5486595125,0.30898761998091007,4,1.0
+lung,all,hardy[2],log_amp,PER3,0.220691745,0.6294666341740519,4,0.5
+lung,all,hardy[2],log_amp,RORA,0.05628579,0.016521549942423684,2,1.0
+lung,all,hardy[2],log_amp,TEF,0.13826006999999996,0.7188320736287929,4,0.5
+lung,all,hardy[2],mesor,ARNTL,0.2595051975,0.08965582601848111,4,1.0
+lung,all,hardy[2],mesor,CIART,-0.184122789,0.13246218503036936,4,1.0
+lung,all,hardy[2],mesor,CLOCK,0.04689148,0.04147823396372736,4,0.75
+lung,all,hardy[2],mesor,CRY1,0.50380714975,0.4961002494259614,4,1.0
+lung,all,hardy[2],mesor,CRY2,0.1514895635,0.09402537546351032,4,1.0
+lung,all,hardy[2],mesor,DBP,0.18729253325,0.14598658086607905,4,0.75
+lung,all,hardy[2],mesor,NPAS2,-0.122447895,0.33328862960931266,4,0.75
+lung,all,hardy[2],mesor,NR1D1,0.27045210124999997,0.4079812158768844,4,0.75
+lung,all,hardy[2],mesor,NR1D2,0.00692770375,0.08154200399803896,4,0.25
+lung,all,hardy[2],mesor,PER1,0.183992165,0.06589315541335611,4,1.0
+lung,all,hardy[2],mesor,PER2,0.1291574275,0.25374282436855317,4,0.75
+lung,all,hardy[2],mesor,PER3,-0.004733712500000001,0.35543410792025365,4,0.5
+lung,all,hardy[2],mesor,RORA,0.34918238,0.06703640413805471,4,1.0
+lung,all,hardy[2],mesor,TEF,-0.2967077835,0.22836590196677273,4,1.0
+lung,all,hardy[3],log_amp,ARNTL,-0.76026186175,0.4998201854302718,4,1.0
+lung,all,hardy[3],log_amp,CIART,0.3015279225,1.0542973648219929,4,0.75
+lung,all,hardy[3],log_amp,CLOCK,-0.13174208999999998,0.49437065136527997,2,0.5
+lung,all,hardy[3],log_amp,CRY1,-0.12094001500000001,0.7708595412033372,4,0.75
+lung,all,hardy[3],log_amp,DBP,0.19061058250000001,0.4643874066341487,4,0.75
+lung,all,hardy[3],log_amp,NPAS2,-0.4600800475,0.42087379400427294,4,1.0
+lung,all,hardy[3],log_amp,NR1D1,0.7449440175,1.3912851764793857,4,0.5
+lung,all,hardy[3],log_amp,NR1D2,0.70440481,0.3149310747676012,4,1.0
+lung,all,hardy[3],log_amp,PER1,0.384411655,0.2516002953634023,2,1.0
+lung,all,hardy[3],log_amp,PER2,0.25345982,0.921192237967743,4,0.5
+lung,all,hardy[3],log_amp,PER3,0.19304077000000003,0.7686102567915171,4,0.5
+lung,all,hardy[3],log_amp,RORA,0.41733939295,0.5897292292265367,2,1.0
+lung,all,hardy[3],log_amp,TEF,0.2675661125,0.9630683327098952,4,0.75
+lung,all,hardy[3],mesor,ARNTL,0.11115291424999998,0.08907085743384045,4,1.0
+lung,all,hardy[3],mesor,CIART,-0.2227920025,0.11595309392985348,4,1.0
+lung,all,hardy[3],mesor,CLOCK,0.055950748674999995,0.0579914567641787,4,0.75
+lung,all,hardy[3],mesor,CRY1,0.24290018500000002,0.3365650129669458,4,0.75
+lung,all,hardy[3],mesor,CRY2,0.005119989749999998,0.09139357546343937,4,0.75
+lung,all,hardy[3],mesor,DBP,-0.3692535275,0.17103825622051078,4,1.0
+lung,all,hardy[3],mesor,NPAS2,0.0003775964999999937,0.291232713358965,4,0.5
+lung,all,hardy[3],mesor,NR1D1,0.3225031575,0.1819070179346317,4,1.0
+lung,all,hardy[3],mesor,NR1D2,-0.1772312975,0.11622611674852211,4,1.0
+lung,all,hardy[3],mesor,PER1,0.1421296275,0.2166129871224457,4,0.75
+lung,all,hardy[3],mesor,PER2,-0.004965190500000001,0.0819850108571621,4,0.5
+lung,all,hardy[3],mesor,PER3,-0.311768315,0.19407602035663282,4,1.0
+lung,all,hardy[3],mesor,RORA,0.13177161175000002,0.07365792393512413,4,1.0
+lung,all,hardy[3],mesor,TEF,-0.40756480500000003,0.0632414013975916,4,1.0
+lung,all,hardy[4],log_amp,ARNTL,0.447139905,0.660535443450808,4,0.75
+lung,all,hardy[4],log_amp,CIART,0.64994057,0.8739725784391977,4,0.75
+lung,all,hardy[4],log_amp,CLOCK,-0.18696000000000002,0.04066910509858804,2,1.0
+lung,all,hardy[4],log_amp,CRY1,-0.0943382975,0.7273501774709744,4,0.5
+lung,all,hardy[4],log_amp,DBP,0.54250343755,0.9253561394401709,4,0.5
+lung,all,hardy[4],log_amp,NPAS2,-0.02450038000000003,1.2675198387378925,4,0.75
+lung,all,hardy[4],log_amp,NR1D1,-0.008563307499999978,0.6158330024881482,4,0.5
+lung,all,hardy[4],log_amp,NR1D2,-0.10399977999999996,1.3036044169953533,4,0.5
+lung,all,hardy[4],log_amp,PER1,-0.23101378500000003,1.2531878332619482,2,0.5
+lung,all,hardy[4],log_amp,PER2,-0.291609464,0.8651909588093009,4,0.75
+lung,all,hardy[4],log_amp,PER3,0.1161334225,0.7882988646336176,4,0.5
+lung,all,hardy[4],log_amp,RORA,0.01760353499999999,0.20600320754323329,2,0.5
+lung,all,hardy[4],log_amp,TEF,-0.3824496275,1.1341229243402529,4,0.75
+lung,all,hardy[4],mesor,ARNTL,0.200425995,0.1237665505299353,4,1.0
+lung,all,hardy[4],mesor,CIART,-0.07880417499999999,0.24662137201868028,4,0.5
+lung,all,hardy[4],mesor,CLOCK,-0.0244150555,0.04051785001545228,4,0.75
+lung,all,hardy[4],mesor,CRY1,0.167491345,0.5693282293236213,4,0.5
+lung,all,hardy[4],mesor,CRY2,0.0840129257,0.08597660921959735,4,0.75
+lung,all,hardy[4],mesor,DBP,0.1257680235,0.13979575260603117,4,0.75
+lung,all,hardy[4],mesor,NPAS2,0.11159283775,0.3115237772620418,4,0.75
+lung,all,hardy[4],mesor,NR1D1,0.558824985,0.3833986704640124,4,1.0
+lung,all,hardy[4],mesor,NR1D2,0.01440569465,0.03890696946328251,4,0.75
+lung,all,hardy[4],mesor,PER1,0.227858374,0.13395295884229444,4,1.0
+lung,all,hardy[4],mesor,PER2,-0.15303654649999998,0.25792702903704806,4,0.75
+lung,all,hardy[4],mesor,PER3,0.050219907499999994,0.4279138532551748,4,0.5
+lung,all,hardy[4],mesor,RORA,0.1734894225,0.05881071835621654,4,1.0
+lung,all,hardy[4],mesor,TEF,-0.0006488277500000042,0.10183255157001525,4,0.5
+lung,all,hardy__missing,log_amp,ARNTL,-0.22669463749999996,0.9799754945012186,4,0.5
+lung,all,hardy__missing,log_amp,CIART,-0.4591623025,0.801485541568568,4,0.75
+lung,all,hardy__missing,log_amp,CLOCK,-0.77090052,1.4691247597100026,2,0.5
+lung,all,hardy__missing,log_amp,CRY1,0.53331826325,0.5724073115210419,4,1.0
+lung,all,hardy__missing,log_amp,DBP,0.2614907839999999,1.4929726775788468,4,0.25
+lung,all,hardy__missing,log_amp,NPAS2,0.14222877,0.8362682609188107,4,0.5
+lung,all,hardy__missing,log_amp,NR1D1,-0.7357851000000001,1.5889695952226293,4,0.75
+lung,all,hardy__missing,log_amp,NR1D2,0.11816109750000003,1.2973646567017894,4,0.5
+lung,all,hardy__missing,log_amp,PER1,-0.5405347,2.3899654832388855,2,0.5
+lung,all,hardy__missing,log_amp,PER2,0.027349521249999995,0.550333800236666,4,0.25
+lung,all,hardy__missing,log_amp,PER3,-0.1426431,0.7169529757772681,4,0.5
+lung,all,hardy__missing,log_amp,RORA,1.237874875,0.5115765180373325,2,1.0
+lung,all,hardy__missing,log_amp,TEF,-0.7912122850000001,0.7909516227341099,4,1.0
+lung,all,hardy__missing,mesor,ARNTL,-0.212889345,0.18032385462314066,4,0.75
+lung,all,hardy__missing,mesor,CIART,-0.45303048,0.2925318216280036,4,1.0
+lung,all,hardy__missing,mesor,CLOCK,-0.07782538474999999,0.02703950791628091,4,1.0
+lung,all,hardy__missing,mesor,CRY1,0.16168029650000001,0.4114441445283821,4,0.5
+lung,all,hardy__missing,mesor,CRY2,-0.3064988675,0.09830321608840081,4,1.0
+lung,all,hardy__missing,mesor,DBP,-0.35444176250000003,0.18542763902656986,4,1.0
+lung,all,hardy__missing,mesor,NPAS2,-0.33517014925,0.541970828125858,4,0.5
+lung,all,hardy__missing,mesor,NR1D1,-0.16547038249999999,0.37536587890238576,4,0.75
+lung,all,hardy__missing,mesor,NR1D2,-0.2081674625,0.08636528078263718,4,1.0
+lung,all,hardy__missing,mesor,PER1,0.184591799,0.07030404300055404,4,1.0
+lung,all,hardy__missing,mesor,PER2,0.11434585500000002,0.3905408557866947,4,0.5
+lung,all,hardy__missing,mesor,PER3,-0.0367985025,0.322701425634327,4,0.75
+lung,all,hardy__missing,mesor,RORA,-0.313891095,0.1237863031235442,4,1.0
+lung,all,hardy__missing,mesor,TEF,-0.19332518775,0.13478579492840162,4,1.0
+lung,all,sex (F vs M),log_amp,ARNTL,-0.4303047175,0.09584399314566994,4,1.0
+lung,all,sex (F vs M),log_amp,CIART,0.581351264625,0.4188424719477193,4,0.75
+lung,all,sex (F vs M),log_amp,CLOCK,-0.6463452000000001,0.20161560289490296,2,1.0
+lung,all,sex (F vs M),log_amp,CRY1,-0.39733334499999995,0.7873873710516825,4,0.75
+lung,all,sex (F vs M),log_amp,DBP,0.020216830000000005,0.7304668134684541,4,0.5
+lung,all,sex (F vs M),log_amp,NPAS2,0.09928881749999999,0.5203253536363048,4,0.5
+lung,all,sex (F vs M),log_amp,NR1D1,0.05322029449999999,0.553602012147454,4,0.5
+lung,all,sex (F vs M),log_amp,NR1D2,0.514395545,0.2734511040381114,4,1.0
+lung,all,sex (F vs M),log_amp,PER1,1.2032242,0.22040079963380352,2,1.0
+lung,all,sex (F vs M),log_amp,PER2,-0.245706035,0.54291725221432,4,0.75
+lung,all,sex (F vs M),log_amp,PER3,-0.671605025,0.4199292900348988,4,1.0
+lung,all,sex (F vs M),log_amp,RORA,0.027606665000000002,0.4075526111012816,2,0.5
+lung,all,sex (F vs M),log_amp,TEF,0.22357717875000002,0.4505575398618403,4,0.5
+lung,all,sex (F vs M),mesor,ARNTL,0.04033708575,0.13177254312673178,4,0.5
+lung,all,sex (F vs M),mesor,CIART,-0.1310932235,0.10181695617344907,4,0.75
+lung,all,sex (F vs M),mesor,CLOCK,0.03964893725,0.008594072830712082,4,1.0
+lung,all,sex (F vs M),mesor,CRY1,0.062966638125,0.1765258298123791,4,0.75
+lung,all,sex (F vs M),mesor,CRY2,-0.0286221095,0.03452123782014848,4,0.75
+lung,all,sex (F vs M),mesor,DBP,-0.032161955000000006,0.24768551149048829,4,0.25
+lung,all,sex (F vs M),mesor,NPAS2,0.26438607825,0.2510496722251992,4,1.0
+lung,all,sex (F vs M),mesor,NR1D1,0.057292429250000006,0.19348110961642226,4,0.75
+lung,all,sex (F vs M),mesor,NR1D2,0.0035340646249999996,0.062354344131510364,4,0.25
+lung,all,sex (F vs M),mesor,PER1,-0.079194312125,0.14781594986347438,4,0.75
+lung,all,sex (F vs M),mesor,PER2,0.01477517750000001,0.211522458411165,4,0.5
+lung,all,sex (F vs M),mesor,PER3,-0.20006370575,0.1296012639022494,4,1.0
+lung,all,sex (F vs M),mesor,RORA,-0.01976630485,0.04833521186843278,4,0.75
+lung,all,sex (F vs M),mesor,TEF,0.008011932499999999,0.2295675932379338,4,0.25
+lung,fast,age (per 10 y),log_amp,ARNTL,-0.5529547422730209,0.4440680661732709,4,1.0
+lung,fast,age (per 10 y),log_amp,CIART,0.009583067673073452,0.2107952144154822,4,0.5
+lung,fast,age (per 10 y),log_amp,CLOCK,-0.2515375087953851,0.42224013638385915,2,0.5
+lung,fast,age (per 10 y),log_amp,CRY1,0.04483343766620468,0.7030418087395165,4,0.5
+lung,fast,age (per 10 y),log_amp,DBP,0.2276936645477039,0.4388583965195579,4,0.75
+lung,fast,age (per 10 y),log_amp,NPAS2,-0.14729454012842444,0.3554153419752293,4,0.75
+lung,fast,age (per 10 y),log_amp,NR1D1,-0.14648345260756518,0.10077956916874428,4,1.0
+lung,fast,age (per 10 y),log_amp,NR1D2,0.49837410744063215,0.6136141346397084,4,0.75
+lung,fast,age (per 10 y),log_amp,PER1,-0.17849226371825358,0.1042996111535795,2,1.0
+lung,fast,age (per 10 y),log_amp,PER2,-0.054881305567544655,0.477735475575695,4,0.75
+lung,fast,age (per 10 y),log_amp,PER3,0.10681194751352668,0.5364464662728488,4,0.5
+lung,fast,age (per 10 y),log_amp,RORA,-0.7379854140616258,0.5631610698889538,2,1.0
+lung,fast,age (per 10 y),log_amp,TEF,0.07784900650144853,0.3414843934290253,4,0.5
+lung,fast,age (per 10 y),mesor,ARNTL,0.017233086519607126,0.07617773831619286,4,0.75
+lung,fast,age (per 10 y),mesor,CIART,-0.048200734834872985,0.0572212357634286,4,1.0
+lung,fast,age (per 10 y),mesor,CLOCK,0.03917683799322629,0.04685123120826029,4,0.75
+lung,fast,age (per 10 y),mesor,CRY1,-0.010168360782801422,0.09549203992640623,4,0.25
+lung,fast,age (per 10 y),mesor,CRY2,-0.02583009706261795,0.004036266342661648,4,1.0
+lung,fast,age (per 10 y),mesor,DBP,-0.07293437656698643,0.08908713459447885,4,0.5
+lung,fast,age (per 10 y),mesor,NPAS2,0.010363427828818971,0.05648396519603724,4,0.5
+lung,fast,age (per 10 y),mesor,NR1D1,-0.044808478504443604,0.07088639994246873,4,0.75
+lung,fast,age (per 10 y),mesor,NR1D2,0.01584397118686491,0.1303331381133187,4,0.25
+lung,fast,age (per 10 y),mesor,PER1,-0.0056419116175997625,0.010339994863851726,4,0.5
+lung,fast,age (per 10 y),mesor,PER2,-0.05809525320600367,0.052579236434694136,4,1.0
+lung,fast,age (per 10 y),mesor,PER3,-0.10826094964523401,0.14846644794364525,4,0.75
+lung,fast,age (per 10 y),mesor,RORA,0.0002661497706880024,0.029521902734923777,4,0.5
+lung,fast,age (per 10 y),mesor,TEF,-0.028769246341387212,0.1868300596644622,4,0.75
+lung,fast,hardy[2],log_amp,ARNTL,-0.225554378,0.2400860020459659,4,0.75
+lung,fast,hardy[2],log_amp,CIART,0.6296278974999999,0.8879623261849277,4,0.75
+lung,fast,hardy[2],log_amp,CLOCK,0.171004405,0.03594798646584325,2,1.0
+lung,fast,hardy[2],log_amp,CRY1,-0.12401669774999999,0.3356007945287071,4,0.5
+lung,fast,hardy[2],log_amp,DBP,0.33279011,0.1920298566334414,4,1.0
+lung,fast,hardy[2],log_amp,NPAS2,-0.06096349250000001,0.5216648201151037,4,0.5
+lung,fast,hardy[2],log_amp,NR1D1,-0.081674045,0.4279652231747139,4,0.75
+lung,fast,hardy[2],log_amp,NR1D2,0.634995405,0.683442253207169,4,0.75
+lung,fast,hardy[2],log_amp,PER1,0.7983808,0.053262535450164274,2,1.0
+lung,fast,hardy[2],log_amp,PER2,-0.256023175,0.5056247010712446,4,0.75
+lung,fast,hardy[2],log_amp,PER3,-0.030002542249999996,0.14671378048161368,4,0.5
+lung,fast,hardy[2],log_amp,RORA,-0.18880358,0.1796448335382145,2,1.0
+lung,fast,hardy[2],log_amp,TEF,0.2836317725,0.3670757666244849,4,0.75
+lung,fast,hardy[2],mesor,ARNTL,-0.061611641249999995,0.0681034674531618,4,1.0
+lung,fast,hardy[2],mesor,CIART,-0.059698736,0.07743169768695261,4,0.5
+lung,fast,hardy[2],mesor,CLOCK,-0.0608326519,0.06387596723870043,4,0.75
+lung,fast,hardy[2],mesor,CRY1,0.1368836235,0.179417181643699,4,0.75
+lung,fast,hardy[2],mesor,CRY2,0.045066620749999994,0.027092383524033627,4,1.0
+lung,fast,hardy[2],mesor,DBP,-0.18951773824999998,0.17952906044441222,4,1.0
+lung,fast,hardy[2],mesor,NPAS2,-0.0584130065,0.1757278173197659,4,0.75
+lung,fast,hardy[2],mesor,NR1D1,-0.046906006,0.07782362267492955,4,0.75
+lung,fast,hardy[2],mesor,NR1D2,0.05921156250000001,0.2155143928301728,4,0.75
+lung,fast,hardy[2],mesor,PER1,0.1804096275,0.11248798176407836,4,1.0
+lung,fast,hardy[2],mesor,PER2,-0.04675436,0.2251717814828402,4,0.5
+lung,fast,hardy[2],mesor,PER3,0.146516845,0.2921347455190818,4,0.75
+lung,fast,hardy[2],mesor,RORA,0.04306349375,0.09697697081807131,4,0.75
+lung,fast,hardy[2],mesor,TEF,0.014257628500000001,0.16608992826391528,4,0.5
+lung,fast,sex (F vs M),log_amp,ARNTL,-0.424201975,0.3230346735947981,4,1.0
+lung,fast,sex (F vs M),log_amp,CIART,-0.147459195,0.28110267142708484,4,0.5
+lung,fast,sex (F vs M),log_amp,CLOCK,-0.70754637,0.3083437972891951,2,1.0
+lung,fast,sex (F vs M),log_amp,CRY1,0.0875012425,0.28813767329078027,4,0.75
+lung,fast,sex (F vs M),log_amp,DBP,0.33174707375,0.25142763111949584,4,1.0
+lung,fast,sex (F vs M),log_amp,NPAS2,-0.09038595249999999,0.6093542270157404,4,0.5
+lung,fast,sex (F vs M),log_amp,NR1D1,0.2255710285,0.15238704813433315,4,1.0
+lung,fast,sex (F vs M),log_amp,NR1D2,-0.22130289250000001,0.794370842395202,4,0.5
+lung,fast,sex (F vs M),log_amp,PER1,0.371807215,0.2340290595464428,2,1.0
+lung,fast,sex (F vs M),log_amp,PER2,0.125956865,0.38875320213704095,4,0.5
+lung,fast,sex (F vs M),log_amp,PER3,0.09188471625,0.4763130368253443,4,0.75
+lung,fast,sex (F vs M),log_amp,RORA,0.27116194499999996,0.4067889499197357,2,0.5
+lung,fast,sex (F vs M),log_amp,TEF,-0.24137175500000002,0.42731245935625534,4,0.75
+lung,fast,sex (F vs M),mesor,ARNTL,-0.04781212124999999,0.23075727707816518,4,0.5
+lung,fast,sex (F vs M),mesor,CIART,-0.17673453374999998,0.10065473458053933,4,1.0
+lung,fast,sex (F vs M),mesor,CLOCK,-0.0016185740749999995,0.1055523947171064,4,0.5
+lung,fast,sex (F vs M),mesor,CRY1,0.13533807625,0.3003580354754753,4,0.5
+lung,fast,sex (F vs M),mesor,CRY2,-0.007103221500000001,0.031119605525299295,4,0.5
+lung,fast,sex (F vs M),mesor,DBP,-0.12107593075,0.18497569969196798,4,0.75
+lung,fast,sex (F vs M),mesor,NPAS2,0.015339704000000003,0.12989391419845148,4,0.5
+lung,fast,sex (F vs M),mesor,NR1D1,0.02144419624999999,0.3120747431080331,4,0.25
+lung,fast,sex (F vs M),mesor,NR1D2,-0.1602676255,0.18191994779552192,4,1.0
+lung,fast,sex (F vs M),mesor,PER1,0.0211393088,0.051167535436320556,4,0.5
+lung,fast,sex (F vs M),mesor,PER2,0.09503030500000001,0.2806919572801262,4,0.25
+lung,fast,sex (F vs M),mesor,PER3,-0.21102920375,0.1962470426928797,4,0.75
+lung,fast,sex (F vs M),mesor,RORA,-0.037815087875,0.05591598089967709,4,0.5
+lung,fast,sex (F vs M),mesor,TEF,-0.19732998499999999,0.10664274204514107,4,1.0
+muscle_skeletal,all,age (per 10 y),log_amp,ARNTL,-0.03649353710218474,0.08209108659202442,2,0.5
+muscle_skeletal,all,age (per 10 y),log_amp,CIART,-0.05809047971896171,0.01933660353618249,2,1.0
+muscle_skeletal,all,age (per 10 y),log_amp,CLOCK,-0.09014815564858135,0.19620675635606685,2,0.5
+muscle_skeletal,all,age (per 10 y),log_amp,CRY1,0.028064192114968127,0.010006733941328715,2,1.0
+muscle_skeletal,all,age (per 10 y),log_amp,DBP,-0.2118539823939416,0.23781595966000255,2,1.0
+muscle_skeletal,all,age (per 10 y),log_amp,NPAS2,-0.029894994426645796,0.02563887855639192,2,1.0
+muscle_skeletal,all,age (per 10 y),log_amp,NR1D1,0.11494356496427344,0.1649389653740135,2,0.5
+muscle_skeletal,all,age (per 10 y),log_amp,NR1D2,-0.1061764105775156,0.14220508285707908,2,1.0
+muscle_skeletal,all,age (per 10 y),log_amp,PER1,-0.023768907800190794,0.2585279301764795,2,0.5
+muscle_skeletal,all,age (per 10 y),log_amp,PER2,0.017523529672814703,0.011679313621549588,2,1.0
+muscle_skeletal,all,age (per 10 y),log_amp,PER3,-0.05522809556523884,0.12133495443956792,2,0.5
+muscle_skeletal,all,age (per 10 y),log_amp,TEF,-0.14038011559215136,0.06971678303497778,2,1.0
+muscle_skeletal,all,age (per 10 y),mesor,ARNTL,0.022717551262132478,0.038328092501492765,4,0.75
+muscle_skeletal,all,age (per 10 y),mesor,CIART,0.04679337650821275,0.019609783654895855,4,1.0
+muscle_skeletal,all,age (per 10 y),mesor,CLOCK,0.01403302334189019,0.005326678304759283,4,1.0
+muscle_skeletal,all,age (per 10 y),mesor,CRY1,-0.01280813501679687,0.056105868968961976,4,0.75
+muscle_skeletal,all,age (per 10 y),mesor,CRY2,-0.002450070033529605,0.020104314048990535,4,0.5
+muscle_skeletal,all,age (per 10 y),mesor,DBP,0.04375613229059511,0.059972581113110525,4,0.75
+muscle_skeletal,all,age (per 10 y),mesor,NPAS2,0.021956574547957686,0.06668170715358941,4,0.75
+muscle_skeletal,all,age (per 10 y),mesor,NR1D1,0.03243417023359549,0.061797776455647865,4,0.5
+muscle_skeletal,all,age (per 10 y),mesor,NR1D2,0.014233242041301896,0.030705898191983452,4,0.75
+muscle_skeletal,all,age (per 10 y),mesor,PER1,0.008967783959078443,0.01752805138849812,4,0.75
+muscle_skeletal,all,age (per 10 y),mesor,PER2,0.036314823351113856,0.0242019535503903,4,1.0
+muscle_skeletal,all,age (per 10 y),mesor,PER3,0.041381537468313655,0.054885168076265506,4,0.75
+muscle_skeletal,all,age (per 10 y),mesor,RORA,0.012036433143866265,0.021123370390228484,4,0.75
+muscle_skeletal,all,age (per 10 y),mesor,TEF,0.026990913048715683,0.03131527487070035,4,0.75
+muscle_skeletal,all,hardy[1],log_amp,ARNTL,1.213597525,0.5241676149365307,2,1.0
+muscle_skeletal,all,hardy[1],log_amp,CIART,1.0722626800000001,0.36907342277509614,2,1.0
+muscle_skeletal,all,hardy[1],log_amp,CLOCK,1.032320425,0.6515589826856056,2,1.0
+muscle_skeletal,all,hardy[1],log_amp,CRY1,-1.6403557,0.3205785972234889,2,1.0
+muscle_skeletal,all,hardy[1],log_amp,DBP,-0.084625645,0.2318735718032162,2,0.5
+muscle_skeletal,all,hardy[1],log_amp,NPAS2,0.6911511,0.36951646759991624,2,1.0
+muscle_skeletal,all,hardy[1],log_amp,NR1D1,0.55240345,0.003984758844020558,2,1.0
+muscle_skeletal,all,hardy[1],log_amp,NR1D2,0.55597322,0.6631114175049868,2,1.0
+muscle_skeletal,all,hardy[1],log_amp,PER1,1.09881957,0.9172187953164249,2,1.0
+muscle_skeletal,all,hardy[1],log_amp,PER2,-1.58828815,0.6787063322949366,2,1.0
+muscle_skeletal,all,hardy[1],log_amp,PER3,0.2763442365,0.41310049807447274,2,0.5
+muscle_skeletal,all,hardy[1],log_amp,TEF,0.89492981,0.6089341828648153,2,1.0
+muscle_skeletal,all,hardy[1],mesor,ARNTL,0.46237024574999996,0.42894148876282223,4,1.0
+muscle_skeletal,all,hardy[1],mesor,CIART,-0.23054715,0.3213015164290727,4,0.75
+muscle_skeletal,all,hardy[1],mesor,CLOCK,0.01846083525,0.059018955805620395,4,0.5
+muscle_skeletal,all,hardy[1],mesor,CRY1,-0.33924918275000004,0.47457150098722795,4,0.5
+muscle_skeletal,all,hardy[1],mesor,CRY2,0.2033657485,0.08567278296320044,4,1.0
+muscle_skeletal,all,hardy[1],mesor,DBP,-0.184516585,0.5561305563699485,4,0.75
+muscle_skeletal,all,hardy[1],mesor,NPAS2,0.20309057749999998,0.6608087340166663,4,0.5
+muscle_skeletal,all,hardy[1],mesor,NR1D1,0.45444483,0.8333067372180665,4,0.5
+muscle_skeletal,all,hardy[1],mesor,NR1D2,-0.3132534225,0.13930568171846505,4,1.0
+muscle_skeletal,all,hardy[1],mesor,PER1,-0.369973655,0.07216385878434416,4,1.0
+muscle_skeletal,all,hardy[1],mesor,PER2,-0.42094851,0.33780017492098446,4,1.0
+muscle_skeletal,all,hardy[1],mesor,PER3,-0.44431525000000005,0.10042666274127171,4,1.0
+muscle_skeletal,all,hardy[1],mesor,RORA,-0.4888964425,0.30967288785916214,4,1.0
+muscle_skeletal,all,hardy[1],mesor,TEF,-0.32011742,0.0832520203797814,4,1.0
+muscle_skeletal,all,hardy[2],log_amp,ARNTL,0.2593324,0.2248983947419474,2,1.0
+muscle_skeletal,all,hardy[2],log_amp,CIART,-0.04282326999999997,1.1130042179476312,2,0.5
+muscle_skeletal,all,hardy[2],log_amp,CLOCK,0.42685143999999997,0.3223833600032471,2,1.0
+muscle_skeletal,all,hardy[2],log_amp,CRY1,-0.370658925,0.09559365968259216,2,1.0
+muscle_skeletal,all,hardy[2],log_amp,DBP,-1.50404578,1.2517174824922166,2,1.0
+muscle_skeletal,all,hardy[2],log_amp,NPAS2,0.31069390999999996,0.6748832039189597,2,0.5
+muscle_skeletal,all,hardy[2],log_amp,NR1D1,-0.07165507500000001,0.5286051342525451,2,0.5
+muscle_skeletal,all,hardy[2],log_amp,NR1D2,-0.28042177,0.18135403790756302,2,1.0
+muscle_skeletal,all,hardy[2],log_amp,PER1,-0.25598656000000003,0.22599223236390054,2,1.0
+muscle_skeletal,all,hardy[2],log_amp,PER2,-0.283337285,0.0741424723887196,2,1.0
+muscle_skeletal,all,hardy[2],log_amp,PER3,0.011430395000000003,0.11226589408008672,2,0.5
+muscle_skeletal,all,hardy[2],log_amp,TEF,0.171472725,0.3037628837890239,2,0.5
+muscle_skeletal,all,hardy[2],mesor,ARNTL,0.1466037705,0.2553632963572669,4,0.5
+muscle_skeletal,all,hardy[2],mesor,CIART,-0.256109998,0.22813239439239957,4,0.75
+muscle_skeletal,all,hardy[2],mesor,CLOCK,-0.052055230349999995,0.16588466737904212,4,0.75
+muscle_skeletal,all,hardy[2],mesor,CRY1,-0.37978159499999997,0.2965454921303487,4,1.0
+muscle_skeletal,all,hardy[2],mesor,CRY2,0.24202496,0.07750146367300684,4,1.0
+muscle_skeletal,all,hardy[2],mesor,DBP,-0.0854528975,0.14070988508040894,4,0.75
+muscle_skeletal,all,hardy[2],mesor,NPAS2,0.24871642499999996,0.7106504514903295,4,0.5
+muscle_skeletal,all,hardy[2],mesor,NR1D1,0.28857077,0.3845987959290047,4,0.75
+muscle_skeletal,all,hardy[2],mesor,NR1D2,-0.254619,0.1746329661993216,4,1.0
+muscle_skeletal,all,hardy[2],mesor,PER1,-0.158591181,0.11210223711085981,4,1.0
+muscle_skeletal,all,hardy[2],mesor,PER2,-0.34542146875,0.3867174921818791,4,1.0
+muscle_skeletal,all,hardy[2],mesor,PER3,-0.3444310475,0.22778625225842924,4,1.0
+muscle_skeletal,all,hardy[2],mesor,RORA,-0.38578288400000005,0.3161038145361242,4,0.75
+muscle_skeletal,all,hardy[2],mesor,TEF,-0.175079545,0.19506411494806547,4,0.75
+muscle_skeletal,all,hardy[3],log_amp,ARNTL,-0.37917179999999995,0.2326944167101566,2,1.0
+muscle_skeletal,all,hardy[3],log_amp,CIART,0.227759298,0.1946963395952497,2,1.0
+muscle_skeletal,all,hardy[3],log_amp,CLOCK,0.37223276,0.19039053730200772,2,1.0
+muscle_skeletal,all,hardy[3],log_amp,CRY1,-0.154488765,0.40778442898842576,2,0.5
+muscle_skeletal,all,hardy[3],log_amp,DBP,-0.67387025,0.005615064238724197,2,1.0
+muscle_skeletal,all,hardy[3],log_amp,NPAS2,-0.0874406375,0.14058041182011388,2,0.5
+muscle_skeletal,all,hardy[3],log_amp,NR1D1,-0.1417286975,0.1730505006537589,2,1.0
+muscle_skeletal,all,hardy[3],log_amp,NR1D2,-0.3538829485,0.47957573102461354,2,1.0
+muscle_skeletal,all,hardy[3],log_amp,PER1,0.429356265,0.07460837090470782,2,1.0
+muscle_skeletal,all,hardy[3],log_amp,PER2,-0.339350715,0.19167558366866147,2,1.0
+muscle_skeletal,all,hardy[3],log_amp,PER3,-0.51215994,0.054986546635510725,2,1.0
+muscle_skeletal,all,hardy[3],log_amp,TEF,-0.118166572,0.061738239770158396,2,1.0
+muscle_skeletal,all,hardy[3],mesor,ARNTL,0.14791592250000002,0.08559439921999623,4,1.0
+muscle_skeletal,all,hardy[3],mesor,CIART,-0.28944861774999997,0.28401556837927816,4,1.0
+muscle_skeletal,all,hardy[3],mesor,CLOCK,-0.007215079999999992,0.13845233112062144,4,0.5
+muscle_skeletal,all,hardy[3],mesor,CRY1,-0.026981984,0.2391872186755585,4,0.25
+muscle_skeletal,all,hardy[3],mesor,CRY2,0.17166092575,0.11747635633535314,4,1.0
+muscle_skeletal,all,hardy[3],mesor,DBP,-0.5054354835,0.30014780304220023,4,1.0
+muscle_skeletal,all,hardy[3],mesor,NPAS2,0.05663692,0.18024582656015994,4,0.5
+muscle_skeletal,all,hardy[3],mesor,NR1D1,0.029015327499999997,0.11587578394038058,4,0.75
+muscle_skeletal,all,hardy[3],mesor,NR1D2,-0.24851807050000002,0.1828711199927231,4,1.0
+muscle_skeletal,all,hardy[3],mesor,PER1,-0.15397410625000002,0.07216842007586552,4,1.0
+muscle_skeletal,all,hardy[3],mesor,PER2,-0.05142621124999999,0.13018317961024703,4,0.5
+muscle_skeletal,all,hardy[3],mesor,PER3,-0.32812781,0.12294828021679849,4,1.0
+muscle_skeletal,all,hardy[3],mesor,RORA,-0.11056985,0.15268031847673774,4,0.75
+muscle_skeletal,all,hardy[3],mesor,TEF,-0.1984176935,0.14992281975909344,4,1.0
+muscle_skeletal,all,hardy[4],log_amp,ARNTL,-0.33577615,0.021750562162891358,2,1.0
+muscle_skeletal,all,hardy[4],log_amp,CIART,0.40797307000000005,0.31490588963996247,2,1.0
+muscle_skeletal,all,hardy[4],log_amp,CLOCK,-0.51480752,0.42374106425229174,2,1.0
+muscle_skeletal,all,hardy[4],log_amp,CRY1,-0.09450829250000001,0.006993360312146972,2,1.0
+muscle_skeletal,all,hardy[4],log_amp,DBP,-0.57960846,0.7153524099305064,2,1.0
+muscle_skeletal,all,hardy[4],log_amp,NPAS2,-0.07124609650000001,0.01600688015041671,2,1.0
+muscle_skeletal,all,hardy[4],log_amp,NR1D1,0.157684735,0.46588621940126757,2,0.5
+muscle_skeletal,all,hardy[4],log_amp,NR1D2,-0.26081875,0.20031612447884517,2,1.0
+muscle_skeletal,all,hardy[4],log_amp,PER1,0.37438673,0.18131548644585266,2,1.0
+muscle_skeletal,all,hardy[4],log_amp,PER2,-0.49146446,0.3954133200799225,2,1.0
+muscle_skeletal,all,hardy[4],log_amp,PER3,-0.26828572500000003,0.13629536240379295,2,1.0
+muscle_skeletal,all,hardy[4],log_amp,TEF,0.202743215,0.1632453090130202,2,1.0
+muscle_skeletal,all,hardy[4],mesor,ARNTL,0.03703028575,0.21132917309531066,4,0.5
+muscle_skeletal,all,hardy[4],mesor,CIART,-0.13414804749999998,0.15804129613363557,4,0.75
+muscle_skeletal,all,hardy[4],mesor,CLOCK,-0.04639674125,0.1316265968934935,4,0.75
+muscle_skeletal,all,hardy[4],mesor,CRY1,-0.16172839249999998,0.24464192853568012,4,0.75
+muscle_skeletal,all,hardy[4],mesor,CRY2,0.19516574,0.04833022812961124,4,1.0
+muscle_skeletal,all,hardy[4],mesor,DBP,-0.2805050075,0.4249503167240657,4,1.0
+muscle_skeletal,all,hardy[4],mesor,NPAS2,-0.08007574775000001,0.1665239297793749,4,0.75
+muscle_skeletal,all,hardy[4],mesor,NR1D1,0.04251101034999999,0.3010067172958994,4,0.5
+muscle_skeletal,all,hardy[4],mesor,NR1D2,-0.013887233499999999,0.15292555271739855,4,0.25
+muscle_skeletal,all,hardy[4],mesor,PER1,0.046552320625,0.14515199696418005,4,0.5
+muscle_skeletal,all,hardy[4],mesor,PER2,-0.008821582500000008,0.21442638295419808,4,0.25
+muscle_skeletal,all,hardy[4],mesor,PER3,0.091668364,0.1524528212774553,4,0.5
+muscle_skeletal,all,hardy[4],mesor,RORA,-0.010566517749999997,0.12331055436169641,4,0.75
+muscle_skeletal,all,hardy[4],mesor,TEF,-0.08756999325,0.11616578634168695,4,1.0
+muscle_skeletal,all,hardy__missing,log_amp,ARNTL,0.56613011,0.13242482251813747,2,1.0
+muscle_skeletal,all,hardy__missing,log_amp,CIART,0.093089745,0.5339484573552594,2,0.5
+muscle_skeletal,all,hardy__missing,log_amp,CLOCK,1.3336668,0.14270772489364414,2,1.0
+muscle_skeletal,all,hardy__missing,log_amp,CRY1,-0.41653652,0.18264217433085056,2,1.0
+muscle_skeletal,all,hardy__missing,log_amp,DBP,0.02319569999999993,1.526946889390885,2,0.5
+muscle_skeletal,all,hardy__missing,log_amp,NPAS2,-0.055140207000000004,0.14463159698226588,2,0.5
+muscle_skeletal,all,hardy__missing,log_amp,NR1D1,-0.31583891000000003,0.32092138844887264,2,1.0
+muscle_skeletal,all,hardy__missing,log_amp,NR1D2,-0.51069593,0.5153795999360629,2,1.0
+muscle_skeletal,all,hardy__missing,log_amp,PER1,-0.014677069999999987,0.6664588468649882,2,0.5
+muscle_skeletal,all,hardy__missing,log_amp,PER2,-0.1149066505,0.18164421968131955,2,0.5
+muscle_skeletal,all,hardy__missing,log_amp,PER3,-0.89302278,0.5980502962938424,2,1.0
+muscle_skeletal,all,hardy__missing,log_amp,TEF,-0.7172953200000001,0.17703863593265964,2,1.0
+muscle_skeletal,all,hardy__missing,mesor,ARNTL,-0.1870882975,0.04219717304644974,4,1.0
+muscle_skeletal,all,hardy__missing,mesor,CIART,0.07543185,0.1390784434478013,4,0.75
+muscle_skeletal,all,hardy__missing,mesor,CLOCK,-0.10790647275,0.08765594991315309,4,1.0
+muscle_skeletal,all,hardy__missing,mesor,CRY1,-0.19386885249999997,0.40610529268277273,4,0.5
+muscle_skeletal,all,hardy__missing,mesor,CRY2,0.282987755,0.09481968529067877,4,1.0
+muscle_skeletal,all,hardy__missing,mesor,DBP,0.3112894225,0.19341978799396514,4,1.0
+muscle_skeletal,all,hardy__missing,mesor,NPAS2,-0.33453407,0.08487911422011306,4,1.0
+muscle_skeletal,all,hardy__missing,mesor,NR1D1,-0.281838294375,0.32530512886253105,4,0.75
+muscle_skeletal,all,hardy__missing,mesor,NR1D2,-0.052198094,0.08958386425410474,4,0.75
+muscle_skeletal,all,hardy__missing,mesor,PER1,-0.5561872125,0.07088541042055946,4,1.0
+muscle_skeletal,all,hardy__missing,mesor,PER2,0.15817175,0.03577727384357655,4,1.0
+muscle_skeletal,all,hardy__missing,mesor,PER3,0.19048875575,0.18846856057424477,4,0.75
+muscle_skeletal,all,hardy__missing,mesor,RORA,-0.19153404275,0.16389676799506053,4,1.0
+muscle_skeletal,all,hardy__missing,mesor,TEF,0.03067440725,0.05449325506964721,4,0.5
+muscle_skeletal,all,sex (F vs M),log_amp,ARNTL,-0.12016972749999999,0.10507976231725266,2,1.0
+muscle_skeletal,all,sex (F vs M),log_amp,CIART,0.13142418,0.24882151420576315,2,0.5
+muscle_skeletal,all,sex (F vs M),log_amp,CLOCK,-0.045453898,0.09079822695557181,2,0.5
+muscle_skeletal,all,sex (F vs M),log_amp,CRY1,0.09466962500000001,0.022771716278806257,2,1.0
+muscle_skeletal,all,sex (F vs M),log_amp,DBP,-0.17647722,0.9904436481641309,2,0.5
+muscle_skeletal,all,sex (F vs M),log_amp,NPAS2,-0.19064194650000002,0.2820680253770341,2,0.5
+muscle_skeletal,all,sex (F vs M),log_amp,NR1D1,-0.36251364500000005,0.10386717671800103,2,1.0
+muscle_skeletal,all,sex (F vs M),log_amp,NR1D2,-0.090799408,0.02432142139994964,2,1.0
+muscle_skeletal,all,sex (F vs M),log_amp,PER1,0.09337151,0.46795894029575635,2,0.5
+muscle_skeletal,all,sex (F vs M),log_amp,PER2,-0.29138494000000004,0.07054989617874856,2,1.0
+muscle_skeletal,all,sex (F vs M),log_amp,PER3,-0.0811995695,0.03346328324032506,2,1.0
+muscle_skeletal,all,sex (F vs M),log_amp,TEF,0.082110612,0.16272359573036582,2,0.5
+muscle_skeletal,all,sex (F vs M),mesor,ARNTL,0.0877651175,0.11162753882504543,4,0.75
+muscle_skeletal,all,sex (F vs M),mesor,CIART,-0.048273368000000004,0.2792472415886949,4,0.25
+muscle_skeletal,all,sex (F vs M),mesor,CLOCK,0.093715412225,0.07791260570427305,4,0.75
+muscle_skeletal,all,sex (F vs M),mesor,CRY1,0.22118934,0.2765964741974528,4,0.75
+muscle_skeletal,all,sex (F vs M),mesor,CRY2,0.023320503,0.026176191705326732,4,0.75
+muscle_skeletal,all,sex (F vs M),mesor,DBP,-0.07142891000000001,0.3746681098518532,4,0.25
+muscle_skeletal,all,sex (F vs M),mesor,NPAS2,-0.163056165,0.09697726887467616,4,1.0
+muscle_skeletal,all,sex (F vs M),mesor,NR1D1,-0.21861976500000002,0.4153683423647887,4,0.5
+muscle_skeletal,all,sex (F vs M),mesor,NR1D2,-0.029230067250000005,0.1500021371629388,4,0.25
+muscle_skeletal,all,sex (F vs M),mesor,PER1,0.156149019,0.15739065368323443,4,0.75
+muscle_skeletal,all,sex (F vs M),mesor,PER2,0.11871608385000001,0.14432495262606612,4,0.75
+muscle_skeletal,all,sex (F vs M),mesor,PER3,0.19271566,0.09329898340357735,4,1.0
+muscle_skeletal,all,sex (F vs M),mesor,RORA,0.1480944575,0.07639294500904403,4,1.0
+muscle_skeletal,all,sex (F vs M),mesor,TEF,-0.030941080050000007,0.13710479570495604,4,0.5
+muscle_skeletal,fast,age (per 10 y),log_amp,ARNTL,-0.19908888043170847,0.22765210295670293,2,1.0
+muscle_skeletal,fast,age (per 10 y),log_amp,CIART,0.15629570939746645,0.040513296808472835,2,1.0
+muscle_skeletal,fast,age (per 10 y),log_amp,CLOCK,-0.06113860343262108,0.000761240958900268,2,1.0
+muscle_skeletal,fast,age (per 10 y),log_amp,CRY1,-0.06268164974157472,0.4389832868052717,2,0.5
+muscle_skeletal,fast,age (per 10 y),log_amp,DBP,-0.21827975506101932,0.058025825358732255,2,1.0
+muscle_skeletal,fast,age (per 10 y),log_amp,NPAS2,-0.08244574957316629,0.32239606139138166,2,0.5
+muscle_skeletal,fast,age (per 10 y),log_amp,NR1D1,0.038185853705822684,0.1998732302743874,2,0.5
+muscle_skeletal,fast,age (per 10 y),log_amp,NR1D2,0.28725893363868726,0.018683094087644094,2,1.0
+muscle_skeletal,fast,age (per 10 y),log_amp,PER1,0.45729724760469304,0.19775409841860395,2,1.0
+muscle_skeletal,fast,age (per 10 y),log_amp,PER2,-0.012760931467974815,0.18230026205907357,2,0.5
+muscle_skeletal,fast,age (per 10 y),log_amp,PER3,0.04247204764810883,0.15876939571076332,2,0.5
+muscle_skeletal,fast,age (per 10 y),log_amp,TEF,0.00990193594739697,0.0920147217192759,2,0.5
+muscle_skeletal,fast,age (per 10 y),mesor,ARNTL,0.01182851931998467,0.0655500279568198,4,0.5
+muscle_skeletal,fast,age (per 10 y),mesor,CIART,0.2033636830948944,0.09628615865372295,4,1.0
+muscle_skeletal,fast,age (per 10 y),mesor,CLOCK,0.005445766012349964,0.021141346250174692,4,0.75
+muscle_skeletal,fast,age (per 10 y),mesor,CRY1,-0.08097054692906781,0.16678223479756946,4,0.5
+muscle_skeletal,fast,age (per 10 y),mesor,CRY2,0.03465540331876075,0.025235151671377944,4,1.0
+muscle_skeletal,fast,age (per 10 y),mesor,DBP,0.01388672053182502,0.1506528221566177,4,0.75
+muscle_skeletal,fast,age (per 10 y),mesor,NPAS2,-0.038080990736878456,0.11952887633505262,4,0.5
+muscle_skeletal,fast,age (per 10 y),mesor,NR1D1,0.0876978800764204,0.31449528465222687,4,0.5
+muscle_skeletal,fast,age (per 10 y),mesor,NR1D2,0.042997336229306564,0.06778883853795226,4,0.75
+muscle_skeletal,fast,age (per 10 y),mesor,PER1,0.14714351124209954,0.08137040654012402,4,1.0
+muscle_skeletal,fast,age (per 10 y),mesor,PER2,0.10402238727789465,0.12751882721502275,4,0.75
+muscle_skeletal,fast,age (per 10 y),mesor,PER3,0.09879530290602415,0.044115719029665344,4,1.0
+muscle_skeletal,fast,age (per 10 y),mesor,RORA,0.0450306870076652,0.022260693610317954,4,1.0
+muscle_skeletal,fast,age (per 10 y),mesor,TEF,0.06890297183344624,0.07236671862752565,4,0.75
+muscle_skeletal,fast,hardy[2],log_amp,ARNTL,0.19442984800000002,0.1333146909464166,2,1.0
+muscle_skeletal,fast,hardy[2],log_amp,CIART,0.12907798,0.31577935036249094,2,0.5
+muscle_skeletal,fast,hardy[2],log_amp,CLOCK,0.71501455,0.18579308457422467,2,1.0
+muscle_skeletal,fast,hardy[2],log_amp,CRY1,-0.88058919,0.5914620268500355,2,1.0
+muscle_skeletal,fast,hardy[2],log_amp,DBP,0.7831618499999999,0.07144585703905433,2,1.0
+muscle_skeletal,fast,hardy[2],log_amp,NPAS2,-0.494228345,0.048748075845289,2,1.0
+muscle_skeletal,fast,hardy[2],log_amp,NR1D1,-0.440184075,0.017170638612213893,2,1.0
+muscle_skeletal,fast,hardy[2],log_amp,NR1D2,0.93782995,0.10253606941562074,2,1.0
+muscle_skeletal,fast,hardy[2],log_amp,PER1,0.7822260999999999,0.3902676474646855,2,1.0
+muscle_skeletal,fast,hardy[2],log_amp,PER2,-0.394614585,0.05181435954909072,2,1.0
+muscle_skeletal,fast,hardy[2],log_amp,PER3,-0.372868565,0.05562785713070792,2,1.0
+muscle_skeletal,fast,hardy[2],log_amp,TEF,0.70999965,0.15494427845275544,2,1.0
+muscle_skeletal,fast,hardy[2],mesor,ARNTL,-0.189378683,0.19020623372005588,4,1.0
+muscle_skeletal,fast,hardy[2],mesor,CIART,0.1839398515,0.1621034144173437,4,1.0
+muscle_skeletal,fast,hardy[2],mesor,CLOCK,-0.025647992875,0.029734943412737233,4,0.75
+muscle_skeletal,fast,hardy[2],mesor,CRY1,-0.1082355775,0.13744354048818552,4,0.75
+muscle_skeletal,fast,hardy[2],mesor,CRY2,0.017259282749999997,0.05528230685371249,4,0.5
+muscle_skeletal,fast,hardy[2],mesor,DBP,0.17958925025,0.16681361385559412,4,0.75
+muscle_skeletal,fast,hardy[2],mesor,NPAS2,-0.009382217749999998,0.1418464361975856,4,0.25
+muscle_skeletal,fast,hardy[2],mesor,NR1D1,0.07045561125,0.15987459930739834,4,0.5
+muscle_skeletal,fast,hardy[2],mesor,NR1D2,0.05593737275,0.081915607013723,4,0.75
+muscle_skeletal,fast,hardy[2],mesor,PER1,0.18685153725,0.17541123498514538,4,0.75
+muscle_skeletal,fast,hardy[2],mesor,PER2,-0.014365749,0.0471363079040134,4,0.5
+muscle_skeletal,fast,hardy[2],mesor,PER3,-0.007528875000000001,0.18975161323667974,4,0.5
+muscle_skeletal,fast,hardy[2],mesor,RORA,0.021084314775,0.03436727997878594,4,0.5
+muscle_skeletal,fast,hardy[2],mesor,TEF,0.18690431999999998,0.05968142540964593,4,1.0
+muscle_skeletal,fast,sex (F vs M),log_amp,ARNTL,0.24086747249999998,0.2856420456908533,2,1.0
+muscle_skeletal,fast,sex (F vs M),log_amp,CIART,1.067547165,0.44132179651332254,2,1.0
+muscle_skeletal,fast,sex (F vs M),log_amp,CLOCK,0.606723695,0.10281989500652117,2,1.0
+muscle_skeletal,fast,sex (F vs M),log_amp,CRY1,-0.340093875,0.2819584400894062,2,1.0
+muscle_skeletal,fast,sex (F vs M),log_amp,DBP,0.469161835,0.788269720825871,2,0.5
+muscle_skeletal,fast,sex (F vs M),log_amp,NPAS2,0.54849045,0.2697191641691873,2,1.0
+muscle_skeletal,fast,sex (F vs M),log_amp,NR1D1,-0.230241335,0.10605620960692709,2,1.0
+muscle_skeletal,fast,sex (F vs M),log_amp,NR1D2,0.3978917,0.11874415892194445,2,1.0
+muscle_skeletal,fast,sex (F vs M),log_amp,PER1,0.354146697,0.3753844681769117,2,1.0
+muscle_skeletal,fast,sex (F vs M),log_amp,PER2,-0.279558715,0.042554654828096665,2,1.0
+muscle_skeletal,fast,sex (F vs M),log_amp,PER3,-0.229423155,0.1624975294497798,2,1.0
+muscle_skeletal,fast,sex (F vs M),log_amp,TEF,0.9142731500000001,0.4797455759521342,2,1.0
+muscle_skeletal,fast,sex (F vs M),mesor,ARNTL,0.10253937075,0.17823532801236436,4,0.5
+muscle_skeletal,fast,sex (F vs M),mesor,CIART,-0.08827003250000001,0.06807880011490232,4,0.75
+muscle_skeletal,fast,sex (F vs M),mesor,CLOCK,0.0754723425,0.025630053860250777,4,1.0
+muscle_skeletal,fast,sex (F vs M),mesor,CRY1,0.094779594,0.12011223096642458,4,0.75
+muscle_skeletal,fast,sex (F vs M),mesor,CRY2,0.03706579125,0.05843196299041295,4,0.75
+muscle_skeletal,fast,sex (F vs M),mesor,DBP,0.054972461375000004,0.13030329027060839,4,0.75
+muscle_skeletal,fast,sex (F vs M),mesor,NPAS2,0.24111966625,0.2004976539035117,4,1.0
+muscle_skeletal,fast,sex (F vs M),mesor,NR1D1,0.365599014,0.288780487037522,4,1.0
+muscle_skeletal,fast,sex (F vs M),mesor,NR1D2,0.04121896975,0.0796135008282609,4,0.75
+muscle_skeletal,fast,sex (F vs M),mesor,PER1,0.09758581599999999,0.053813034123833946,4,1.0
+muscle_skeletal,fast,sex (F vs M),mesor,PER2,-0.11079663625,0.17839879570264455,4,0.75
+muscle_skeletal,fast,sex (F vs M),mesor,PER3,-0.03544987675,0.167911622177542,4,0.75
+muscle_skeletal,fast,sex (F vs M),mesor,RORA,0.1257453775,0.03165501197415387,4,1.0
+muscle_skeletal,fast,sex (F vs M),mesor,TEF,-0.005288203250000002,0.03304488415308168,4,0.5
+nerve_tibial,all,age (per 10 y),log_amp,ARNTL,-0.0003885614866702136,0.14932358285884278,2,0.5
+nerve_tibial,all,age (per 10 y),log_amp,CIART,-0.1161675557705862,0.12041639586859991,2,1.0
+nerve_tibial,all,age (per 10 y),log_amp,CLOCK,-0.01961741163958379,0.22110264616853212,2,0.5
+nerve_tibial,all,age (per 10 y),log_amp,CRY1,0.023284255816843895,0.19653110283780145,2,0.5
+nerve_tibial,all,age (per 10 y),log_amp,DBP,-0.039609515410497564,0.4334561581473892,2,0.5
+nerve_tibial,all,age (per 10 y),log_amp,NPAS2,0.14433090520833405,0.05283535523928337,2,1.0
+nerve_tibial,all,age (per 10 y),log_amp,NR1D1,0.0470729756370232,0.10872869155649212,2,0.5
+nerve_tibial,all,age (per 10 y),log_amp,NR1D2,-0.08517895394434839,0.08758122910518287,2,1.0
+nerve_tibial,all,age (per 10 y),log_amp,PER1,0.25283938776523496,0.22067801251410613,2,1.0
+nerve_tibial,all,age (per 10 y),log_amp,PER2,0.008644775731166308,0.11577797625058932,2,0.5
+nerve_tibial,all,age (per 10 y),log_amp,PER3,-0.03478002678493751,0.07985111655283558,2,0.5
+nerve_tibial,all,age (per 10 y),log_amp,TEF,-0.2904209846581525,0.5277314909694739,2,0.5
+nerve_tibial,all,age (per 10 y),mesor,ARNTL,-0.003108515002534672,0.019757887766570472,4,0.5
+nerve_tibial,all,age (per 10 y),mesor,CIART,0.005437595671501216,0.0359267986175024,4,0.75
+nerve_tibial,all,age (per 10 y),mesor,CLOCK,-0.0028584078315531183,0.011133653446484993,4,0.75
+nerve_tibial,all,age (per 10 y),mesor,CRY1,-0.039284131129061775,0.06960196936622283,4,0.75
+nerve_tibial,all,age (per 10 y),mesor,CRY2,-0.001940542984744547,0.004883850200641724,4,0.75
+nerve_tibial,all,age (per 10 y),mesor,DBP,0.07127899300794541,0.019944274381498896,4,1.0
+nerve_tibial,all,age (per 10 y),mesor,NPAS2,0.005435215677029632,0.07395143216816542,4,0.25
+nerve_tibial,all,age (per 10 y),mesor,NR1D1,0.055820761084650984,0.15233740937909487,4,0.75
+nerve_tibial,all,age (per 10 y),mesor,NR1D2,-0.010083585234686403,0.021480370683805126,4,0.75
+nerve_tibial,all,age (per 10 y),mesor,PER1,0.017400835995922872,0.03974131307823068,4,0.75
+nerve_tibial,all,age (per 10 y),mesor,PER2,0.01591325905051964,0.08927083484300417,4,0.75
+nerve_tibial,all,age (per 10 y),mesor,PER3,0.034244803702008025,0.05261351402733152,4,0.75
+nerve_tibial,all,age (per 10 y),mesor,RORA,-0.020627455337870387,0.008258353367577353,4,1.0
+nerve_tibial,all,age (per 10 y),mesor,TEF,0.0009364899929255356,0.023317932250629902,4,0.75
+nerve_tibial,all,hardy[1],log_amp,ARNTL,0.806496135,0.5013735894387781,2,1.0
+nerve_tibial,all,hardy[1],log_amp,CIART,1.95654625,0.11375078296523938,2,1.0
+nerve_tibial,all,hardy[1],log_amp,CLOCK,-0.15257589000000002,0.3156492851411595,2,0.5
+nerve_tibial,all,hardy[1],log_amp,CRY1,-0.12715895499999996,0.7513641491437414,2,0.5
+nerve_tibial,all,hardy[1],log_amp,DBP,0.16336262,0.28660865005413355,2,0.5
+nerve_tibial,all,hardy[1],log_amp,NPAS2,-0.4533496665,0.7182724689017063,2,0.5
+nerve_tibial,all,hardy[1],log_amp,NR1D1,-0.37979572500000003,0.08212051778454184,2,1.0
+nerve_tibial,all,hardy[1],log_amp,NR1D2,1.15817185,0.10582340884135709,2,1.0
+nerve_tibial,all,hardy[1],log_amp,PER1,2.61037735,1.0849224903665722,2,1.0
+nerve_tibial,all,hardy[1],log_amp,PER2,-1.3333155099999998,1.4887765440935183,2,1.0
+nerve_tibial,all,hardy[1],log_amp,PER3,-0.6356876499999999,0.15749919667453863,2,1.0
+nerve_tibial,all,hardy[1],log_amp,TEF,0.07470725,2.168390249952209,2,0.5
+nerve_tibial,all,hardy[1],mesor,ARNTL,0.026006952500000007,0.2270001096227028,4,0.5
+nerve_tibial,all,hardy[1],mesor,CIART,-0.062163026,0.26680086492093497,4,0.5
+nerve_tibial,all,hardy[1],mesor,CLOCK,-0.0376511575,0.05067408976128286,4,0.75
+nerve_tibial,all,hardy[1],mesor,CRY1,-0.246883069,0.25085711044164405,4,0.75
+nerve_tibial,all,hardy[1],mesor,CRY2,0.0590978585,0.015958616812941594,4,1.0
+nerve_tibial,all,hardy[1],mesor,DBP,0.48067402000000004,0.04382457368141608,4,1.0
+nerve_tibial,all,hardy[1],mesor,NPAS2,0.071060966,0.2392456373103148,4,0.75
+nerve_tibial,all,hardy[1],mesor,NR1D1,-0.05715555250000001,0.3850427122307442,4,0.5
+nerve_tibial,all,hardy[1],mesor,NR1D2,0.0996687455,0.08146037711579089,4,0.75
+nerve_tibial,all,hardy[1],mesor,PER1,-0.15416339825,0.12571474117925638,4,0.75
+nerve_tibial,all,hardy[1],mesor,PER2,0.07561259749999999,0.2227650781049457,4,0.75
+nerve_tibial,all,hardy[1],mesor,PER3,0.09595740999999999,0.278860363307242,4,0.75
+nerve_tibial,all,hardy[1],mesor,RORA,0.06709706675,0.06546168756460494,4,0.75
+nerve_tibial,all,hardy[1],mesor,TEF,0.05827806225,0.027201603767556877,4,1.0
+nerve_tibial,all,hardy[2],log_amp,ARNTL,0.88555185,0.1935402878902608,2,1.0
+nerve_tibial,all,hardy[2],log_amp,CIART,1.9388907999999998,0.14952536563513238,2,1.0
+nerve_tibial,all,hardy[2],log_amp,CLOCK,0.44069458,0.12020252423173484,2,1.0
+nerve_tibial,all,hardy[2],log_amp,CRY1,-0.5491600425000001,0.8818541613384588,2,0.5
+nerve_tibial,all,hardy[2],log_amp,DBP,1.642695,0.09516299629751063,2,1.0
+nerve_tibial,all,hardy[2],log_amp,NPAS2,-1.64474147,2.9843739109090404,2,0.5
+nerve_tibial,all,hardy[2],log_amp,NR1D1,-0.3019528,0.1582716259801712,2,1.0
+nerve_tibial,all,hardy[2],log_amp,NR1D2,1.9117099,0.06312313951381067,2,1.0
+nerve_tibial,all,hardy[2],log_amp,PER1,1.92986515,0.3885652878889789,2,1.0
+nerve_tibial,all,hardy[2],log_amp,PER2,-1.541455315,1.57061000480917,2,1.0
+nerve_tibial,all,hardy[2],log_amp,PER3,0.018562824999999977,0.5281605762192132,2,0.5
+nerve_tibial,all,hardy[2],log_amp,TEF,-0.3651715499999999,2.6868985004101744,2,0.5
+nerve_tibial,all,hardy[2],mesor,ARNTL,0.0397436,0.25879748038407496,4,0.5
+nerve_tibial,all,hardy[2],mesor,CIART,0.2097963175,0.05746447184904447,4,1.0
+nerve_tibial,all,hardy[2],mesor,CLOCK,0.022743096749999997,0.08785760785151105,4,0.5
+nerve_tibial,all,hardy[2],mesor,CRY1,-0.18502496975,0.24996370342712532,4,0.75
+nerve_tibial,all,hardy[2],mesor,CRY2,0.0707305675,0.041681087855003955,4,1.0
+nerve_tibial,all,hardy[2],mesor,DBP,0.3811714475,0.13326713421161307,4,1.0
+nerve_tibial,all,hardy[2],mesor,NPAS2,0.09895607999999999,0.3213190076542441,4,0.5
+nerve_tibial,all,hardy[2],mesor,NR1D1,0.3137106095,0.395502836580257,4,0.75
+nerve_tibial,all,hardy[2],mesor,NR1D2,0.2421991375,0.1683645274949939,4,1.0
+nerve_tibial,all,hardy[2],mesor,PER1,0.156575156,0.07615896335449618,4,1.0
+nerve_tibial,all,hardy[2],mesor,PER2,0.08769520750000001,0.35778469506360105,4,0.75
+nerve_tibial,all,hardy[2],mesor,PER3,0.230183095,0.25747801015856464,4,0.75
+nerve_tibial,all,hardy[2],mesor,RORA,0.2134627175,0.0561189922031026,4,1.0
+nerve_tibial,all,hardy[2],mesor,TEF,0.103941944,0.035706275175333674,4,1.0
+nerve_tibial,all,hardy[3],log_amp,ARNTL,-2.33709715,2.171448345359485,2,1.0
+nerve_tibial,all,hardy[3],log_amp,CIART,1.18308263,0.5792097896625175,2,1.0
+nerve_tibial,all,hardy[3],log_amp,CLOCK,0.504654285,0.48586214153327945,2,1.0
+nerve_tibial,all,hardy[3],log_amp,CRY1,-0.23267982499999998,0.5040819639742145,2,0.5
+nerve_tibial,all,hardy[3],log_amp,DBP,-0.26510369999999994,1.26676525219702,2,0.5
+nerve_tibial,all,hardy[3],log_amp,NPAS2,-0.7017435750000001,0.25310105879579253,2,1.0
+nerve_tibial,all,hardy[3],log_amp,NR1D1,-0.027605829999999998,0.5781301790290019,2,0.5
+nerve_tibial,all,hardy[3],log_amp,NR1D2,1.159876575,0.40825577222662923,2,1.0
+nerve_tibial,all,hardy[3],log_amp,PER1,1.2787697,0.44046798628824313,2,1.0
+nerve_tibial,all,hardy[3],log_amp,PER2,-0.531301885,0.11815346313014463,2,1.0
+nerve_tibial,all,hardy[3],log_amp,PER3,0.04015105000000001,0.1669271786673195,2,0.5
+nerve_tibial,all,hardy[3],log_amp,TEF,0.23132755,0.8310944904443808,2,0.5
+nerve_tibial,all,hardy[3],mesor,ARNTL,-0.08199068375,0.10622325468493213,4,0.75
+nerve_tibial,all,hardy[3],mesor,CIART,0.15001157125,0.10965544883562531,4,1.0
+nerve_tibial,all,hardy[3],mesor,CLOCK,-0.06044867350000001,0.08029775119849906,4,0.75
+nerve_tibial,all,hardy[3],mesor,CRY1,0.18411088050000002,0.26002253628116023,4,0.75
+nerve_tibial,all,hardy[3],mesor,CRY2,0.08019723925,0.05887688817686524,4,1.0
+nerve_tibial,all,hardy[3],mesor,DBP,0.15105816749999998,0.09698942440987723,4,1.0
+nerve_tibial,all,hardy[3],mesor,NPAS2,-0.1131484005,0.15148332301823472,4,0.75
+nerve_tibial,all,hardy[3],mesor,NR1D1,-0.36602672950000004,0.4133951516562499,4,1.0
+nerve_tibial,all,hardy[3],mesor,NR1D2,0.213652655,0.11482119183187789,4,1.0
+nerve_tibial,all,hardy[3],mesor,PER1,0.056039852,0.08350528894286265,4,0.75
+nerve_tibial,all,hardy[3],mesor,PER2,0.285555465,0.24713234497644815,4,1.0
+nerve_tibial,all,hardy[3],mesor,PER3,0.350114915,0.14707826443526692,4,1.0
+nerve_tibial,all,hardy[3],mesor,RORA,0.1754520925,0.015730109211937834,4,1.0
+nerve_tibial,all,hardy[3],mesor,TEF,0.033099137525,0.04970973972532606,4,0.5
+nerve_tibial,all,hardy[4],log_amp,ARNTL,-0.4330433925,0.5588214793201838,2,1.0
+nerve_tibial,all,hardy[4],log_amp,CIART,0.302922755,0.14644870867485055,2,1.0
+nerve_tibial,all,hardy[4],log_amp,CLOCK,-0.5341979299999999,0.6373213805753466,2,1.0
+nerve_tibial,all,hardy[4],log_amp,CRY1,-0.265747795,0.607702565486548,2,0.5
+nerve_tibial,all,hardy[4],log_amp,DBP,-0.525052965,1.4086413275921075,2,0.5
+nerve_tibial,all,hardy[4],log_amp,NPAS2,-0.37525328999999996,0.8382577791226486,2,0.5
+nerve_tibial,all,hardy[4],log_amp,NR1D1,-0.21650949,0.4941597072703164,2,0.5
+nerve_tibial,all,hardy[4],log_amp,NR1D2,0.34536553,0.39061217817275073,2,1.0
+nerve_tibial,all,hardy[4],log_amp,PER1,0.6313266099999999,0.5984470821930373,2,1.0
+nerve_tibial,all,hardy[4],log_amp,PER2,-0.02401510000000001,0.8204079149496304,2,0.5
+nerve_tibial,all,hardy[4],log_amp,PER3,-0.552344935,0.5332770594665227,2,1.0
+nerve_tibial,all,hardy[4],log_amp,TEF,0.07781795999999999,0.15698736450204456,2,0.5
+nerve_tibial,all,hardy[4],mesor,ARNTL,-0.19383519999999999,0.07801965722436024,4,1.0
+nerve_tibial,all,hardy[4],mesor,CIART,-0.02944610375,0.1015279426673862,4,0.5
+nerve_tibial,all,hardy[4],mesor,CLOCK,-0.04507160475,0.014032871009144,4,1.0
+nerve_tibial,all,hardy[4],mesor,CRY1,0.09137845875,0.19824319489717324,4,0.5
+nerve_tibial,all,hardy[4],mesor,CRY2,0.1231924925,0.028241524121293896,4,1.0
+nerve_tibial,all,hardy[4],mesor,DBP,0.1653642425,0.020416762557552853,4,1.0
+nerve_tibial,all,hardy[4],mesor,NPAS2,-0.0911756975,0.10356650602571031,4,0.75
+nerve_tibial,all,hardy[4],mesor,NR1D1,-0.027447168499999997,0.1993187959701577,4,0.25
+nerve_tibial,all,hardy[4],mesor,NR1D2,0.14070282625,0.04682069910259339,4,1.0
+nerve_tibial,all,hardy[4],mesor,PER1,0.04904701875,0.03822866390885207,4,0.75
+nerve_tibial,all,hardy[4],mesor,PER2,0.3140217925,0.14101890469264547,4,1.0
+nerve_tibial,all,hardy[4],mesor,PER3,0.2181136625,0.07846628138321256,4,1.0
+nerve_tibial,all,hardy[4],mesor,RORA,0.07205980149999999,0.018286981809902427,4,1.0
+nerve_tibial,all,hardy[4],mesor,TEF,0.013502035625,0.03441088254016218,4,0.75
+nerve_tibial,all,hardy__missing,log_amp,ARNTL,0.101351303,0.12830624654420444,2,1.0
+nerve_tibial,all,hardy__missing,log_amp,CIART,0.8568627550000001,0.09015965720625861,2,1.0
+nerve_tibial,all,hardy__missing,log_amp,CLOCK,0.41681202,0.4994140056292793,2,1.0
+nerve_tibial,all,hardy__missing,log_amp,CRY1,-0.64975205,1.3142215217348274,2,0.5
+nerve_tibial,all,hardy__missing,log_amp,DBP,1.14448545,0.03445724273654218,2,1.0
+nerve_tibial,all,hardy__missing,log_amp,NPAS2,-0.08413322499999998,1.3326783168713414,2,0.5
+nerve_tibial,all,hardy__missing,log_amp,NR1D1,0.62606359,0.5785569038293122,2,1.0
+nerve_tibial,all,hardy__missing,log_amp,NR1D2,1.3113843,0.10437801186993367,2,1.0
+nerve_tibial,all,hardy__missing,log_amp,PER1,1.1090668,0.1803786972400012,2,1.0
+nerve_tibial,all,hardy__missing,log_amp,PER2,-0.8712119250000001,0.4345827011930885,2,1.0
+nerve_tibial,all,hardy__missing,log_amp,PER3,0.18200439999999998,0.783096718533541,2,0.5
+nerve_tibial,all,hardy__missing,log_amp,TEF,-1.43686918,3.0663046624467154,2,0.5
+nerve_tibial,all,hardy__missing,mesor,ARNTL,-0.13342919105,0.14784883618516173,4,0.75
+nerve_tibial,all,hardy__missing,mesor,CIART,-0.1121187155,0.24421974536251803,4,0.5
+nerve_tibial,all,hardy__missing,mesor,CLOCK,-0.06323534875,0.13397921150072525,4,0.75
+nerve_tibial,all,hardy__missing,mesor,CRY1,-0.3113588475,0.2743609892688126,4,1.0
+nerve_tibial,all,hardy__missing,mesor,CRY2,-0.09699916550000001,0.08882067608202873,4,1.0
+nerve_tibial,all,hardy__missing,mesor,DBP,0.087300249,0.19934710126341196,4,0.75
+nerve_tibial,all,hardy__missing,mesor,NPAS2,0.19813021000000003,0.45885777667093286,4,0.5
+nerve_tibial,all,hardy__missing,mesor,NR1D1,-0.02569368249999998,0.9109523260074268,4,0.5
+nerve_tibial,all,hardy__missing,mesor,NR1D2,0.04106329539999999,0.2366842304061971,4,0.75
+nerve_tibial,all,hardy__missing,mesor,PER1,-0.246105195,0.13076285681448704,4,1.0
+nerve_tibial,all,hardy__missing,mesor,PER2,0.02060119749999999,0.3022890747335267,4,0.5
+nerve_tibial,all,hardy__missing,mesor,PER3,-0.1330260885,0.3400833320095311,4,0.5
+nerve_tibial,all,hardy__missing,mesor,RORA,0.1198471585,0.016510459819569206,4,1.0
+nerve_tibial,all,hardy__missing,mesor,TEF,0.11272258,0.10461908211261112,4,1.0
+nerve_tibial,all,sex (F vs M),log_amp,ARNTL,-0.24531294,0.7731292847773931,2,0.5
+nerve_tibial,all,sex (F vs M),log_amp,CIART,0.66317083,0.08024045520365528,2,1.0
+nerve_tibial,all,sex (F vs M),log_amp,CLOCK,0.2693399535,0.3860684888948617,2,0.5
+nerve_tibial,all,sex (F vs M),log_amp,CRY1,-0.36983906,0.031187877965183866,2,1.0
+nerve_tibial,all,sex (F vs M),log_amp,DBP,0.044911000000000006,0.2994263463924309,2,0.5
+nerve_tibial,all,sex (F vs M),log_amp,NPAS2,-0.6388281149999999,0.2537917748417912,2,1.0
+nerve_tibial,all,sex (F vs M),log_amp,NR1D1,-0.49731702,0.03531712700887208,2,1.0
+nerve_tibial,all,sex (F vs M),log_amp,NR1D2,0.635713,0.3242875137121687,2,1.0
+nerve_tibial,all,sex (F vs M),log_amp,PER1,0.406510995,0.0647064293786332,2,1.0
+nerve_tibial,all,sex (F vs M),log_amp,PER2,-0.5897088749999999,0.2711082400854892,2,1.0
+nerve_tibial,all,sex (F vs M),log_amp,PER3,-0.41892263500000004,0.013769751979554653,2,1.0
+nerve_tibial,all,sex (F vs M),log_amp,TEF,0.40499317,0.23104081921808062,2,1.0
+nerve_tibial,all,sex (F vs M),mesor,ARNTL,0.03108989005,0.08534492414474215,4,0.5
+nerve_tibial,all,sex (F vs M),mesor,CIART,0.02182333625,0.10647656573586713,4,0.25
+nerve_tibial,all,sex (F vs M),mesor,CLOCK,0.0129536845,0.03915997522456108,4,0.5
+nerve_tibial,all,sex (F vs M),mesor,CRY1,0.0289900585,0.09575577131715265,4,0.75
+nerve_tibial,all,sex (F vs M),mesor,CRY2,0.0016225219249999985,0.03717540691338968,4,0.25
+nerve_tibial,all,sex (F vs M),mesor,DBP,-0.0172492255,0.07372165108156911,4,0.5
+nerve_tibial,all,sex (F vs M),mesor,NPAS2,-0.0016227654999999997,0.07373837693678861,4,0.5
+nerve_tibial,all,sex (F vs M),mesor,NR1D1,-0.0740818225,0.0676351987925812,4,1.0
+nerve_tibial,all,sex (F vs M),mesor,NR1D2,-0.0038373477499999975,0.05139145790856781,4,0.25
+nerve_tibial,all,sex (F vs M),mesor,PER1,0.04144869775,0.012282337489610448,4,1.0
+nerve_tibial,all,sex (F vs M),mesor,PER2,-0.022365488000000003,0.07718717227892793,4,0.75
+nerve_tibial,all,sex (F vs M),mesor,PER3,-0.10834480925000001,0.20045493353387547,4,0.75
+nerve_tibial,all,sex (F vs M),mesor,RORA,0.048764198999999994,0.018193897834626088,4,1.0
+nerve_tibial,all,sex (F vs M),mesor,TEF,-0.048323753,0.03797649899337325,4,1.0
+nerve_tibial,fast,age (per 10 y),log_amp,ARNTL,-0.25885028100879126,0.20842839370928973,2,1.0
+nerve_tibial,fast,age (per 10 y),log_amp,CIART,-0.52963985629916,0.1729119606579433,2,1.0
+nerve_tibial,fast,age (per 10 y),log_amp,CLOCK,0.04775324428788255,0.62585150648799,2,0.5
+nerve_tibial,fast,age (per 10 y),log_amp,CRY1,0.4031973421455677,0.7738702254272517,2,0.5
+nerve_tibial,fast,age (per 10 y),log_amp,DBP,-0.30779607546177723,0.8370523570203142,2,0.5
+nerve_tibial,fast,age (per 10 y),log_amp,NPAS2,0.32916056936389715,0.03017807902909393,2,1.0
+nerve_tibial,fast,age (per 10 y),log_amp,NR1D1,-0.01374118975459479,0.23314834259648698,2,0.5
+nerve_tibial,fast,age (per 10 y),log_amp,NR1D2,-0.07822756617430152,0.16290064917066835,2,0.5
+nerve_tibial,fast,age (per 10 y),log_amp,PER1,0.1311000574570792,0.14458578833923613,2,1.0
+nerve_tibial,fast,age (per 10 y),log_amp,PER2,0.13058961380361028,0.2660205552589766,2,0.5
+nerve_tibial,fast,age (per 10 y),log_amp,PER3,0.07867674202123433,0.22257688582607318,2,0.5
+nerve_tibial,fast,age (per 10 y),log_amp,TEF,-0.12728331808140195,0.10672790840539723,2,1.0
+nerve_tibial,fast,age (per 10 y),mesor,ARNTL,-0.028079501282925176,0.06769144606930944,4,0.5
+nerve_tibial,fast,age (per 10 y),mesor,CIART,0.0011703183187677692,0.08687823070880198,4,0.5
+nerve_tibial,fast,age (per 10 y),mesor,CLOCK,0.0013276560899205601,0.028409317531758932,4,0.75
+nerve_tibial,fast,age (per 10 y),mesor,CRY1,-0.011615877936626053,0.057007174030614005,4,0.5
+nerve_tibial,fast,age (per 10 y),mesor,CRY2,0.010559000011225212,0.022938843467728696,4,0.75
+nerve_tibial,fast,age (per 10 y),mesor,DBP,0.07153787401747143,0.026782259737900257,4,1.0
+nerve_tibial,fast,age (per 10 y),mesor,NPAS2,-0.06019713683409531,0.07060204665270889,4,0.75
+nerve_tibial,fast,age (per 10 y),mesor,NR1D1,0.03634481256914649,0.06247720241663526,4,0.75
+nerve_tibial,fast,age (per 10 y),mesor,NR1D2,0.05562759854532384,0.013830283482497296,4,1.0
+nerve_tibial,fast,age (per 10 y),mesor,PER1,0.04235726429409509,0.04421149630805503,4,0.75
+nerve_tibial,fast,age (per 10 y),mesor,PER2,0.04285148856645502,0.07166986539993077,4,0.75
+nerve_tibial,fast,age (per 10 y),mesor,PER3,0.0663668425727398,0.03550387107580682,4,1.0
+nerve_tibial,fast,age (per 10 y),mesor,RORA,0.0029419159338661747,0.023799977034472834,4,0.5
+nerve_tibial,fast,age (per 10 y),mesor,TEF,0.012944204340082172,0.03480255550308838,4,0.75
+nerve_tibial,fast,hardy[2],log_amp,ARNTL,-0.73529335,0.04097903000078209,2,1.0
+nerve_tibial,fast,hardy[2],log_amp,CIART,0.2508844325,0.1868815870755137,2,1.0
+nerve_tibial,fast,hardy[2],log_amp,CLOCK,-0.145875198,0.13407477416764962,2,1.0
+nerve_tibial,fast,hardy[2],log_amp,CRY1,-0.35407183,0.770532519976299,2,0.5
+nerve_tibial,fast,hardy[2],log_amp,DBP,-0.103819751,0.20553107800228929,2,0.5
+nerve_tibial,fast,hardy[2],log_amp,NPAS2,-0.718900925,0.04176550951815686,2,1.0
+nerve_tibial,fast,hardy[2],log_amp,NR1D1,-0.82774377,0.18807508786274113,2,1.0
+nerve_tibial,fast,hardy[2],log_amp,NR1D2,0.402533315,0.24072944784147468,2,1.0
+nerve_tibial,fast,hardy[2],log_amp,PER1,0.686581635,1.0275545141580424,2,0.5
+nerve_tibial,fast,hardy[2],log_amp,PER2,-0.369039585,0.33386424975850776,2,1.0
+nerve_tibial,fast,hardy[2],log_amp,PER3,-0.147306026,0.15516518426805231,2,1.0
+nerve_tibial,fast,hardy[2],log_amp,TEF,0.23161982025,0.3064215554352573,2,1.0
+nerve_tibial,fast,hardy[2],mesor,ARNTL,-0.060304808999999994,0.12193253794386279,4,0.75
+nerve_tibial,fast,hardy[2],mesor,CIART,0.16911712125,0.15253770368631667,4,0.75
+nerve_tibial,fast,hardy[2],mesor,CLOCK,0.044381677499999994,0.04552721647544464,4,0.75
+nerve_tibial,fast,hardy[2],mesor,CRY1,0.15558730875,0.18298319312810665,4,0.75
+nerve_tibial,fast,hardy[2],mesor,CRY2,0.05480323125,0.02814220657885546,4,1.0
+nerve_tibial,fast,hardy[2],mesor,DBP,-0.009315796249999998,0.0441234182674803,4,0.5
+nerve_tibial,fast,hardy[2],mesor,NPAS2,-0.018736740999999994,0.17851490047169433,4,0.5
+nerve_tibial,fast,hardy[2],mesor,NR1D1,0.1565398375,0.34992492008551246,4,0.75
+nerve_tibial,fast,hardy[2],mesor,NR1D2,0.0905781775,0.0408425015584545,4,1.0
+nerve_tibial,fast,hardy[2],mesor,PER1,0.16980376,0.03738425461463244,4,1.0
+nerve_tibial,fast,hardy[2],mesor,PER2,0.13126975325,0.16653454382560107,4,1.0
+nerve_tibial,fast,hardy[2],mesor,PER3,0.08660761675,0.13780930562440294,4,0.75
+nerve_tibial,fast,hardy[2],mesor,RORA,0.006229246749999999,0.0933236127305572,4,0.75
+nerve_tibial,fast,hardy[2],mesor,TEF,0.05603319025,0.09425626673364783,4,0.75
+nerve_tibial,fast,sex (F vs M),log_amp,ARNTL,0.3630213539,0.5064783079848837,2,1.0
+nerve_tibial,fast,sex (F vs M),log_amp,CIART,-0.9260904,0.7386908369390945,2,1.0
+nerve_tibial,fast,sex (F vs M),log_amp,CLOCK,-0.32966486500000003,0.7934963854518251,2,0.5
+nerve_tibial,fast,sex (F vs M),log_amp,CRY1,-0.322814215,0.14458200334106058,2,1.0
+nerve_tibial,fast,sex (F vs M),log_amp,DBP,0.010482220000000042,0.9452679535591423,2,0.5
+nerve_tibial,fast,sex (F vs M),log_amp,NPAS2,0.3190131125,0.49146091756729904,2,0.5
+nerve_tibial,fast,sex (F vs M),log_amp,NR1D1,-0.20378784500000002,0.3093340791230434,2,0.5
+nerve_tibial,fast,sex (F vs M),log_amp,NR1D2,0.3203645385,0.490786131222867,2,0.5
+nerve_tibial,fast,sex (F vs M),log_amp,PER1,0.2678668795,0.37098770296023104,2,1.0
+nerve_tibial,fast,sex (F vs M),log_amp,PER2,-0.57541991,0.3799994529102276,2,1.0
+nerve_tibial,fast,sex (F vs M),log_amp,PER3,-0.756012585,0.20987709204396376,2,1.0
+nerve_tibial,fast,sex (F vs M),log_amp,TEF,-0.53202935,0.2932044431140923,2,1.0
+nerve_tibial,fast,sex (F vs M),mesor,ARNTL,0.075407635,0.016668877876862814,4,1.0
+nerve_tibial,fast,sex (F vs M),mesor,CIART,-0.12497183475000001,0.11658691099230696,4,0.75
+nerve_tibial,fast,sex (F vs M),mesor,CLOCK,0.018662072000000002,0.045081659031113344,4,0.5
+nerve_tibial,fast,sex (F vs M),mesor,CRY1,-0.07134885275,0.15296891275818347,4,0.75
+nerve_tibial,fast,sex (F vs M),mesor,CRY2,0.01498163925,0.0461977017433813,4,0.75
+nerve_tibial,fast,sex (F vs M),mesor,DBP,0.043058692674999996,0.10999547130980605,4,0.75
+nerve_tibial,fast,sex (F vs M),mesor,NPAS2,0.1293252255,0.23684067110018373,4,0.5
+nerve_tibial,fast,sex (F vs M),mesor,NR1D1,0.15187568275,0.3409662834551093,4,0.5
+nerve_tibial,fast,sex (F vs M),mesor,NR1D2,0.04452209975,0.07673690473884764,4,0.75
+nerve_tibial,fast,sex (F vs M),mesor,PER1,0.1799599335,0.12043434941086371,4,1.0
+nerve_tibial,fast,sex (F vs M),mesor,PER2,-0.11421995175,0.2976299367946407,4,0.5
+nerve_tibial,fast,sex (F vs M),mesor,PER3,-0.14447527775000002,0.17724428738979928,4,1.0
+nerve_tibial,fast,sex (F vs M),mesor,RORA,0.04357505075,0.042921713592071815,4,0.75
+nerve_tibial,fast,sex (F vs M),mesor,TEF,-0.014054318399999996,0.10123290780017093,4,0.75
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),log_amp,ARNTL,0.06040039385721446,0.4026219418499163,2,0.5
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),log_amp,CIART,-0.0573658386258911,0.10366055145395546,2,0.5
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),log_amp,CLOCK,-0.6842815066319933,0.1403702044825739,2,1.0
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),log_amp,CRY1,0.3279682766604639,0.50991053029103,2,0.5
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),log_amp,DBP,0.049649566954789254,0.555502271371427,2,0.5
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),log_amp,NPAS2,-0.23495030894298619,0.09030065112343351,2,1.0
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),log_amp,NR1D1,-0.009045436900582987,0.1478154631593957,2,0.5
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),log_amp,NR1D2,0.03208550251398994,0.09130638924305866,2,0.5
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),log_amp,PER1,-0.23877012512621956,0.031498098897031354,2,1.0
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),log_amp,PER2,-0.10055018930391216,0.24073398783530145,2,0.5
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),log_amp,PER3,0.40147851911148136,0.235478255614573,2,1.0
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),log_amp,TEF,0.41329504743757467,1.0108360792637738,2,0.5
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,ARNTL,-0.007796527961740412,0.031141354423618775,4,0.25
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,CIART,-0.02123793183663463,0.04093467567567472,4,0.5
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,CLOCK,-0.010863523318615937,0.02569919410649927,4,0.5
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,CRY1,0.06570528721376168,0.09832196340043958,4,0.5
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,CRY2,0.014076719361487963,0.013024355929663091,4,0.75
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,DBP,0.04204769127878665,0.030050234813582925,4,1.0
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,NPAS2,-0.07658891145123205,0.06458475545870968,4,1.0
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,NR1D1,-0.10173960964416069,0.12225828343354629,4,0.75
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,NR1D2,-0.011523218175610224,0.01809506076274127,4,0.75
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,PER1,0.00968781846581126,0.04365811087160086,4,0.5
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,PER2,0.10027930308510047,0.12162298028662881,4,0.75
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,PER3,0.04318024759348282,0.10852982016832552,4,0.75
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,RORA,0.000270207269254359,0.012966118601876998,4,0.75
+skin_not_sun_exposed_suprapubic,all,age (per 10 y),mesor,TEF,-0.01917569095068823,0.019870745623071,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[1],log_amp,ARNTL,-0.11262665,1.0222492121869526,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[1],log_amp,CIART,0.937121085,0.1370880856740455,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],log_amp,CLOCK,0.1823597765,0.24574660874897844,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],log_amp,CRY1,0.209465585,0.08983824888993805,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],log_amp,DBP,0.21478018499999998,0.7910871170848306,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[1],log_amp,NPAS2,-0.429505635,0.5839696011783289,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],log_amp,NR1D1,-0.32209757,0.09774672204955931,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],log_amp,NR1D2,0.778068362,1.1924181190641945,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[1],log_amp,PER1,-0.10013840000000007,1.9206212359059711,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[1],log_amp,PER2,-0.176900115,0.0051328103428872306,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],log_amp,PER3,-0.421961085,0.059455185720965066,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],log_amp,TEF,0.509082865,0.32734961841489363,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,ARNTL,-0.07702193175,0.10793675174403748,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,CIART,-0.332909985,0.1454685123403835,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,CLOCK,0.061098838600000004,0.052764719842197175,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,CRY1,0.6039758925000001,0.3566435269882504,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,CRY2,0.10060466675,0.07369501670310843,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,DBP,0.207240295,0.2509457372110813,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,NPAS2,-0.02458712249999999,0.3005846053044181,4,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,NR1D1,-0.11195787225,0.17524892853386034,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,NR1D2,-0.1403443735,0.08566971841983566,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,PER1,-0.3528196425,0.12116742475301889,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,PER2,0.44039044125,0.40284846380895734,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,PER3,0.098495693,0.10556434744595689,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,RORA,-0.19418048275000002,0.1717692508561654,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[1],mesor,TEF,-0.0668972585,0.07920375582565967,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[2],log_amp,ARNTL,-0.7754718580000001,1.039485494350091,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],log_amp,CIART,0.78976421,0.45600607797725695,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],log_amp,CLOCK,0.26355392499999997,0.0010739184239270195,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],log_amp,CRY1,0.031829230000000014,0.698385990827767,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[2],log_amp,DBP,0.564454915,1.0877980603004203,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[2],log_amp,NPAS2,-0.49427788500000003,0.6323636357293456,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],log_amp,NR1D1,-0.66698,0.5098036245602026,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],log_amp,NR1D2,1.22116245,0.05732210619163424,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],log_amp,PER1,1.6657738,0.9187596799875797,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],log_amp,PER2,0.19721228,0.626893323319798,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[2],log_amp,PER3,-0.66537422,0.4386273590525434,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],log_amp,TEF,0.7192639000000001,0.02682522711516153,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,ARNTL,-0.0627366435,0.03389012456829719,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,CIART,-0.03507908625,0.11070486337682477,4,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,CLOCK,0.05753424149999999,0.04701140852888885,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,CRY1,0.2781697125,0.523620224800181,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,CRY2,0.13780782,0.10001554585392679,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,DBP,0.472410085,0.18423073191739636,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,NPAS2,-0.1346948575,0.22517632545085603,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,NR1D1,0.24097516,0.5036758894747121,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,NR1D2,0.0577716905,0.07742272237706642,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,PER1,0.013213190999999999,0.24745439890749554,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,PER2,0.20629986775,0.4849023209276713,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,PER3,0.18390822750000002,0.27404153570090933,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,RORA,-0.02948316775,0.07896476140241866,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[2],mesor,TEF,-0.07252542220000001,0.11671031168291549,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[3],log_amp,ARNTL,0.06274779999999996,0.6538506096974139,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[3],log_amp,CIART,0.022707962499999998,0.1303701929506454,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[3],log_amp,CLOCK,0.88169085,0.15579167521932938,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],log_amp,CRY1,-0.14266065,0.397664238954338,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[3],log_amp,DBP,1.0137989,0.6523577658609729,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],log_amp,NPAS2,0.13406729500000003,0.38853422468808135,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[3],log_amp,NR1D1,-0.49046825000000005,0.10867272390041947,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],log_amp,NR1D2,0.339204362,0.3649180645206193,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],log_amp,PER1,1.19182693,0.6872049355609328,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],log_amp,PER2,-0.05386302,0.24361462028541103,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[3],log_amp,PER3,-0.79555958,0.5287979552007069,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],log_amp,TEF,0.39560864500000004,0.18797867385312636,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,ARNTL,-0.05479442375,0.09481793447152738,4,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,CIART,0.16307456250000002,0.24847127028884428,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,CLOCK,-0.078242513,0.037075611964724906,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,CRY1,0.3614288,0.2246854657819706,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,CRY2,0.170998325,0.09518573124200444,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,DBP,0.55896479,0.324644374429018,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,NPAS2,-0.12569304925,0.16655540303090563,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,NR1D1,0.2977601365,0.2527043885740157,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,NR1D2,0.178032385,0.0766281035310399,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,PER1,0.149314825225,0.11552721302996784,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,PER2,0.09204579999999998,0.3303030722833685,4,0.25
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,PER3,0.1766746775,0.40891519211419675,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,RORA,0.035862964,0.08581215847419532,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[3],mesor,TEF,-0.0566383985,0.08263631604563562,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[4],log_amp,ARNTL,-0.78269055,0.5552087187471437,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],log_amp,CIART,0.6830484,0.49500486957946177,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],log_amp,CLOCK,-0.6507209700000001,0.011549556894781746,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],log_amp,CRY1,-0.51016768,0.8157850205198602,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[4],log_amp,DBP,0.70482826,1.4606261281597352,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[4],log_amp,NPAS2,-0.43088837999999996,0.3273901144202521,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],log_amp,NR1D1,-0.83039285,0.599183689469135,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],log_amp,NR1D2,1.1900946499999998,0.23732448120268787,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],log_amp,PER1,1.7010198,0.6115065100555515,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],log_amp,PER2,0.025457019999999997,0.6564306726363363,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[4],log_amp,PER3,-0.3065491,0.9064684105057402,2,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[4],log_amp,TEF,0.319625265,0.3024536190151145,2,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,ARNTL,0.032557063750000004,0.07113577426411966,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,CIART,0.058392261,0.10959399226539232,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,CLOCK,-0.07865273325,0.032587743754178736,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,CRY1,0.0344983935,0.3464238095169961,4,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,CRY2,0.08170508674999999,0.09663326928668706,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,DBP,0.48503724,0.12769319828228595,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,NPAS2,0.05087565749999999,0.17557615121255246,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,NR1D1,0.4395568525,0.22582330832791456,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,NR1D2,0.18377658,0.0562950511329874,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,PER1,0.15252533499999998,0.22670136688932638,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,PER2,-0.1075337915,0.4416960966336793,4,0.75
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,PER3,0.031001832250000014,0.380265846933955,4,0.5
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,RORA,-0.0484071395,0.04322133300652192,4,1.0
+skin_not_sun_exposed_suprapubic,all,hardy[4],mesor,TEF,-0.12073644800000001,0.11192706549667633,4,1.0
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),log_amp,ARNTL,-0.3897911161,0.5480116924487106,2,1.0
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),log_amp,CIART,0.8188592,0.07828563022279379,2,1.0
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),log_amp,CLOCK,0.183080451,0.2823176135646963,2,0.5
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),log_amp,CRY1,-0.37969323,0.48420016482584644,2,1.0
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),log_amp,DBP,1.3061091500000002,0.5659223764316138,2,1.0
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),log_amp,NPAS2,-0.22305658,0.437324783508784,2,0.5
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),log_amp,NR1D1,-0.1990502,0.1105839203928817,2,1.0
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),log_amp,NR1D2,1.0604954,0.23497243191642705,2,1.0
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),log_amp,PER1,0.8366559,0.25004200879436245,2,1.0
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),log_amp,PER2,-0.349516125,0.05786020738104944,2,1.0
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),log_amp,PER3,-0.364755965,0.754503349698819,2,0.5
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),log_amp,TEF,0.027421099999999976,1.0154381475385292,2,0.5
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,ARNTL,0.09191255225,0.014255925028156313,4,1.0
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,CIART,0.007263673499999998,0.11139472173161415,4,0.5
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,CLOCK,0.0009437907499999995,0.03450832300481787,4,0.5
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,CRY1,-0.021493210250000006,0.18434786694390487,4,0.25
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,CRY2,-0.020182607875,0.04635281438745829,4,0.75
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,DBP,-0.09728904025,0.048538101519657664,4,1.0
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,NPAS2,0.07323841475000001,0.1092921052710824,4,0.75
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,NR1D1,0.31829371,0.290087737817542,4,0.75
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,NR1D2,0.05552643755,0.09848495773685693,4,0.75
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,PER1,0.0916827385,0.09186572857142578,4,0.75
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,PER2,-0.00795495375,0.06958249238466639,4,0.5
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,PER3,-0.097012039,0.17569895158325285,4,0.75
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,RORA,0.08374485125,0.08143203866046059,4,1.0
+skin_not_sun_exposed_suprapubic,all,sex (F vs M),mesor,TEF,-0.060777230499999994,0.05064022663419694,4,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),log_amp,ARNTL,0.23132423025164206,0.21928394729871042,2,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),log_amp,CIART,0.7328164558533505,0.7775934636066939,2,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),log_amp,CLOCK,0.2943476942623605,0.18759567615272227,2,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),log_amp,CRY1,-0.07325111351077002,0.10382158120545147,2,0.5
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),log_amp,DBP,0.3182763988323329,0.30499042872769316,2,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),log_amp,NPAS2,-0.2138708778515273,0.10831141659224544,2,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),log_amp,NR1D1,-0.08230546085597928,0.5352601828587041,2,0.5
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),log_amp,NR1D2,-0.5538539780069067,0.3986927216084484,2,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),log_amp,PER1,-0.1964756729042729,0.783007630061006,2,0.5
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),log_amp,PER2,-0.00035828876977098134,0.07652726175670169,2,0.5
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),log_amp,PER3,-0.06483439067558679,0.3825516274047845,2,0.5
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),log_amp,TEF,0.06650984254027022,0.0023988773347480325,2,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,ARNTL,0.005557706478904646,0.028517890898434515,4,0.5
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,CIART,0.12168712769835632,0.1424080052563956,4,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,CLOCK,-0.02272937988406383,0.031678152494990876,4,0.75
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,CRY1,0.06140760244939042,0.07051267288284356,4,0.75
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,CRY2,0.08510999596737698,0.02896060879026752,4,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,DBP,0.05860109810712686,0.004350878198090561,4,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,NPAS2,-0.048923298809804346,0.16310533951224132,4,0.25
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,NR1D1,-0.05434554130027091,0.25209945484597934,4,0.25
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,NR1D2,0.021786826480768587,0.05812500709535808,4,0.75
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,PER1,0.09912580835266828,0.0038307178503745134,4,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,PER2,0.14412587217488737,0.19567391639009,4,0.75
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,PER3,0.07608109508217081,0.22446790123198176,4,0.5
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,RORA,0.06168469427780223,0.023231042883570207,4,1.0
+skin_not_sun_exposed_suprapubic,fast,age (per 10 y),mesor,TEF,0.022266120610429752,0.02879277003248543,4,0.75
+skin_not_sun_exposed_suprapubic,fast,hardy[2],log_amp,ARNTL,-0.53785381,0.18889091938260294,2,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],log_amp,CIART,0.118154385,0.4053864601877947,2,0.5
+skin_not_sun_exposed_suprapubic,fast,hardy[2],log_amp,CLOCK,0.28118475,0.11299424942004789,2,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],log_amp,CRY1,-0.728048285,0.22273578643343428,2,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],log_amp,DBP,0.8468116,1.8368961160582218,2,0.5
+skin_not_sun_exposed_suprapubic,fast,hardy[2],log_amp,NPAS2,-0.6441764999999999,0.17641295956839448,2,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],log_amp,NR1D1,-0.207547655,0.047272739972750145,2,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],log_amp,NR1D2,0.797127445,1.4725000278639795,2,0.5
+skin_not_sun_exposed_suprapubic,fast,hardy[2],log_amp,PER1,0.264951085,0.12486145989414209,2,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],log_amp,PER2,0.053201860000000004,0.26750929991448746,2,0.5
+skin_not_sun_exposed_suprapubic,fast,hardy[2],log_amp,PER3,0.0190216285,0.0050434285102113315,2,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],log_amp,TEF,1.0027656999999999,0.5406899073410748,2,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,ARNTL,-0.173994555,0.09173258672596869,4,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,CIART,0.3228858325,0.14870443211455026,4,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,CLOCK,-0.009692241,0.048159010071912305,4,0.5
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,CRY1,-0.1224173535,0.13709387888039923,4,0.75
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,CRY2,-0.049213456,0.06503099886988298,4,0.75
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,DBP,0.27900584500000003,0.10236077065947694,4,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,NPAS2,-0.14205891425,0.08132682768582185,4,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,NR1D1,0.1225181145,0.13401634230331216,4,0.75
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,NR1D2,0.1769683425,0.08593143456677475,4,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,PER1,0.23165713875,0.10815596131634571,4,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,PER2,-0.03933746499999998,0.4042237095552027,4,0.5
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,PER3,0.26628050999999997,0.08686380097333489,4,1.0
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,RORA,-0.0430946395,0.060617267277988524,4,0.75
+skin_not_sun_exposed_suprapubic,fast,hardy[2],mesor,TEF,-0.06790157150000001,0.06131670364426979,4,0.75
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),log_amp,ARNTL,-0.7707318999999999,0.45361578835626953,2,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),log_amp,CIART,-0.129477802,0.28844228824640816,2,0.5
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),log_amp,CLOCK,0.245503435,0.05020245307283352,2,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),log_amp,CRY1,-0.801139115,0.8023546090845969,2,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),log_amp,DBP,0.006950734999999986,0.8207970570245208,2,0.5
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),log_amp,NPAS2,-0.25154301999999995,0.3980473494083848,2,0.5
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),log_amp,NR1D1,-0.18432609500000002,0.11861671706677121,2,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),log_amp,NR1D2,0.50070826,0.025002786665873862,2,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),log_amp,PER1,-0.569670645,0.27667505135746523,2,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),log_amp,PER2,0.39008618000000006,0.35709312471348675,2,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),log_amp,PER3,0.35639502250000005,0.4742548599764156,2,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),log_amp,TEF,0.3675967,0.10589312956998205,2,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,ARNTL,0.035215051975,0.07521508177309093,4,0.5
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,CIART,0.06900572825,0.059404573496194595,4,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,CLOCK,-0.009788811000000001,0.0654661955417841,4,0.75
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,CRY1,0.09474264,0.014818858158627924,4,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,CRY2,0.097718708,0.05352221558393863,4,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,DBP,0.012675325000000001,0.03593452342238046,4,0.75
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,NPAS2,0.06452588575,0.18683792862819137,4,0.5
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,NR1D1,0.022295608924999995,0.17743558340026397,4,0.5
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,NR1D2,0.05681389075,0.08190205026932343,4,0.75
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,PER1,0.131118188,0.07650349870514474,4,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,PER2,0.2522309235,0.29334379748858835,4,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,PER3,0.07695219625,0.24003041466511182,4,0.75
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,RORA,0.11081814375,0.011028445303746259,4,1.0
+skin_not_sun_exposed_suprapubic,fast,sex (F vs M),mesor,TEF,-0.1259500325,0.03596348134711968,4,1.0
+skin_sun_exposed_lower_leg,all,age (per 10 y),log_amp,ARNTL,-0.10066047455260199,0.7521432234343873,2,0.5
+skin_sun_exposed_lower_leg,all,age (per 10 y),log_amp,CIART,-0.25221736245268866,0.6438171558912129,2,0.5
+skin_sun_exposed_lower_leg,all,age (per 10 y),log_amp,CLOCK,0.4447167015129152,0.326822267769678,2,1.0
+skin_sun_exposed_lower_leg,all,age (per 10 y),log_amp,CRY1,0.20307556020083364,0.47539582662884755,2,0.5
+skin_sun_exposed_lower_leg,all,age (per 10 y),log_amp,DBP,0.030932689744142122,0.6479375323906382,2,0.5
+skin_sun_exposed_lower_leg,all,age (per 10 y),log_amp,NPAS2,-0.0604075618718167,0.7119470951358892,2,0.5
+skin_sun_exposed_lower_leg,all,age (per 10 y),log_amp,NR1D1,0.1523823002035854,0.2846502651731962,2,0.5
+skin_sun_exposed_lower_leg,all,age (per 10 y),log_amp,NR1D2,0.05142258661931201,0.5982921809334479,2,0.5
+skin_sun_exposed_lower_leg,all,age (per 10 y),log_amp,PER1,-0.14681255282994732,0.24898170094578034,2,0.5
+skin_sun_exposed_lower_leg,all,age (per 10 y),log_amp,PER2,0.04485957924388861,0.07956802409104222,2,0.5
+skin_sun_exposed_lower_leg,all,age (per 10 y),log_amp,PER3,-0.2274100825774699,0.30968388651076806,2,1.0
+skin_sun_exposed_lower_leg,all,age (per 10 y),log_amp,TEF,-0.3271540552785878,0.31677098873244103,2,1.0
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,ARNTL,-0.04158027294260399,0.056437779007670344,4,0.75
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,CIART,0.07302196972088507,0.04970488439704142,4,1.0
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,CLOCK,-0.004517309984223685,0.03269724934461229,4,0.5
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,CRY1,0.02338949131521473,0.11168137773859588,4,0.75
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,CRY2,0.028773484946411514,0.04052345166512674,4,0.75
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,DBP,-0.007481808736234297,0.04951058506072905,4,0.5
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,NPAS2,-0.06190207964180611,0.2229380750952029,4,0.25
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,NR1D1,0.005543126882935984,0.19384538937916998,4,0.75
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,NR1D2,0.008269873849747977,0.041101217458033024,4,0.5
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,PER1,0.03015246642891057,0.0242016293741358,4,1.0
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,PER2,0.07224527962722448,0.20943759921421262,4,0.75
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,PER3,0.09210088303506361,0.20066085637488285,4,0.75
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,RORA,-0.024591882713017505,0.03227490587399997,4,0.75
+skin_sun_exposed_lower_leg,all,age (per 10 y),mesor,TEF,0.05361013333905588,0.02864659279215187,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],log_amp,ARNTL,0.0763989105,0.07479689193653316,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],log_amp,CIART,0.022399434999999995,0.6851280144521639,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[1],log_amp,CLOCK,-0.50383879,0.06858630307380034,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],log_amp,CRY1,-0.23746692,0.2468640163612688,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],log_amp,DBP,-0.052720925,0.1205799707604644,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[1],log_amp,NPAS2,-0.035759730999999996,0.11357698884634582,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[1],log_amp,NR1D1,0.118217687,0.003556969140897632,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],log_amp,NR1D2,0.157176216,0.19114115094922712,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],log_amp,PER1,0.29238087,0.01693227998734369,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],log_amp,PER2,-0.614922185,0.14120132582020767,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],log_amp,PER3,-0.487884975,0.5740549175880573,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],log_amp,TEF,0.3712295,0.12902365304276578,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,ARNTL,0.0769877635,0.0901264260661651,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,CIART,-0.2200145375,0.399033511230813,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,CLOCK,0.07295758684999999,0.05033000773845273,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,CRY1,0.13033691649999998,0.12129696174528794,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,CRY2,0.2448256125,0.11828011983791371,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,DBP,0.056478686,0.19852696407816955,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,NPAS2,0.0888919315,0.08390799261894236,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,NR1D1,0.1029087825,0.19190322058532325,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,NR1D2,-0.11609694100000001,0.16426232119370623,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,PER1,-0.219240475,0.06391729590130071,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,PER2,0.07216048500000001,0.24211088552545637,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,PER3,-0.118200574,0.1644014497253399,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,RORA,0.13095342100000001,0.1036208778628218,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[1],mesor,TEF,-0.08629604874999999,0.11651020680097117,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[2],log_amp,ARNTL,0.54869605,0.002320512323819931,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],log_amp,CIART,-0.1299262355,0.1996579699930134,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[2],log_amp,CLOCK,-0.92075184,0.9630526507712064,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],log_amp,CRY1,-0.513336185,1.2550362103879698,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[2],log_amp,DBP,0.268816088,0.34558445556122036,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],log_amp,NPAS2,0.05399174,0.23683673308716113,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[2],log_amp,NR1D1,0.60575008,0.18206865416276574,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],log_amp,NR1D2,0.386483105,0.06919657158130343,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],log_amp,PER1,1.24197067,0.3743241290316105,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],log_amp,PER2,-0.87845561,0.09592078849277254,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],log_amp,PER3,-1.25750285,0.20427713867715355,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],log_amp,TEF,0.523589505,0.5142664512279155,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,ARNTL,0.052741887499999994,0.1964648443436205,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,CIART,-0.012891201749999998,0.33583911283836776,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,CLOCK,0.03762692125,0.039670694884865944,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,CRY1,-0.011697867500000007,0.31598989229391006,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,CRY2,0.17414562,0.03945992283191727,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,DBP,0.136629736,0.08429094214860684,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,NPAS2,0.15764321375,0.23596954849058072,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,NR1D1,0.6890089799999999,0.6440889270833965,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,NR1D2,0.0629901055,0.09514768231743531,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,PER1,0.012687514999999996,0.1110470592571271,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,PER2,-0.005038739999999986,0.44784874325725904,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,PER3,0.00401563625000001,0.46861211867833913,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,RORA,0.0707981305,0.016220864134339746,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[2],mesor,TEF,-0.07094345749999999,0.14896087164557406,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[3],log_amp,ARNTL,-0.079125345,0.2786981828533894,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[3],log_amp,CIART,-0.35415542699999997,0.4939337060435542,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],log_amp,CLOCK,-1.62801435,1.1139903773489452,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],log_amp,CRY1,0.62614622,0.4406293197714387,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],log_amp,DBP,-1.06698982,1.9043663783571398,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[3],log_amp,NPAS2,-0.11523317,0.01492763226267984,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],log_amp,NR1D1,0.725267365,0.5598333173042566,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],log_amp,NR1D2,0.159534515,0.03385295635240813,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],log_amp,PER1,1.45782547,1.1049604540475655,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],log_amp,PER2,-0.683518225,0.13211240152900577,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],log_amp,PER3,-1.0183519300000001,0.8041379111735462,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],log_amp,TEF,0.276932045,0.054652134625484204,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,ARNTL,0.051222514999999996,0.16858507123062322,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,CIART,-0.0459763425,0.47138023263080886,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,CLOCK,-0.06628730099999999,0.04173291797157118,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,CRY1,-0.0945054175,0.42030708096297253,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,CRY2,0.1615250425,0.20084321209181694,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,DBP,0.2401827825,0.09202479673366462,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,NPAS2,0.09296373175,0.17762653936823128,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,NR1D1,0.54746472425,0.6265061895094497,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,NR1D2,0.0175475375,0.14045401701699559,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,PER1,0.1420618505,0.1497326778363425,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,PER2,0.1380052925,0.38068435041047605,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,PER3,0.1418063075,0.27966918760248854,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,RORA,0.03825275845000001,0.03715478359701202,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[3],mesor,TEF,-0.027691624999999997,0.14186564223064713,4,0.5
+skin_sun_exposed_lower_leg,all,hardy[4],log_amp,ARNTL,-0.5604625649999999,0.36578794304019435,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[4],log_amp,CIART,-0.33664051500000003,0.74811308429588,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[4],log_amp,CLOCK,-0.05728411499999998,0.3850076003275915,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[4],log_amp,CRY1,-0.138503575,0.3740673007776158,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[4],log_amp,DBP,0.454730815,1.0580551691847266,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[4],log_amp,NPAS2,-0.47945247999999996,0.47974284651995885,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[4],log_amp,NR1D1,0.03372724800000001,0.2207363387720393,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[4],log_amp,NR1D2,0.11815072500000001,0.24071896851897742,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[4],log_amp,PER1,-0.18873038,0.08250223523822976,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[4],log_amp,PER2,-0.136277453,0.13666222637243525,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[4],log_amp,PER3,-0.50787942,0.27868679136314445,2,1.0
+skin_sun_exposed_lower_leg,all,hardy[4],log_amp,TEF,-0.0196136725,0.07973578955838848,2,0.5
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,ARNTL,-0.03873205575,0.06294930839574531,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,CIART,0.09954807075000001,0.11104747684087767,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,CLOCK,-0.11936104425,0.07228264456254581,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,CRY1,0.039220954999999995,0.14980198462734587,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,CRY2,0.1368788485,0.0537788423951128,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,DBP,0.2748203175,0.04870378412512207,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,NPAS2,-0.03702706774999999,0.13008345605295946,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,NR1D1,0.30552013,0.362361867906129,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,NR1D2,0.15077134250000002,0.05011450822530098,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,PER1,0.2015570625,0.015406183790650157,4,1.0
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,PER2,0.15488136,0.28835175626810294,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,PER3,0.09655759,0.2624098082936943,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,RORA,-0.01753910065,0.0279396174165086,4,0.75
+skin_sun_exposed_lower_leg,all,hardy[4],mesor,TEF,-0.011761326499999999,0.04216357888011271,4,0.5
+skin_sun_exposed_lower_leg,all,hardy__missing,log_amp,ARNTL,0.090399215,0.23994600181219117,2,0.5
+skin_sun_exposed_lower_leg,all,hardy__missing,log_amp,CIART,-0.6657879200000001,0.07711737668318866,2,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,log_amp,CLOCK,-1.3081248,0.6947232201276275,2,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,log_amp,CRY1,-0.5351807499999999,1.536681557736802,2,0.5
+skin_sun_exposed_lower_leg,all,hardy__missing,log_amp,DBP,-0.8967700599999999,1.6459309555015504,2,0.5
+skin_sun_exposed_lower_leg,all,hardy__missing,log_amp,NPAS2,0.60283096,0.366524401823868,2,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,log_amp,NR1D1,1.75693405,0.39339143309193325,2,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,log_amp,NR1D2,-0.080789097,0.06704843492017407,2,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,log_amp,PER1,1.3184744,0.2224415098043078,2,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,log_amp,PER2,-0.55119813,0.2923306288381732,2,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,log_amp,PER3,-1.8573331,0.1259095547784201,2,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,log_amp,TEF,-0.24319999,0.4728012641018643,2,0.5
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,ARNTL,0.015056342499999976,0.396701804601743,4,0.5
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,CIART,-0.8814433450000001,0.5131857170475422,4,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,CLOCK,-0.11277288375,0.08079966283779895,4,0.75
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,CRY1,-0.1883487275,0.23651148565623406,4,0.75
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,CRY2,-0.1062423275,0.07873551072774485,4,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,DBP,-0.3739137775,0.17817476822945955,4,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,NPAS2,0.09999776249999999,0.5680518579776074,4,0.5
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,NR1D1,-0.80636834375,0.6914718171311461,4,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,NR1D2,-0.2961222075,0.2784553939081271,4,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,PER1,-0.5530243975,0.23711876370441262,4,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,PER2,-0.0144684125,0.28054689074014366,4,0.5
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,PER3,-0.31738819975,0.3840632613164878,4,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,RORA,-0.1490217,0.0519324594995853,4,1.0
+skin_sun_exposed_lower_leg,all,hardy__missing,mesor,TEF,-0.21254604949999997,0.27841099539457986,4,0.75
+skin_sun_exposed_lower_leg,all,sex (F vs M),log_amp,ARNTL,-0.143158285,0.12894603393139492,2,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),log_amp,CIART,0.084950375,0.8163642470396693,2,0.5
+skin_sun_exposed_lower_leg,all,sex (F vs M),log_amp,CLOCK,-0.12438545899999999,0.0995251535869995,2,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),log_amp,CRY1,-0.182644385,0.06966057505111804,2,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),log_amp,DBP,0.21423335999999998,0.030612759735773574,2,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),log_amp,NPAS2,-0.269506415,0.10146654919587268,2,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),log_amp,NR1D1,-0.208822815,0.012499151804440571,2,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),log_amp,NR1D2,0.7534523,0.5767294429218782,2,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),log_amp,PER1,0.17422271500000003,0.7810323697833417,2,0.5
+skin_sun_exposed_lower_leg,all,sex (F vs M),log_amp,PER2,-0.26742167,0.13488330551710243,2,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),log_amp,PER3,-0.31333658,0.0938659644709157,2,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),log_amp,TEF,-0.049000964999999994,0.3699848197764352,2,0.5
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,ARNTL,0.07069410475,0.026104987008846125,4,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,CIART,0.06576941374999999,0.06957185475924842,4,0.75
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,CLOCK,-0.003846080249999998,0.08875787498136115,4,0.5
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,CRY1,0.028064281000000003,0.06429397900500909,4,0.75
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,CRY2,0.08160804,0.024534219104647835,4,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,DBP,-0.045491269,0.08745188914319045,4,0.75
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,NPAS2,0.0179318366,0.04932689639154833,4,0.5
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,NR1D1,0.03890770475,0.03311809463010604,4,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,NR1D2,0.0731558255,0.0836688731717336,4,0.75
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,PER1,0.10356788475,0.0037755994661470963,4,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,PER2,0.039729665250000004,0.12533900406750623,4,0.5
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,PER3,0.00824154585,0.00856429863352263,4,0.75
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,RORA,0.1025697125,0.028450278242971395,4,1.0
+skin_sun_exposed_lower_leg,all,sex (F vs M),mesor,TEF,-0.004688391975000001,0.01850793416338388,4,0.5
+skin_sun_exposed_lower_leg,fast,age (per 10 y),log_amp,ARNTL,0.1529237500137086,0.7631470065545983,2,0.5
+skin_sun_exposed_lower_leg,fast,age (per 10 y),log_amp,CIART,0.3054210921795284,0.25505281474499675,2,1.0
+skin_sun_exposed_lower_leg,fast,age (per 10 y),log_amp,CLOCK,0.3370027967491901,0.1716482929197184,2,1.0
+skin_sun_exposed_lower_leg,fast,age (per 10 y),log_amp,CRY1,0.177973362712532,0.21853138236970643,2,1.0
+skin_sun_exposed_lower_leg,fast,age (per 10 y),log_amp,DBP,0.24817131197092834,0.047262354580878484,2,1.0
+skin_sun_exposed_lower_leg,fast,age (per 10 y),log_amp,NPAS2,0.5655680500071887,0.4680503376063484,2,1.0
+skin_sun_exposed_lower_leg,fast,age (per 10 y),log_amp,NR1D1,-0.015278361088244763,0.4264852622113255,2,0.5
+skin_sun_exposed_lower_leg,fast,age (per 10 y),log_amp,NR1D2,0.8679625764258485,0.306445526560098,2,1.0
+skin_sun_exposed_lower_leg,fast,age (per 10 y),log_amp,PER1,-0.04378963529822605,0.6109847173222416,2,0.5
+skin_sun_exposed_lower_leg,fast,age (per 10 y),log_amp,PER2,-0.23871611698061193,0.052042523348015665,2,1.0
+skin_sun_exposed_lower_leg,fast,age (per 10 y),log_amp,PER3,0.5549138617035348,0.29539807692789666,2,1.0
+skin_sun_exposed_lower_leg,fast,age (per 10 y),log_amp,TEF,0.1672942651938505,0.001445708886583233,2,1.0
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,ARNTL,-0.01807589883981528,0.023011732683498983,4,0.75
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,CIART,-0.045456199032112496,0.06429180292096341,4,0.75
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,CLOCK,-0.021692788712391078,0.020962503579676543,4,0.75
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,CRY1,0.005173225370619068,0.05442975338026685,4,0.25
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,CRY2,0.0017968824442903485,0.016411164615323465,4,0.25
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,DBP,-0.029364359868581453,0.0313104816541048,4,1.0
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,NPAS2,-0.03805976616314508,0.0491766861903633,4,0.75
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,NR1D1,0.055085743268095545,0.0689434086296721,4,0.75
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,NR1D2,-0.04138593485085993,0.02211445208835933,4,1.0
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,PER1,0.023041820883785077,0.03236937895328115,4,0.75
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,PER2,0.025823495442015593,0.08380466019132538,4,0.75
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,PER3,0.03702973859993259,0.04016468270983232,4,0.75
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,RORA,0.013468262150083187,0.02572817450788353,4,0.5
+skin_sun_exposed_lower_leg,fast,age (per 10 y),mesor,TEF,-0.04570702017393501,0.049013196222040374,4,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],log_amp,ARNTL,-0.032640525000000004,0.24797891869423347,2,0.5
+skin_sun_exposed_lower_leg,fast,hardy[2],log_amp,CIART,0.90763319,0.9007672206610674,2,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],log_amp,CLOCK,0.49419639,0.5038801062013891,2,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],log_amp,CRY1,-1.1798435,0.8908865206226998,2,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],log_amp,DBP,0.307143052,0.4794422243145781,2,0.5
+skin_sun_exposed_lower_leg,fast,hardy[2],log_amp,NPAS2,-0.8531838,0.35479393873018744,2,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],log_amp,NR1D1,-0.889151815,0.1232963073182569,2,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],log_amp,NR1D2,0.49926311,0.1621729462240117,2,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],log_amp,PER1,0.12835973499999997,0.5049206350431086,2,0.5
+skin_sun_exposed_lower_leg,fast,hardy[2],log_amp,PER2,-0.208820375,0.041412818797836606,2,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],log_amp,PER3,-0.20816401999999998,0.851074117815926,2,0.5
+skin_sun_exposed_lower_leg,fast,hardy[2],log_amp,TEF,0.8536602,0.27969311744985786,2,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,ARNTL,-0.07978069,0.12701508042474038,4,0.75
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,CIART,0.14441075500000003,0.4675879561189502,4,0.75
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,CLOCK,0.03217027475,0.00630844936285283,4,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,CRY1,0.094895452,0.1635073977181121,4,0.75
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,CRY2,0.004361341999999999,0.056619484007350465,4,0.5
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,DBP,0.12597046915000001,0.11399419165325508,4,0.75
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,NPAS2,-0.050277709999999996,0.17270293371232598,4,0.5
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,NR1D1,-0.017691553750000005,0.26113306342408227,4,0.5
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,NR1D2,0.2680752625,0.07322427273677462,4,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,PER1,0.140974126,0.06235107156969508,4,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,PER2,0.23720344,0.05297798500752051,4,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,PER3,0.3238772625,0.15383475363109628,4,1.0
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,RORA,0.05538576925,0.06160067885997542,4,0.75
+skin_sun_exposed_lower_leg,fast,hardy[2],mesor,TEF,0.025288330749999997,0.1210292231361312,4,0.75
+skin_sun_exposed_lower_leg,fast,sex (F vs M),log_amp,ARNTL,0.33534295000000003,0.9528910879193514,2,0.5
+skin_sun_exposed_lower_leg,fast,sex (F vs M),log_amp,CIART,1.12281739,1.0138051692801928,2,1.0
+skin_sun_exposed_lower_leg,fast,sex (F vs M),log_amp,CLOCK,-0.37024182499999997,0.8419169365071362,2,0.5
+skin_sun_exposed_lower_leg,fast,sex (F vs M),log_amp,CRY1,0.353670045,0.12322682700593748,2,1.0
+skin_sun_exposed_lower_leg,fast,sex (F vs M),log_amp,DBP,0.23572806000000002,0.6297725489957047,2,0.5
+skin_sun_exposed_lower_leg,fast,sex (F vs M),log_amp,NPAS2,-0.17788178500000001,0.9236337882435021,2,0.5
+skin_sun_exposed_lower_leg,fast,sex (F vs M),log_amp,NR1D1,-0.409893725,0.24272264043628328,2,1.0
+skin_sun_exposed_lower_leg,fast,sex (F vs M),log_amp,NR1D2,0.13795767,0.7471903028753637,2,0.5
+skin_sun_exposed_lower_leg,fast,sex (F vs M),log_amp,PER1,-0.382664815,0.9089021659805672,2,0.5
+skin_sun_exposed_lower_leg,fast,sex (F vs M),log_amp,PER2,-0.5024778999999999,0.29416187983795444,2,1.0
+skin_sun_exposed_lower_leg,fast,sex (F vs M),log_amp,PER3,-0.280856868,0.23858914450926724,2,1.0
+skin_sun_exposed_lower_leg,fast,sex (F vs M),log_amp,TEF,0.71125998,0.48297800146524356,2,1.0
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,ARNTL,0.17777206750000002,0.13601276278041494,4,1.0
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,CIART,0.07253025207500001,0.1373616462701137,4,0.75
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,CLOCK,-0.019060690100000003,0.026373255130643498,4,0.75
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,CRY1,0.040409873500000006,0.21346834518004293,4,0.5
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,CRY2,0.09941693025000001,0.09498512290684549,4,1.0
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,DBP,-0.060371089499999996,0.12594171535611892,4,0.5
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,NPAS2,0.17034134,0.11836491558107497,4,1.0
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,NR1D1,0.041469849999999996,0.16055383229732761,4,0.5
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,NR1D2,0.035070224250000004,0.13559009040844727,4,0.75
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,PER1,0.1163844675,0.1510253339865504,4,0.75
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,PER2,-0.071465021,0.15720365768211703,4,0.75
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,PER3,-0.08838984975,0.13260641931549175,4,0.75
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,RORA,0.14195953,0.07666297568235443,4,1.0
+skin_sun_exposed_lower_leg,fast,sex (F vs M),mesor,TEF,-0.021474358000000002,0.09706848252774193,4,0.5
+thyroid,all,age (per 10 y),log_amp,ARNTL,-0.04671834576514714,0.2084485844799578,4,0.5
+thyroid,all,age (per 10 y),log_amp,CIART,-0.03649347411027787,0.2702069907317388,4,0.5
+thyroid,all,age (per 10 y),log_amp,CLOCK,-0.03923545544613741,0.1470489704651213,2,0.5
+thyroid,all,age (per 10 y),log_amp,CRY1,-0.03856686080092395,0.020476753825718955,2,1.0
+thyroid,all,age (per 10 y),log_amp,DBP,0.2759563246364254,0.2766798926797816,4,0.75
+thyroid,all,age (per 10 y),log_amp,NPAS2,0.05864410610020408,0.1144841621525353,2,0.5
+thyroid,all,age (per 10 y),log_amp,NR1D1,-0.01727924528053566,0.24296032310216625,4,0.75
+thyroid,all,age (per 10 y),log_amp,NR1D2,0.16409444742050783,0.1806022167137262,4,0.75
+thyroid,all,age (per 10 y),log_amp,PER1,0.2823558886926685,0.24682822167887714,4,0.75
+thyroid,all,age (per 10 y),log_amp,PER2,0.10924830996932697,0.1542764358919332,4,0.75
+thyroid,all,age (per 10 y),log_amp,PER3,0.0802538147631218,0.2523947877496045,4,0.5
+thyroid,all,age (per 10 y),log_amp,TEF,-0.06422989113768135,0.15946993494712225,4,0.5
+thyroid,all,age (per 10 y),mesor,ARNTL,0.013186578136426897,0.0335253547903548,4,0.5
+thyroid,all,age (per 10 y),mesor,CIART,-0.025735835086312525,0.046620959586293115,4,0.5
+thyroid,all,age (per 10 y),mesor,CLOCK,-0.006441582163836313,0.011609458614634421,4,0.75
+thyroid,all,age (per 10 y),mesor,CRY1,-0.04159725536625519,0.057360883909380614,4,1.0
+thyroid,all,age (per 10 y),mesor,CRY2,-0.015960856808306674,0.010077367951090517,4,1.0
+thyroid,all,age (per 10 y),mesor,DBP,-0.0023673407864847028,0.04561528497990207,4,0.25
+thyroid,all,age (per 10 y),mesor,NPAS2,0.04252745236200807,0.02008731399150676,4,1.0
+thyroid,all,age (per 10 y),mesor,NR1D1,0.07913660517430735,0.1412130798216015,4,0.75
+thyroid,all,age (per 10 y),mesor,NR1D2,-0.04932381898471015,0.06202243484850118,4,0.75
+thyroid,all,age (per 10 y),mesor,PER1,0.008507593839034502,0.030422910726856392,4,0.75
+thyroid,all,age (per 10 y),mesor,PER2,-0.022941506290465933,0.0639935831610479,4,0.75
+thyroid,all,age (per 10 y),mesor,PER3,0.009336427502745395,0.08976686701218453,4,0.5
+thyroid,all,age (per 10 y),mesor,RORA,0.007328074074670692,0.01888442590919952,4,0.5
+thyroid,all,age (per 10 y),mesor,TEF,-0.036190596922651884,0.034564722373089704,4,0.75
+thyroid,all,hardy[1],log_amp,ARNTL,0.009326551249999999,0.08284199797433328,4,0.5
+thyroid,all,hardy[1],log_amp,CIART,-0.118963435,0.4091780398858701,4,0.5
+thyroid,all,hardy[1],log_amp,CLOCK,-0.16591329999999999,0.5597597287015386,2,0.5
+thyroid,all,hardy[1],log_amp,CRY1,-0.8089651499999999,0.617722615058284,2,1.0
+thyroid,all,hardy[1],log_amp,DBP,0.39023086649999994,0.3263810463726124,4,0.75
+thyroid,all,hardy[1],log_amp,NPAS2,0.03180009,0.5306213997416238,2,0.5
+thyroid,all,hardy[1],log_amp,NR1D1,-0.242775136325,0.31254753290028037,4,0.75
+thyroid,all,hardy[1],log_amp,NR1D2,0.447310485,0.5060986045541187,4,0.75
+thyroid,all,hardy[1],log_amp,PER1,0.35072459,0.7593449053551052,4,0.5
+thyroid,all,hardy[1],log_amp,PER2,-0.1875217025,0.2622965197773941,4,0.75
+thyroid,all,hardy[1],log_amp,PER3,-0.03992147749999999,0.3379140301839088,4,0.5
+thyroid,all,hardy[1],log_amp,TEF,0.15218496285,0.09997037332537721,4,1.0
+thyroid,all,hardy[1],mesor,ARNTL,0.039773084,0.21054526615144728,4,0.5
+thyroid,all,hardy[1],mesor,CIART,0.22034017649999998,0.22179584000361247,4,1.0
+thyroid,all,hardy[1],mesor,CLOCK,-0.15667418,0.019823810934474724,4,1.0
+thyroid,all,hardy[1],mesor,CRY1,-0.00970542005,0.04890361336607072,4,0.5
+thyroid,all,hardy[1],mesor,CRY2,0.1738717485,0.05217704286242136,4,1.0
+thyroid,all,hardy[1],mesor,DBP,0.20460976,0.11129696835497634,4,1.0
+thyroid,all,hardy[1],mesor,NPAS2,-0.11720273,0.061728725926220654,4,1.0
+thyroid,all,hardy[1],mesor,NR1D1,-0.04786778,0.20343797394892102,4,0.75
+thyroid,all,hardy[1],mesor,NR1D2,-0.09889046675,0.09619238988230905,4,0.75
+thyroid,all,hardy[1],mesor,PER1,0.051699372,0.11231096219915836,4,0.5
+thyroid,all,hardy[1],mesor,PER2,0.24053678199999998,0.20502160040707892,4,1.0
+thyroid,all,hardy[1],mesor,PER3,0.143938576,0.14837330954000244,4,1.0
+thyroid,all,hardy[1],mesor,RORA,-0.0299208459,0.06007370052474589,4,0.75
+thyroid,all,hardy[1],mesor,TEF,0.105341031,0.17807649895137265,4,0.75
+thyroid,all,hardy[2],log_amp,ARNTL,0.025763052750000008,0.20299780070676837,4,0.75
+thyroid,all,hardy[2],log_amp,CIART,-0.04000021749999999,0.6744229529549701,4,0.5
+thyroid,all,hardy[2],log_amp,CLOCK,0.24411087,0.20077711567377196,2,1.0
+thyroid,all,hardy[2],log_amp,CRY1,-0.90323875,0.29725800344792225,2,1.0
+thyroid,all,hardy[2],log_amp,DBP,0.9691206560000001,0.6925657373459205,4,0.75
+thyroid,all,hardy[2],log_amp,NPAS2,-0.046240030000000015,0.3783231007219329,2,0.5
+thyroid,all,hardy[2],log_amp,NR1D1,-0.423367865,0.19860491573410993,4,1.0
+thyroid,all,hardy[2],log_amp,NR1D2,1.23934335,0.49875869127086897,4,1.0
+thyroid,all,hardy[2],log_amp,PER1,0.8099158150000001,0.6129622434253784,4,0.75
+thyroid,all,hardy[2],log_amp,PER2,0.173823211,0.48386775273636917,4,0.5
+thyroid,all,hardy[2],log_amp,PER3,-0.17158007625,0.4824180488768766,4,0.75
+thyroid,all,hardy[2],log_amp,TEF,0.76870353,0.4401951961328394,4,1.0
+thyroid,all,hardy[2],mesor,ARNTL,-0.02030586,0.17164546294295518,4,0.5
+thyroid,all,hardy[2],mesor,CIART,0.18508810275,0.15900778245758046,4,0.75
+thyroid,all,hardy[2],mesor,CLOCK,-0.12475088749999999,0.02808634402223421,4,1.0
+thyroid,all,hardy[2],mesor,CRY1,0.1553162445,0.12092166663094449,4,1.0
+thyroid,all,hardy[2],mesor,CRY2,0.22927324999999998,0.08698792331242536,4,1.0
+thyroid,all,hardy[2],mesor,DBP,0.2052729775,0.09417167314529687,4,1.0
+thyroid,all,hardy[2],mesor,NPAS2,-0.24055513,0.05291176575523886,4,1.0
+thyroid,all,hardy[2],mesor,NR1D1,-0.07195577099999999,0.3069134098432084,4,0.5
+thyroid,all,hardy[2],mesor,NR1D2,0.015168039125000003,0.06644099548131298,4,0.5
+thyroid,all,hardy[2],mesor,PER1,0.1869040775,0.12257576284146317,4,1.0
+thyroid,all,hardy[2],mesor,PER2,0.3204706375,0.1840010280761475,4,1.0
+thyroid,all,hardy[2],mesor,PER3,0.225040896,0.20387137786509288,4,1.0
+thyroid,all,hardy[2],mesor,RORA,0.005315984999999999,0.06068995113212997,4,0.5
+thyroid,all,hardy[2],mesor,TEF,0.14638006407499998,0.14842645203301588,4,1.0
+thyroid,all,hardy[3],log_amp,ARNTL,0.0729344495,0.17401682291679904,4,0.75
+thyroid,all,hardy[3],log_amp,CIART,-0.330813281,0.3720867174308928,4,0.75
+thyroid,all,hardy[3],log_amp,CLOCK,-0.132380675,0.2239226085971134,2,0.5
+thyroid,all,hardy[3],log_amp,CRY1,-0.703250675,0.25603937031433516,2,1.0
+thyroid,all,hardy[3],log_amp,DBP,0.30979385950000005,0.4814352921982676,4,0.5
+thyroid,all,hardy[3],log_amp,NPAS2,-0.38744107,0.03281211638370498,2,1.0
+thyroid,all,hardy[3],log_amp,NR1D1,-0.092822225,0.2724506258849911,4,0.75
+thyroid,all,hardy[3],log_amp,NR1D2,0.3605142325,0.7099345991642696,4,0.75
+thyroid,all,hardy[3],log_amp,PER1,0.351700185,0.1441679224889394,4,1.0
+thyroid,all,hardy[3],log_amp,PER2,0.0015387885000000094,0.4195712908536017,4,0.25
+thyroid,all,hardy[3],log_amp,PER3,-0.19855712124999997,0.1692718753148341,4,1.0
+thyroid,all,hardy[3],log_amp,TEF,0.11426167549999999,0.6667187480504433,4,0.5
+thyroid,all,hardy[3],mesor,ARNTL,0.0956598285,0.18008862975052,4,0.75
+thyroid,all,hardy[3],mesor,CIART,-0.082265720925,0.09485732931862975,4,1.0
+thyroid,all,hardy[3],mesor,CLOCK,-0.06624015999999999,0.03765163322354644,4,1.0
+thyroid,all,hardy[3],mesor,CRY1,0.15661044,0.039251979325425124,4,1.0
+thyroid,all,hardy[3],mesor,CRY2,0.04496301225,0.028400693522095906,4,1.0
+thyroid,all,hardy[3],mesor,DBP,0.081863790575,0.08396441407839822,4,0.75
+thyroid,all,hardy[3],mesor,NPAS2,-0.059923431,0.14512117997269816,4,0.5
+thyroid,all,hardy[3],mesor,NR1D1,0.019908476425000002,0.10709516934786265,4,0.75
+thyroid,all,hardy[3],mesor,NR1D2,-0.04328261675,0.07301449010776337,4,0.75
+thyroid,all,hardy[3],mesor,PER1,0.005534519999999999,0.07927663184172057,4,0.5
+thyroid,all,hardy[3],mesor,PER2,0.1150445975,0.04352492985397861,4,1.0
+thyroid,all,hardy[3],mesor,PER3,-0.029495369,0.11552744208311246,4,0.25
+thyroid,all,hardy[3],mesor,RORA,0.019610562499999998,0.07213143620084306,4,0.5
+thyroid,all,hardy[3],mesor,TEF,0.019091358500000002,0.09688772693114421,4,0.75
+thyroid,all,hardy[4],log_amp,ARNTL,0.119260694,0.34003113817847064,4,0.5
+thyroid,all,hardy[4],log_amp,CIART,-0.08122146499999999,0.22655447278361593,4,0.75
+thyroid,all,hardy[4],log_amp,CLOCK,0.09603202999999999,0.21186488941403195,2,0.5
+thyroid,all,hardy[4],log_amp,CRY1,-0.7357690699999999,0.35228211159564965,2,1.0
+thyroid,all,hardy[4],log_amp,DBP,0.22361517499999997,0.7350939927119421,4,0.75
+thyroid,all,hardy[4],log_amp,NPAS2,-0.2939392911,0.41189559575608414,2,1.0
+thyroid,all,hardy[4],log_amp,NR1D1,-0.19324757999999997,0.3975633045973051,4,0.75
+thyroid,all,hardy[4],log_amp,NR1D2,0.129421815,0.22028097793497112,4,0.75
+thyroid,all,hardy[4],log_amp,PER1,-0.056925077500000004,0.2045174625392509,4,0.75
+thyroid,all,hardy[4],log_amp,PER2,-0.05145878100000001,0.1819549682181287,4,0.5
+thyroid,all,hardy[4],log_amp,PER3,-0.49351646000000005,0.2976678606345612,4,1.0
+thyroid,all,hardy[4],log_amp,TEF,0.1827715425,0.6476920842583658,4,0.75
+thyroid,all,hardy[4],mesor,ARNTL,0.07846201324999999,0.11175963863736384,4,0.75
+thyroid,all,hardy[4],mesor,CIART,-0.22994952000000002,0.12052094359611362,4,1.0
+thyroid,all,hardy[4],mesor,CLOCK,-0.04299636625,0.013787568933918515,4,1.0
+thyroid,all,hardy[4],mesor,CRY1,0.044487014,0.020214684353121272,4,1.0
+thyroid,all,hardy[4],mesor,CRY2,0.017710475175,0.029879644606160098,4,0.75
+thyroid,all,hardy[4],mesor,DBP,0.08148046,0.10311211782808298,4,0.75
+thyroid,all,hardy[4],mesor,NPAS2,0.1030983315,0.03062486050833553,4,1.0
+thyroid,all,hardy[4],mesor,NR1D1,-0.006235989250000001,0.0721146279935509,4,0.75
+thyroid,all,hardy[4],mesor,NR1D2,-0.013718651499999998,0.068963879950664,4,0.5
+thyroid,all,hardy[4],mesor,PER1,-0.1366288235,0.05788604924304148,4,1.0
+thyroid,all,hardy[4],mesor,PER2,-0.028930246,0.09530442124860398,4,0.5
+thyroid,all,hardy[4],mesor,PER3,-0.1204331825,0.291280261082914,4,0.75
+thyroid,all,hardy[4],mesor,RORA,-0.05951086925,0.02221273565848714,4,1.0
+thyroid,all,hardy[4],mesor,TEF,0.09280936255000001,0.1169795505471382,4,0.75
+thyroid,all,hardy__missing,log_amp,ARNTL,1.03616253,1.1466461811363933,4,0.75
+thyroid,all,hardy__missing,log_amp,CIART,0.055525213749999996,0.5352597657290129,4,0.5
+thyroid,all,hardy__missing,log_amp,CLOCK,0.49790984000000005,1.2767745749588857,2,0.5
+thyroid,all,hardy__missing,log_amp,CRY1,0.01737802999999999,0.4996979231440613,2,0.5
+thyroid,all,hardy__missing,log_amp,DBP,-0.21548655875,0.3721859006348948,4,0.75
+thyroid,all,hardy__missing,log_amp,NPAS2,0.59030659,0.22703488959703136,2,1.0
+thyroid,all,hardy__missing,log_amp,NR1D1,-0.39386174500000004,0.5826085555767853,4,0.75
+thyroid,all,hardy__missing,log_amp,NR1D2,-0.287810155,0.37221443140555777,4,0.75
+thyroid,all,hardy__missing,log_amp,PER1,0.47563240749999997,0.5085277385082776,4,1.0
+thyroid,all,hardy__missing,log_amp,PER2,-0.6092618575,1.2481617066403785,4,0.5
+thyroid,all,hardy__missing,log_amp,PER3,0.17705065499999995,0.7034459240215206,4,0.5
+thyroid,all,hardy__missing,log_amp,TEF,-0.240390229,0.3070326882422879,4,0.75
+thyroid,all,hardy__missing,mesor,ARNTL,0.017788710774999997,0.24464232139736183,4,0.25
+thyroid,all,hardy__missing,mesor,CIART,-0.45649644175000004,0.43453366635389923,4,0.75
+thyroid,all,hardy__missing,mesor,CLOCK,0.111145915,0.010727603165772861,4,1.0
+thyroid,all,hardy__missing,mesor,CRY1,0.2270940525,0.32730052233488055,4,0.75
+thyroid,all,hardy__missing,mesor,CRY2,-0.031141113637500002,0.044076926894402665,4,0.75
+thyroid,all,hardy__missing,mesor,DBP,0.005830870000000002,0.3209182419009762,4,0.5
+thyroid,all,hardy__missing,mesor,NPAS2,-0.1737919775,0.44130834127751256,4,0.75
+thyroid,all,hardy__missing,mesor,NR1D1,-0.44345312,0.6019683814838784,4,0.75
+thyroid,all,hardy__missing,mesor,NR1D2,0.026416240499999997,0.1376162936041178,4,0.5
+thyroid,all,hardy__missing,mesor,PER1,0.10396889325,0.11264816023994154,4,0.75
+thyroid,all,hardy__missing,mesor,PER2,0.339177895,0.27208280688866354,4,1.0
+thyroid,all,hardy__missing,mesor,PER3,-0.1337143925,0.3386347426172703,4,0.75
+thyroid,all,hardy__missing,mesor,RORA,-0.10439429125,0.02950536441302733,4,1.0
+thyroid,all,hardy__missing,mesor,TEF,0.1264978565,0.3379018851763342,4,0.75
+thyroid,all,sex (F vs M),log_amp,ARNTL,-0.28135099,0.3996460804283582,4,0.75
+thyroid,all,sex (F vs M),log_amp,CIART,0.15031986,0.41222569352857924,4,0.5
+thyroid,all,sex (F vs M),log_amp,CLOCK,0.0235102675,0.18611697129981325,2,0.5
+thyroid,all,sex (F vs M),log_amp,CRY1,-0.51773747,0.5476385042584386,2,1.0
+thyroid,all,sex (F vs M),log_amp,DBP,0.875654105,0.5487640877315462,4,1.0
+thyroid,all,sex (F vs M),log_amp,NPAS2,-0.6127046,0.41178674529382314,2,1.0
+thyroid,all,sex (F vs M),log_amp,NR1D1,-0.18643664625,0.33598262770261156,4,0.5
+thyroid,all,sex (F vs M),log_amp,NR1D2,0.6385816826499999,0.5375966776975654,4,1.0
+thyroid,all,sex (F vs M),log_amp,PER1,0.25484902,0.4501374324854165,4,0.75
+thyroid,all,sex (F vs M),log_amp,PER2,-0.058709040000000004,0.3981609580371519,4,0.5
+thyroid,all,sex (F vs M),log_amp,PER3,-0.04580745250000001,0.3460220188482509,4,0.25
+thyroid,all,sex (F vs M),log_amp,TEF,0.5284243150000001,0.5975318555111035,4,0.75
+thyroid,all,sex (F vs M),mesor,ARNTL,0.12833909225,0.10402779007164455,4,1.0
+thyroid,all,sex (F vs M),mesor,CIART,0.083053719,0.1738496823059635,4,0.75
+thyroid,all,sex (F vs M),mesor,CLOCK,-0.027887597025,0.06121008080253987,4,0.5
+thyroid,all,sex (F vs M),mesor,CRY1,0.09032132325,0.11089401373053809,4,0.75
+thyroid,all,sex (F vs M),mesor,CRY2,0.026912138500000002,0.05083003995395419,4,0.5
+thyroid,all,sex (F vs M),mesor,DBP,-0.02540250475,0.10049898069870264,4,0.5
+thyroid,all,sex (F vs M),mesor,NPAS2,-0.004585925750000001,0.05954682743144906,4,0.25
+thyroid,all,sex (F vs M),mesor,NR1D1,-0.05677924175,0.14554908804555453,4,0.75
+thyroid,all,sex (F vs M),mesor,NR1D2,0.02161977425,0.10490301301367817,4,0.5
+thyroid,all,sex (F vs M),mesor,PER1,-0.04560251825,0.0323083640775997,4,1.0
+thyroid,all,sex (F vs M),mesor,PER2,0.035298673875,0.07554224425568955,4,0.5
+thyroid,all,sex (F vs M),mesor,PER3,0.029549186499999998,0.18888842634997444,4,0.5
+thyroid,all,sex (F vs M),mesor,RORA,0.04342882000000001,0.07357821176998675,4,0.75
+thyroid,all,sex (F vs M),mesor,TEF,-0.024859007999999995,0.09762723865049915,4,0.5
+thyroid,fast,age (per 10 y),log_amp,ARNTL,0.07132170967778415,0.1151789751803155,4,0.75
+thyroid,fast,age (per 10 y),log_amp,CIART,0.12113406184357009,0.35002626428608424,4,0.5
+thyroid,fast,age (per 10 y),log_amp,CLOCK,-0.16356656874389508,0.019289469082788613,2,1.0
+thyroid,fast,age (per 10 y),log_amp,CRY1,-0.1201297691804355,0.03912070534970146,2,1.0
+thyroid,fast,age (per 10 y),log_amp,DBP,0.21201618263339755,0.2112397561125329,4,1.0
+thyroid,fast,age (per 10 y),log_amp,NPAS2,-0.08153241463784319,0.29740879999737757,2,0.5
+thyroid,fast,age (per 10 y),log_amp,NR1D1,-0.0034215297363388783,0.20160449958226126,4,0.5
+thyroid,fast,age (per 10 y),log_amp,NR1D2,0.08159021890713351,0.32361442182375566,4,0.75
+thyroid,fast,age (per 10 y),log_amp,PER1,-0.030281064473774523,0.4701132392184793,4,0.75
+thyroid,fast,age (per 10 y),log_amp,PER2,0.06451530311188033,0.2211920212413917,4,0.5
+thyroid,fast,age (per 10 y),log_amp,PER3,-0.199781180833155,0.16905739197627045,4,1.0
+thyroid,fast,age (per 10 y),log_amp,TEF,0.2645830211115609,0.3286990709154219,4,0.75
+thyroid,fast,age (per 10 y),mesor,ARNTL,0.08867519543523833,0.06756540079368809,4,0.75
+thyroid,fast,age (per 10 y),mesor,CIART,-0.09543224623189242,0.12250176789807486,4,0.75
+thyroid,fast,age (per 10 y),mesor,CLOCK,0.0073754432201763335,0.01122449245979016,4,0.75
+thyroid,fast,age (per 10 y),mesor,CRY1,0.018999056857744313,0.03221650826903223,4,0.75
+thyroid,fast,age (per 10 y),mesor,CRY2,0.0076025397622693095,0.03351157744410044,4,0.25
+thyroid,fast,age (per 10 y),mesor,DBP,-0.056094630463024084,0.04158826883177081,4,1.0
+thyroid,fast,age (per 10 y),mesor,NPAS2,0.04960197992058833,0.028223507360025598,4,1.0
+thyroid,fast,age (per 10 y),mesor,NR1D1,-0.06657279502321041,0.061289491079892816,4,0.75
+thyroid,fast,age (per 10 y),mesor,NR1D2,-0.062268016736088325,0.07094465293631178,4,1.0
+thyroid,fast,age (per 10 y),mesor,PER1,-0.008573697503648824,0.028498508512880365,4,0.75
+thyroid,fast,age (per 10 y),mesor,PER2,-0.04122952334580224,0.026160085930253808,4,1.0
+thyroid,fast,age (per 10 y),mesor,PER3,-0.09028186028972045,0.007106380605438785,4,1.0
+thyroid,fast,age (per 10 y),mesor,RORA,0.02020257818604876,0.01707575018882041,4,1.0
+thyroid,fast,age (per 10 y),mesor,TEF,-0.08452017975338796,0.025826467708140077,4,1.0
+thyroid,fast,hardy[2],log_amp,ARNTL,-0.07604471750000001,0.37624080682846645,4,0.5
+thyroid,fast,hardy[2],log_amp,CIART,0.3846309925,0.896859252358617,4,0.5
+thyroid,fast,hardy[2],log_amp,CLOCK,0.1046308175,0.012289236549843622,2,1.0
+thyroid,fast,hardy[2],log_amp,CRY1,-0.429699035,0.08718239824620823,2,1.0
+thyroid,fast,hardy[2],log_amp,DBP,2.002712175,0.4907987348846529,4,1.0
+thyroid,fast,hardy[2],log_amp,NPAS2,0.092297989,0.21590483228546992,2,0.5
+thyroid,fast,hardy[2],log_amp,NR1D1,-0.351727642,0.2668124344033227,4,0.75
+thyroid,fast,hardy[2],log_amp,NR1D2,1.7081871825,1.038833840752512,4,1.0
+thyroid,fast,hardy[2],log_amp,PER1,0.889169825,0.28113553303549016,4,1.0
+thyroid,fast,hardy[2],log_amp,PER2,-0.0627971375,0.40523323329379785,4,0.5
+thyroid,fast,hardy[2],log_amp,PER3,-0.0357158575,0.23167355542431806,4,0.5
+thyroid,fast,hardy[2],log_amp,TEF,1.7029535249999999,0.43017609183290956,4,1.0
+thyroid,fast,hardy[2],mesor,ARNTL,0.021207511750000005,0.23648099584972787,4,0.5
+thyroid,fast,hardy[2],mesor,CIART,0.1445574975,0.3235277547853771,4,0.75
+thyroid,fast,hardy[2],mesor,CLOCK,0.025324122499999997,0.02759147228990161,4,0.75
+thyroid,fast,hardy[2],mesor,CRY1,0.059135255,0.12541541912333812,4,0.75
+thyroid,fast,hardy[2],mesor,CRY2,0.038824746,0.0367272678195028,4,0.75
+thyroid,fast,hardy[2],mesor,DBP,0.24019769000000002,0.03429788752493949,4,1.0
+thyroid,fast,hardy[2],mesor,NPAS2,0.026019589999999992,0.30140698687300477,4,0.25
+thyroid,fast,hardy[2],mesor,NR1D1,0.15372565725,0.20177259427205785,4,1.0
+thyroid,fast,hardy[2],mesor,NR1D2,0.2595190825,0.10409403646175458,4,1.0
+thyroid,fast,hardy[2],mesor,PER1,0.19724237375,0.0822540212727829,4,1.0
+thyroid,fast,hardy[2],mesor,PER2,-0.10598391200000001,0.27988529913905247,4,0.75
+thyroid,fast,hardy[2],mesor,PER3,0.1709697005,0.11123350935316619,4,1.0
+thyroid,fast,hardy[2],mesor,RORA,-0.00021968374999999964,0.03417304377856536,4,0.5
+thyroid,fast,hardy[2],mesor,TEF,0.072433524,0.11513778282266371,4,0.75
+thyroid,fast,sex (F vs M),log_amp,ARNTL,0.253611451,0.4901790204729552,4,0.5
+thyroid,fast,sex (F vs M),log_amp,CIART,-0.2003744725,0.2971476623919705,4,0.75
+thyroid,fast,sex (F vs M),log_amp,CLOCK,-0.42871972,0.06162871175817974,2,1.0
+thyroid,fast,sex (F vs M),log_amp,CRY1,-0.41225488,0.04472823743385382,2,1.0
+thyroid,fast,sex (F vs M),log_amp,DBP,0.48032256250000005,0.3001990765004184,4,1.0
+thyroid,fast,sex (F vs M),log_amp,NPAS2,-0.143227938,0.08858798086321015,2,1.0
+thyroid,fast,sex (F vs M),log_amp,NR1D1,0.05557916099999999,0.2854881710231259,4,0.5
+thyroid,fast,sex (F vs M),log_amp,NR1D2,0.4298665225,0.18833133832911933,4,1.0
+thyroid,fast,sex (F vs M),log_amp,PER1,0.31374940875,0.331342036520904,4,1.0
+thyroid,fast,sex (F vs M),log_amp,PER2,-0.34333776,0.13189880538776866,4,1.0
+thyroid,fast,sex (F vs M),log_amp,PER3,0.12646847525,0.3730777065084467,4,0.75
+thyroid,fast,sex (F vs M),log_amp,TEF,0.087074265,0.3602953281370151,4,0.75
+thyroid,fast,sex (F vs M),mesor,ARNTL,0.34159293,0.11572776578600255,4,1.0
+thyroid,fast,sex (F vs M),mesor,CIART,-0.0353033325,0.15074704238479184,4,0.25
+thyroid,fast,sex (F vs M),mesor,CLOCK,0.0687110625,0.003906816532347661,4,1.0
+thyroid,fast,sex (F vs M),mesor,CRY1,0.017204321500000005,0.11075266779222356,4,0.5
+thyroid,fast,sex (F vs M),mesor,CRY2,-0.013831864,0.03408953256465564,4,0.75
+thyroid,fast,sex (F vs M),mesor,DBP,-0.034586551,0.16143568832270447,4,0.5
+thyroid,fast,sex (F vs M),mesor,NPAS2,0.21518610500000002,0.06256660603668462,4,1.0
+thyroid,fast,sex (F vs M),mesor,NR1D1,0.277583511,0.12629269598898846,4,1.0
+thyroid,fast,sex (F vs M),mesor,NR1D2,0.0013962157500000058,0.1112620756133317,4,0.5
+thyroid,fast,sex (F vs M),mesor,PER1,0.127053644,0.06000943128717026,4,1.0
+thyroid,fast,sex (F vs M),mesor,PER2,-0.22372247775,0.1726585383726111,4,0.75
+thyroid,fast,sex (F vs M),mesor,PER3,-0.1807566625,0.1798164132609791,4,0.75
+thyroid,fast,sex (F vs M),mesor,RORA,0.0955771015,0.03180051595510502,4,1.0
+thyroid,fast,sex (F vs M),mesor,TEF,-0.22991716875,0.10824039861788559,4,1.0

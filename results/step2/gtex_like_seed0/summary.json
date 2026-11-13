@@ -1,0 +1,66 @@
+{
+  "args": {
+    "csv": "/workspaces/eyerly/CoPhaser/reference/clock_reference_learned.csv",
+    "n_harm": "2",
+    "n_donors": "900",
+    "n_background_genes": "500",
+    "library_size": "20000000.0",
+    "dispersion": "0.05",
+    "frac_affected": "0.3",
+    "mesor_sd": "0.3",
+    "log_amp_sd": "0.3",
+    "phase_sd_hours": "1.5",
+    "age_dampening": "-0.2",
+    "female_amp": "0.15",
+    "seed": "0",
+    "outdir": "results/step2/gtex_like_seed0"
+  },
+  "n_samples": 1804,
+  "recovery": {
+    "age_std/log_amp": {
+      "corr": 0.9875127099668173,
+      "median_abs_error": 0.023620218466975068,
+      "units": "log"
+    },
+    "age_std/mesor": {
+      "corr": 0.9968284966278881,
+      "median_abs_error": 0.01108642849575294,
+      "units": "log"
+    },
+    "age_std/phase": {
+      "corr": 0.9966847704899016,
+      "median_abs_error": 0.07577657252681846,
+      "units": "hours"
+    },
+    "condition/log_amp": {
+      "corr": 0.9142045486004748,
+      "median_abs_error": 0.020536487444822102,
+      "units": "log"
+    },
+    "condition/mesor": {
+      "corr": 0.9314818795019494,
+      "median_abs_error": 0.023436350468135636,
+      "units": "log"
+    },
+    "condition/phase": {
+      "corr": 0.8474189831160425,
+      "median_abs_error": 0.16105480361610208,
+      "units": "hours"
+    },
+    "sex/log_amp": {
+      "corr": 0.874596980147411,
+      "median_abs_error": 0.021962599099966798,
+      "units": "log"
+    },
+    "sex/mesor": {
+      "corr": 0.9689696491617976,
+      "median_abs_error": 0.03385360658507547,
+      "units": "log"
+    },
+    "sex/phase": {
+      "corr": 0.712727914532662,
+      "median_abs_error": 0.07838707927739264,
+      "units": "hours"
+    }
+  }
+}

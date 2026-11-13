@@ -1,0 +1,7 @@
+900 samples, 512 genes; 473 non-zero mesor effects
+{"run": "frozen_nocov", "train_seconds": 58.2, "phase_median_error_h": 5.487, "phase_median_error_aligned_h": 5.072}
+{"run": "frozen_cov", "train_seconds": 56.5, "phase_median_error_h": 4.515, "phase_median_error_aligned_h": 3.994, "age/intercept": 0.015, "age/slope": 0.775, "age/corr": 0.936, "age/median_abs_error_centered": 0.017, "age/leak_R2_from_z": 0.842, "condition[1]/intercept": 0.024, "condition[1]/slope": 0.602, "condition[1]/corr": 0.854, "condition[1]/median_abs_error_centered": 0.028, "condition[1]/leak_R2_from_z": 0.541, "sex[1]/intercept": 0.016, "sex[1]/slope": 0.449, "sex[1]/corr": 0.76, "sex[1]/median_abs_error_centered": 0.036, "sex[1]/leak_R2_from_z": 0.551}
+{"run": "default_nocov", "train_seconds": 58.7, "phase_median_error_h": 5.332, "phase_median_error_aligned_h": 4.622}
+{"run": "default_cov", "train_seconds": 62.4, "phase_median_error_h": 4.656, "phase_median_error_aligned_h": 3.848, "age/intercept": 0.012, "age/slope": 0.779, "age/corr": 0.938, "age/median_abs_error_centered": 0.015, "age/leak_R2_from_z": 0.842, "condition[1]/intercept": 0.024, "condition[1]/slope": 0.611, "condition[1]/corr": 0.857, "condition[1]/median_abs_error_centered": 0.027, "condition[1]/leak_R2_from_z": 0.518, "sex[1]/intercept": 0.016, "sex[1]/slope": 0.456, "sex[1]/corr": 0.764, "sex[1]/median_abs_error_centered": 0.036, "sex[1]/leak_R2_from_z": 0.54}
+
+Outputs in results/step4/gtex_like_seed0_cp10k_beta2_0999

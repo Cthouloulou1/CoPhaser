@@ -1,0 +1,27 @@
+{
+  "median_abs_error_h": 2.3907893649842458,
+  "mean_abs_error_h": 3.280961275146482,
+  "systematic_offset_h": -0.06412378191312691,
+  "median_abs_error_after_offset_h": 2.4098538951986286,
+  "resultant_same_direction": 0.5486335447771292,
+  "resultant_reversed_direction": 0.18376137626247124,
+  "oracle_median_abs_error_h": 1.9200000000000006,
+  "oracle_mean_abs_error_h": 2.94233,
+  "train_seconds": 79.5,
+  "frozen_weight_drift": 0.0,
+  "args": {
+    "csv": "/workspaces/eyerly/CoPhaser/reference/clock_reference_learned.csv",
+    "n_harm": 2,
+    "n_cells": 4000,
+    "n_decoy_genes": 50,
+    "library_size": 10000.0,
+    "dispersion": 0.1,
+    "epochs": 150,
+    "lr": 0.01,
+    "period": 24.0,
+    "seed": 0,
+    "device": "cpu",
+    "threads": 8,
+    "outdir": "results/step1/full_seed0"
+  }
+}

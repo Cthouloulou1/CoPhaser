@@ -1,0 +1,219 @@
+{
+  "tissue": "Thyroid",
+  "file": "thyroid",
+  "n_samples": 653,
+  "n_context_genes": 2007,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 14,
+  "train_seconds": 127.7,
+  "epochs": 300,
+  "rhythmic_likelihood_weight": 0.22652569152897972,
+  "non_rhythmic_likelihood_weight": 0.22652569152897972,
+  "decoder_frozen": true,
+  "final_elbo": 3082.5082275390623,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[1]",
+    "hardy[2]",
+    "hardy[3]",
+    "hardy[4]",
+    "hardy__missing"
+  ],
+  "grid_prior_kappa_median": 5.325227460439593,
+  "grid_prior_aligned_h": 2.769736086646081,
+  "MI_weight": 50,
+  "entropy_weight_factor": 50,
+  "grid_refresh_every": 10,
+  "grid_refresh_use_z": false,
+  "decoder_phase_from_grid": true,
+  "grid_refresh_log": [
+    [
+      10,
+      0.25,
+      5.67
+    ],
+    [
+      20,
+      0.0,
+      5.72
+    ],
+    [
+      30,
+      0.0,
+      5.68
+    ],
+    [
+      40,
+      0.0,
+      5.72
+    ],
+    [
+      50,
+      0.0,
+      5.74
+    ],
+    [
+      60,
+      0.0,
+      5.73
+    ],
+    [
+      70,
+      0.0,
+      5.79
+    ],
+    [
+      80,
+      0.0,
+      5.74
+    ],
+    [
+      90,
+      0.0,
+      5.83
+    ],
+    [
+      100,
+      0.0,
+      5.85
+    ],
+    [
+      110,
+      0.0,
+      5.81
+    ],
+    [
+      120,
+      0.25,
+      5.62
+    ],
+    [
+      130,
+      0.0,
+      5.67
+    ],
+    [
+      140,
+      0.25,
+      5.76
+    ],
+    [
+      150,
+      0.25,
+      5.84
+    ],
+    [
+      160,
+      0.0,
+      5.78
+    ],
+    [
+      170,
+      0.0,
+      5.64
+    ],
+    [
+      180,
+      0.25,
+      5.9
+    ],
+    [
+      190,
+      0.25,
+      5.84
+    ],
+    [
+      200,
+      0.0,
+      5.84
+    ],
+    [
+      210,
+      0.25,
+      6.04
+    ],
+    [
+      220,
+      0.25,
+      6.45
+    ],
+    [
+      230,
+      0.0,
+      6.39
+    ],
+    [
+      240,
+      0.25,
+      6.22
+    ],
+    [
+      250,
+      0.25,
+      6.12
+    ],
+    [
+      260,
+      0.0,
+      6.22
+    ],
+    [
+      270,
+      0.25,
+      6.52
+    ],
+    [
+      280,
+      0.25,
+      6.78
+    ],
+    [
+      290,
+      0.25,
+      6.74
+    ]
+  ],
+  "phase_prior_anneal_epochs": 100000,
+  "phase_prior_weight": 2.0,
+  "phase_prior_kappa": "auto",
+  "grid_final_noz_aligned_h": 2.877310467450124,
+  "grid_final_z_aligned_h": 2.6836518076636127,
+  "keep_hardy": null,
+  "reference_from_model": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/thyroid/0_seed1/thyroid/model.pt",
+  "encoder_hardy0_n": 358,
+  "encoder_hardy0_median_abs_error_h": 4.801979950038166,
+  "encoder_hardy1-2_n": 195,
+  "encoder_hardy1-2_median_abs_error_h": 2.777940994767193,
+  "encoder_hardy3-4_n": 96,
+  "encoder_hardy3-4_median_abs_error_h": 4.610992239555282,
+  "grid_final_noz_hardy0_n": 358,
+  "grid_final_noz_hardy0_median_abs_error_h": 3.0397688196081782,
+  "grid_final_noz_hardy1-2_n": 195,
+  "grid_final_noz_hardy1-2_median_abs_error_h": 2.6596664475251734,
+  "grid_final_noz_hardy3-4_n": 96,
+  "grid_final_noz_hardy3-4_median_abs_error_h": 2.933436354678591,
+  "chiral_sign": -1,
+  "chiral_offset_h": 11.25802296181891,
+  "chiral_median_abs_error_h": 3.9417280720537327,
+  "chiral_mean_abs_error_h": 4.609465958474527,
+  "chiral_resultant": 0.280535050615061,
+  "chiral_n": 649,
+  "chiral_eval_on": "all samples",
+  "total_seconds": 139.4
+}

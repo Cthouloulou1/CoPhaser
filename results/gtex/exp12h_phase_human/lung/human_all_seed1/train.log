@@ -1,0 +1,6 @@
+[lung] 578 samples, 2011 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+[lung] grid phase prior: kappa median 6.64, anneal 100000 epochs, weight 2.0; vs CHIRAL 2.98 h
+[lung] likelihood weights: rhythmic 0.219, non-rhythmic 0.219; decoder frozen
+[lung] done in 206.3 s; vs CHIRAL: median |diff| 5.47 h (grid with trained decoder: 3.07 h)
+
+All done. Outputs in results/gtex/exp12h_phase_human/lung/human_all_seed1

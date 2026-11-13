@@ -1,0 +1,41 @@
+{
+  "tissue": "Skin - Not Sun Exposed (Suprapubic)",
+  "file": "skin_not_sun_exposed_suprapubic",
+  "n_samples": 604,
+  "n_context_genes": 2012,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 12,
+  "train_seconds": 189.7,
+  "epochs": 300,
+  "final_elbo": 27836.581003289473,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[1]",
+    "hardy[2]",
+    "hardy[3]",
+    "hardy[4]"
+  ],
+  "chiral_sign": 1,
+  "chiral_offset_h": 2.331640858698831,
+  "chiral_median_abs_error_h": 5.096494661116359,
+  "chiral_mean_abs_error_h": 5.497077067722809,
+  "chiral_resultant": 0.10291535623813515,
+  "chiral_n": 603,
+  "total_seconds": 194.1
+}

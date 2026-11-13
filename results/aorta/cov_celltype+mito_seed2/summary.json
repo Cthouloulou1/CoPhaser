@@ -1,0 +1,51 @@
+{
+  "n_cells": 21374,
+  "n_rhythmic": 24,
+  "epochs": 200,
+  "adam_beta2": 0.999,
+  "z_input": "raw",
+  "seed": 2,
+  "covariates": [
+    "celltype",
+    "mito"
+  ],
+  "covariate_columns": [
+    "celltype[Endothelial]",
+    "celltype[Fibroblast]",
+    "celltype[Immune]",
+    "celltype[Other]",
+    "mito"
+  ],
+  "train_seconds": 542.6,
+  "final_elbo": 1323.1672241210938,
+  "encoder_mad_notebook_h": 1.828582942245627,
+  "encoder_median_error_mean_offset_h": 1.8307378847217461,
+  "grid_mad_notebook_h": 1.8793969849246228,
+  "grid_median_error_mean_offset_h": 1.9007794844111503,
+  "theta_resultant": 0.08211760222911835,
+  "lambda_median": 1.1083709001541138,
+  "encoder_input_abs_mean_per_gene_median": 0.2059723436832428,
+  "encoder_input_sd_per_gene_median": 0.38682007789611816,
+  "celltype_W_c_vs_observed": {
+    "Endothelial": {
+      "n_cells": 221,
+      "pearson_r": 0.6791051500471565,
+      "slope": 0.2418780089286309
+    },
+    "Fibroblast": {
+      "n_cells": 1981,
+      "pearson_r": 0.5585256980624033,
+      "slope": 0.2277873086979675
+    },
+    "Immune": {
+      "n_cells": 196,
+      "pearson_r": 0.6276568321525303,
+      "slope": 0.17245635646257448
+    },
+    "Other": {
+      "n_cells": 11,
+      "pearson_r": 0.6960207468013033,
+      "slope": 0.22519681310177417
+    }
+  }
+}

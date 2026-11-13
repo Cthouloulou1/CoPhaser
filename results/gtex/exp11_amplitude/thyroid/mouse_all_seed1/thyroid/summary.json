@@ -1,0 +1,219 @@
+{
+  "tissue": "Thyroid",
+  "file": "thyroid",
+  "n_samples": 653,
+  "n_context_genes": 2007,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 12,
+  "train_seconds": 143.6,
+  "epochs": 300,
+  "rhythmic_likelihood_weight": 0.22652569152897972,
+  "non_rhythmic_likelihood_weight": 0.22652569152897972,
+  "decoder_frozen": true,
+  "final_elbo": 3138.8314208984375,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[1]",
+    "hardy[2]",
+    "hardy[3]",
+    "hardy[4]",
+    "hardy__missing"
+  ],
+  "grid_prior_kappa_median": 50.0,
+  "grid_prior_aligned_h": 3.0325262573886733,
+  "MI_weight": 50,
+  "entropy_weight_factor": 50,
+  "grid_refresh_every": 10,
+  "grid_refresh_use_z": false,
+  "decoder_phase_from_grid": true,
+  "grid_refresh_log": [
+    [
+      10,
+      0.5,
+      50.0
+    ],
+    [
+      20,
+      0.25,
+      50.0
+    ],
+    [
+      30,
+      0.0,
+      50.0
+    ],
+    [
+      40,
+      0.0,
+      50.0
+    ],
+    [
+      50,
+      0.0,
+      50.0
+    ],
+    [
+      60,
+      0.0,
+      50.0
+    ],
+    [
+      70,
+      0.0,
+      50.0
+    ],
+    [
+      80,
+      0.0,
+      50.0
+    ],
+    [
+      90,
+      0.0,
+      50.0
+    ],
+    [
+      100,
+      0.0,
+      50.0
+    ],
+    [
+      110,
+      0.25,
+      50.0
+    ],
+    [
+      120,
+      0.0,
+      50.0
+    ],
+    [
+      130,
+      0.0,
+      50.0
+    ],
+    [
+      140,
+      0.0,
+      50.0
+    ],
+    [
+      150,
+      0.0,
+      50.0
+    ],
+    [
+      160,
+      0.0,
+      50.0
+    ],
+    [
+      170,
+      0.0,
+      50.0
+    ],
+    [
+      180,
+      0.0,
+      50.0
+    ],
+    [
+      190,
+      0.0,
+      50.0
+    ],
+    [
+      200,
+      0.0,
+      50.0
+    ],
+    [
+      210,
+      0.0,
+      50.0
+    ],
+    [
+      220,
+      0.0,
+      50.0
+    ],
+    [
+      230,
+      0.0,
+      50.0
+    ],
+    [
+      240,
+      0.0,
+      50.0
+    ],
+    [
+      250,
+      0.0,
+      50.0
+    ],
+    [
+      260,
+      0.0,
+      50.0
+    ],
+    [
+      270,
+      0.0,
+      50.0
+    ],
+    [
+      280,
+      0.0,
+      50.0
+    ],
+    [
+      290,
+      0.0,
+      50.0
+    ]
+  ],
+  "phase_prior_anneal_epochs": 100000,
+  "phase_prior_weight": 2.0,
+  "phase_prior_kappa": "auto",
+  "grid_final_noz_aligned_h": 3.7347058695060267,
+  "grid_final_z_aligned_h": 3.6449297975685413,
+  "keep_hardy": null,
+  "reference_from_model": null,
+  "encoder_hardy0_n": 358,
+  "encoder_hardy0_median_abs_error_h": 5.49428951251769,
+  "encoder_hardy1-2_n": 195,
+  "encoder_hardy1-2_median_abs_error_h": 5.434100248037391,
+  "encoder_hardy3-4_n": 96,
+  "encoder_hardy3-4_median_abs_error_h": 5.053329856944933,
+  "grid_final_noz_hardy0_n": 358,
+  "grid_final_noz_hardy0_median_abs_error_h": 4.0862426813821635,
+  "grid_final_noz_hardy1-2_n": 195,
+  "grid_final_noz_hardy1-2_median_abs_error_h": 3.4875418807340153,
+  "grid_final_noz_hardy3-4_n": 96,
+  "grid_final_noz_hardy3-4_median_abs_error_h": 3.2783053246315257,
+  "chiral_sign": -1,
+  "chiral_offset_h": 7.567589885219735,
+  "chiral_median_abs_error_h": 5.358800742240604,
+  "chiral_mean_abs_error_h": 5.599019593416992,
+  "chiral_resultant": 0.08230950055400078,
+  "chiral_n": 649,
+  "chiral_eval_on": "all samples",
+  "total_seconds": 159.4
+}

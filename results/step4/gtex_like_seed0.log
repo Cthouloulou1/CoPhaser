@@ -1,0 +1,8 @@
+900 samples, 512 genes; 473 non-zero mesor effects
+{"run": "frozen_nocov", "train_seconds": 58.3, "phase_median_error_h": 2.886, "phase_median_error_aligned_h": 2.615}
+{"run": "frozen_cov", "train_seconds": 60.7, "phase_median_error_h": 1.123, "phase_median_error_aligned_h": 1.299, "age/intercept": 0.013, "age/slope": 0.999, "age/corr": 0.999, "age/median_abs_error_centered": 0.006, "age/leak_R2_from_z": 0.012, "condition[1]/intercept": 0.013, "condition[1]/slope": 0.996, "condition[1]/corr": 0.993, "condition[1]/median_abs_error_centered": 0.012, "condition[1]/leak_R2_from_z": 0.004, "sex[1]/intercept": -0.036, "sex[1]/slope": 0.995, "sex[1]/corr": 0.995, "sex[1]/median_abs_error_centered": 0.012, "sex[1]/leak_R2_from_z": 0.004}
+Warning: 1 optimizer step(s) were skipped because the loss was not finite. The run finished, but check it before trusting it.
+{"run": "default_nocov", "train_seconds": 57.1, "phase_median_error_h": 3.202, "phase_median_error_aligned_h": 3.093}
+{"run": "default_cov", "train_seconds": 60.3, "phase_median_error_h": 2.593, "phase_median_error_aligned_h": 2.086, "age/intercept": 0.013, "age/slope": 1.002, "age/corr": 0.999, "age/median_abs_error_centered": 0.006, "age/leak_R2_from_z": 0.012, "condition[1]/intercept": 0.011, "condition[1]/slope": 0.994, "condition[1]/corr": 0.993, "condition[1]/median_abs_error_centered": 0.013, "condition[1]/leak_R2_from_z": 0.004, "sex[1]/intercept": -0.036, "sex[1]/slope": 0.996, "sex[1]/corr": 0.995, "sex[1]/median_abs_error_centered": 0.012, "sex[1]/leak_R2_from_z": 0.0}
+
+Outputs in results/step4/gtex_like_seed0

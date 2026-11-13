@@ -1,0 +1,18 @@
+/workspaces/eyerly/CoPhaser/scripts/aorta_check.py:126: Pandas4Warning: Starting with pandas version 4.0 all arguments of max will be keyword-only.
+  ad.obs["celltype"] = np.where(S.max(1) > 0, S.idxmax(1), "Other")
+cell types: {'SMC': 18965, 'Fibroblast': 1981, 'Endothelial': 221, 'Immune': 196, 'Other': 11}
+cells per cell type and ZT:
+ zt             0     6     12    18
+celltype                           
+Endothelial    51    60    53    57
+Fibroblast    452   564   462   503
+Immune         51    40    44    61
+Other           3     2     5     1
+SMC          3875  4413  4284  6393
+21374 cells after QC (99.3% kept); per ZT: {0: 4432, 6: 5079, 12: 4848, 18: 7015}
+24 rhythmic genes: ['Bhlhe41', np.str_('Bmal1'), np.str_('Ciart'), np.str_('Clock'), np.str_('Cry1'), np.str_('Cry2'), 'Csnk1a1', 'Csnk1d', 'Csnk1e', np.str_('Dbp'), 'Fbxo21', 'Fbxo3', 'Hlf', 'Nampt', 'Nfil3', np.str_('Npas2'), np.str_('Nr1d1'), np.str_('Nr1d2'), np.str_('Per1'), np.str_('Per2'), np.str_('Per3'), np.str_('Rora'), 'Rorc', np.str_('Tef')]
+covariates: ['mito', 'sample[GSM6257184]', 'sample[GSM6257185]', 'sample[GSM6257186]']
+/workspaces/eyerly/CoPhaser/src/cophaser/model/decoder_prior.py:47: UserWarning: Gene ARNTL was not found in the model's genes, prior not loaded
+  warnings.warn(
+{"n_cells": 21374, "n_rhythmic": 24, "epochs": 200, "adam_beta2": 0.999, "z_input": "raw", "seed": 0, "covariates": ["mito", "sample"], "covariate_columns": ["mito", "sample[GSM6257184]", "sample[GSM6257185]", "sample[GSM6257186]"], "train_seconds": 659.0, "final_elbo": 1330.435, "encoder_mad_notebook_h": 2.683, "encoder_median_error_mean_offset_h": 2.681, "grid_mad_notebook_h": 2.753, "grid_median_error_mean_offset_h": 2.834, "theta_resultant": 0.029, "lambda_median": 1.108, "encoder_input_abs_mean_per_gene_median": 0.258, "encoder_input_sd_per_gene_median": 0.4}
+All done. Outputs in results/aorta/cov_mito+sample

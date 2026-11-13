@@ -1,0 +1,12 @@
+{
+  "tissues": "None",
+  "replicates": "40",
+  "clock": "mouse",
+  "subset": "all",
+  "epochs": "300",
+  "jobs": "10",
+  "threads": "6",
+  "exp10": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy",
+  "outdir": "results/gtex/exp13b_bootstrap_mouse",
+  "learned_clocks": {}
+}

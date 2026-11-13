@@ -1,0 +1,3 @@
+tissue,file,n_samples,n_context_genes,n_prior_genes,train_seconds,epochs,rhythmic_likelihood_weight,non_rhythmic_likelihood_weight,decoder_frozen,final_elbo,chiral_sign,chiral_offset_h,chiral_median_abs_error_h,chiral_mean_abs_error_h,chiral_resultant,chiral_n,chiral_eval_on,total_seconds
+Artery - Tibial,artery_tibial,294,2007,12,151.5,300,0.22531178306501015,0.22531178306501015,False,3093.4991590711807,1,11.873561952369455,4.5510642068697145,4.983888512751083,0.20639812486262263,282,all samples,162.3
+Lung,lung,279,2012,12,135.8,300,0.21831049381197692,0.21831049381197692,False,3099.119341681985,1,3.7732272335861694,5.276038142479041,5.466237897270309,0.10604452976662486,275,all samples,140.5

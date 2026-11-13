@@ -1,0 +1,42 @@
+{
+  "tissue": "Skin - Sun Exposed (Lower leg)",
+  "file": "skin_sun_exposed_lower_leg",
+  "n_samples": 701,
+  "n_context_genes": 2011,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 12,
+  "train_seconds": 142.9,
+  "epochs": 300,
+  "final_elbo": 29929.59943181818,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[1]",
+    "hardy[2]",
+    "hardy[3]",
+    "hardy[4]",
+    "hardy__missing"
+  ],
+  "chiral_sign": 1,
+  "chiral_offset_h": 2.1115592110156682,
+  "chiral_median_abs_error_h": 5.367734607234743,
+  "chiral_mean_abs_error_h": 5.658840692829817,
+  "chiral_resultant": 0.06881354467241944,
+  "chiral_n": 690,
+  "total_seconds": 147.8
+}

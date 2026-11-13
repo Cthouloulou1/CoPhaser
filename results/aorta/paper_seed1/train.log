@@ -1,0 +1,6 @@
+21374 cells after QC (99.3% kept); per ZT: {0: 4432, 6: 5079, 12: 4848, 18: 7015}
+24 rhythmic genes: ['Bhlhe41', np.str_('Bmal1'), np.str_('Ciart'), np.str_('Clock'), np.str_('Cry1'), np.str_('Cry2'), 'Csnk1a1', 'Csnk1d', 'Csnk1e', np.str_('Dbp'), 'Fbxo21', 'Fbxo3', 'Hlf', 'Nampt', 'Nfil3', np.str_('Npas2'), np.str_('Nr1d1'), np.str_('Nr1d2'), np.str_('Per1'), np.str_('Per2'), np.str_('Per3'), np.str_('Rora'), 'Rorc', np.str_('Tef')]
+/workspaces/eyerly/CoPhaser/src/cophaser/model/decoder_prior.py:47: UserWarning: Gene ARNTL was not found in the model's genes, prior not loaded
+  warnings.warn(
+{"n_cells": 21374, "n_rhythmic": 24, "epochs": 200, "adam_beta2": 0.999, "z_input": "raw", "seed": 1, "train_seconds": 547.7, "final_elbo": 1338.345, "encoder_mad_notebook_h": 1.812, "encoder_median_error_mean_offset_h": 1.82, "grid_mad_notebook_h": 1.879, "grid_median_error_mean_offset_h": 1.908, "theta_resultant": 0.073, "lambda_median": 1.109, "encoder_input_abs_mean_per_gene_median": 0.213, "encoder_input_sd_per_gene_median": 0.382}
+All done. Outputs in results/aorta/paper_seed1

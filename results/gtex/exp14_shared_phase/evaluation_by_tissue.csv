@@ -1,0 +1,49 @@
+tissue,clock,phase,raw_h,aligned_h,n,donors
+adipose_subcutaneous,half,tissue,3.144365118451268,2.9654630211705815,336,held-out half
+adipose_subcutaneous,half,shared,2.170697067134151,2.1407713539851434,336,held-out half
+adipose_subcutaneous,human,tissue,3.1280986850842347,3.0846598309287847,650,all
+adipose_subcutaneous,human,shared,2.0645369633440134,2.081149137487459,650,all
+adipose_subcutaneous,mouse,tissue,4.029806049848059,3.2316506607604882,650,all
+adipose_subcutaneous,mouse,shared,4.162280101494325,2.9583959524709273,650,all
+artery_tibial,half,tissue,2.233517767250669,2.2361681414751846,334,held-out half
+artery_tibial,half,shared,2.2799353004625007,2.1741380475089,334,held-out half
+artery_tibial,human,tissue,2.28443838784076,2.322217133988309,650,all
+artery_tibial,human,shared,2.1889972989445563,2.18342290463244,650,all
+artery_tibial,mouse,tissue,4.290417325850106,3.2221007680957587,650,all
+artery_tibial,mouse,shared,4.109299330551015,3.084580971638373,650,all
+lung,half,tissue,3.088845701451975,3.105982252980292,298,held-out half
+lung,half,shared,2.064529632094518,2.0393529643246593,298,held-out half
+lung,human,tissue,3.006628749595655,2.976128363197874,574,all
+lung,human,shared,1.9598152059682576,1.9507757636559984,574,all
+lung,mouse,tissue,5.105371735332447,3.6294634820854457,574,all
+lung,mouse,shared,4.2368969869316455,2.9889661718448615,574,all
+muscle_skeletal,half,tissue,3.1999882116086287,3.095204272371724,418,held-out half
+muscle_skeletal,half,shared,2.235159989522003,2.185777972261236,418,held-out half
+muscle_skeletal,human,tissue,3.186606955220287,3.1827510001649095,788,all
+muscle_skeletal,human,shared,2.1135587417048076,2.113558741704807,788,all
+muscle_skeletal,mouse,tissue,4.842591641286971,4.1377684633675145,788,all
+muscle_skeletal,mouse,shared,4.117281184481506,3.0124365691161774,788,all
+nerve_tibial,half,tissue,2.7923218508220473,2.8548191618155716,322,held-out half
+nerve_tibial,half,shared,2.382483455686968,2.3385142754274675,322,held-out half
+nerve_tibial,human,tissue,2.6002301127814604,2.6354092549581454,610,all
+nerve_tibial,human,shared,2.131057064449035,2.1649472285072004,610,all
+nerve_tibial,mouse,tissue,4.021246852450066,3.204319011631921,610,all
+nerve_tibial,mouse,shared,4.176403750023054,2.952322774309877,610,all
+skin_not_sun_exposed_suprapubic,half,tissue,3.375544261929511,3.511945063250558,316,held-out half
+skin_not_sun_exposed_suprapubic,half,shared,2.2600978601736723,2.1644037404384044,316,held-out half
+skin_not_sun_exposed_suprapubic,human,tissue,3.4450639599334156,3.3598692856438404,603,all
+skin_not_sun_exposed_suprapubic,human,shared,2.060217684036791,2.0325072615776287,603,all
+skin_not_sun_exposed_suprapubic,mouse,tissue,4.7151567637835985,3.5370600200398736,603,all
+skin_not_sun_exposed_suprapubic,mouse,shared,4.0257374400148365,2.994601183881349,603,all
+skin_sun_exposed_lower_leg,half,tissue,3.244941755354819,3.2867305584176174,360,held-out half
+skin_sun_exposed_lower_leg,half,shared,2.163399091102268,2.197971307012277,360,held-out half
+skin_sun_exposed_lower_leg,human,tissue,3.188695227149933,3.2196684486481413,690,all
+skin_sun_exposed_lower_leg,human,shared,2.0251097784434973,2.0368394842691395,690,all
+skin_sun_exposed_lower_leg,mouse,tissue,4.56664058925994,3.71630076609475,690,all
+skin_sun_exposed_lower_leg,mouse,shared,4.162905863483256,3.0037252913297414,690,all
+thyroid,half,tissue,2.33464026631219,2.198773715749014,342,held-out half
+thyroid,half,shared,2.3499031395487604,2.3680337457697735,342,held-out half
+thyroid,human,tissue,2.409171934618401,2.4241461737566334,649,all
+thyroid,human,shared,2.12908957926831,2.1801444691749525,649,all
+thyroid,mouse,tissue,3.965387354414265,2.822897538531505,649,all
+thyroid,mouse,shared,4.180446626688038,2.9565800638931132,649,all

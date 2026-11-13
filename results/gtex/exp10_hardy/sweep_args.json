@@ -1,0 +1,10 @@
+{
+  "tissues": "None",
+  "groups": "['all', '0', '1-2', '3-4']",
+  "seeds": "[0, 1]",
+  "epochs": "300",
+  "jobs": "10",
+  "threads": "6",
+  "outdir": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy",
+  "extra": ""
+}

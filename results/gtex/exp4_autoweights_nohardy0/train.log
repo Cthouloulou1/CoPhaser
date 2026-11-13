@@ -1,0 +1,8 @@
+[artery_tibial] 294 samples, 2007 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+[artery_tibial] likelihood weights: rhythmic 0.225, non-rhythmic 0.225; decoder unfrozen at epoch 10
+[artery_tibial] done in 162.3 s; vs CHIRAL: median |diff| 4.55 h
+[lung] 279 samples, 2012 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+[lung] likelihood weights: rhythmic 0.218, non-rhythmic 0.218; decoder unfrozen at epoch 10
+[lung] done in 140.5 s; vs CHIRAL: median |diff| 5.28 h
+
+All done. Outputs in results/gtex/exp4_autoweights_nohardy0

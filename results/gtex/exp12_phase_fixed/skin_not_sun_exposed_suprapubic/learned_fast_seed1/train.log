@@ -1,0 +1,7 @@
+[skin_not_sun_exposed_suprapubic] 183 samples, 2009 context genes, clock genes: [np.str_('ARNTL'), np.str_('NPAS2'), np.str_('CRY1'), np.str_('CRY2'), np.str_('PER1'), np.str_('PER2'), np.str_('PER3'), np.str_('NR1D1'), np.str_('NR1D2'), np.str_('CLOCK'), np.str_('RORA'), np.str_('TEF'), np.str_('DBP'), np.str_('CIART')]
+  clock from /workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/skin_not_sun_exposed_suprapubic/0_seed0/skin_not_sun_exposed_suprapubic/model.pt: 14 genes
+[skin_not_sun_exposed_suprapubic] grid phase prior: kappa median 0.87, anneal 100000 epochs, weight 2.0; vs CHIRAL 2.93 h
+[skin_not_sun_exposed_suprapubic] likelihood weights: rhythmic 0.225, non-rhythmic 0.225; decoder frozen
+[skin_not_sun_exposed_suprapubic] done in 107.1 s; vs CHIRAL: median |diff| 5.43 h (grid with trained decoder: 3.29 h)
+
+All done. Outputs in results/gtex/exp12_phase_fixed/skin_not_sun_exposed_suprapubic/learned_fast_seed1

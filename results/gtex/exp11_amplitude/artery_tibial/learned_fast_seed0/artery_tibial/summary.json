@@ -1,0 +1,210 @@
+{
+  "tissue": "Artery - Tibial",
+  "file": "artery_tibial",
+  "n_samples": 188,
+  "n_context_genes": 2005,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 14,
+  "train_seconds": 86.5,
+  "epochs": 300,
+  "rhythmic_likelihood_weight": 0.2272148686146829,
+  "non_rhythmic_likelihood_weight": 0.2272148686146829,
+  "decoder_frozen": true,
+  "final_elbo": 3113.5320027669272,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[2]"
+  ],
+  "grid_prior_kappa_median": 9.760965169804845,
+  "grid_prior_aligned_h": 1.7121980754588737,
+  "MI_weight": 50,
+  "entropy_weight_factor": 50,
+  "grid_refresh_every": 10,
+  "grid_refresh_use_z": false,
+  "decoder_phase_from_grid": true,
+  "grid_refresh_log": [
+    [
+      10,
+      0.25,
+      9.77
+    ],
+    [
+      20,
+      0.75,
+      11.25
+    ],
+    [
+      30,
+      0.25,
+      10.49
+    ],
+    [
+      40,
+      0.0,
+      10.53
+    ],
+    [
+      50,
+      0.0,
+      10.7
+    ],
+    [
+      60,
+      0.0,
+      10.67
+    ],
+    [
+      70,
+      0.0,
+      10.77
+    ],
+    [
+      80,
+      0.0,
+      10.57
+    ],
+    [
+      90,
+      0.0,
+      10.58
+    ],
+    [
+      100,
+      0.0,
+      10.67
+    ],
+    [
+      110,
+      0.0,
+      10.72
+    ],
+    [
+      120,
+      0.25,
+      10.34
+    ],
+    [
+      130,
+      0.25,
+      9.77
+    ],
+    [
+      140,
+      0.0,
+      9.46
+    ],
+    [
+      150,
+      0.25,
+      10.01
+    ],
+    [
+      160,
+      0.25,
+      10.01
+    ],
+    [
+      170,
+      0.25,
+      10.6
+    ],
+    [
+      180,
+      0.25,
+      9.97
+    ],
+    [
+      190,
+      0.25,
+      10.53
+    ],
+    [
+      200,
+      0.0,
+      11.12
+    ],
+    [
+      210,
+      0.25,
+      11.34
+    ],
+    [
+      220,
+      0.25,
+      11.53
+    ],
+    [
+      230,
+      0.25,
+      12.58
+    ],
+    [
+      240,
+      0.25,
+      13.1
+    ],
+    [
+      250,
+      0.25,
+      12.64
+    ],
+    [
+      260,
+      0.25,
+      13.58
+    ],
+    [
+      270,
+      0.25,
+      13.24
+    ],
+    [
+      280,
+      0.25,
+      15.19
+    ],
+    [
+      290,
+      0.25,
+      15.8
+    ]
+  ],
+  "phase_prior_anneal_epochs": 100000,
+  "phase_prior_weight": 2.0,
+  "phase_prior_kappa": "auto",
+  "grid_final_noz_aligned_h": 3.365658587040408,
+  "grid_final_z_aligned_h": 2.8849939871976087,
+  "keep_hardy": [
+    "1",
+    "2"
+  ],
+  "reference_from_model": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/artery_tibial/1-2_seed0/artery_tibial/model.pt",
+  "encoder_hardy1-2_n": 188,
+  "encoder_hardy1-2_median_abs_error_h": 4.581479935814473,
+  "grid_final_noz_hardy1-2_n": 188,
+  "grid_final_noz_hardy1-2_median_abs_error_h": 3.365658587040408,
+  "chiral_sign": 1,
+  "chiral_offset_h": 0.040319163583882586,
+  "chiral_median_abs_error_h": 4.58147987889623,
+  "chiral_mean_abs_error_h": 4.8897813276786275,
+  "chiral_resultant": 0.2237008522336384,
+  "chiral_n": 188,
+  "chiral_eval_on": "all samples",
+  "total_seconds": 96.2
+}

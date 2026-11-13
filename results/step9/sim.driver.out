@@ -1,0 +1,74 @@
+prepared seed 0 jitter 0 h in 2 s
+prepared seed 0 jitter 1 h in 2 s
+prepared seed 1 jitter 0 h in 2 s
+prepared seed 1 jitter 1 h in 2 s
+prepared seed 2 jitter 0 h in 2 s
+prepared seed 2 jitter 1 h in 2 s
+prepared seed 3 jitter 0 h in 2 s
+prepared seed 3 jitter 1 h in 2 s
+prepared seed 4 jitter 0 h in 2 s
+prepared seed 4 jitter 1 h in 2 s
+                 err_vs_sample_h  err_vs_donor_h
+jitter_h mode                                   
+0.0      oracle             0.00            0.00
+         shared             1.13            1.13
+         tissue             2.37            2.37
+1.0      oracle             0.67            0.00
+         shared             1.37            1.27
+         tissue             2.29            2.46
+150 training jobs, 10 at a time
+ jitter_h   mode    kind   covariate  n_estimates  n_seeds  slope  intercept  slope_nonzero   corr  bias_rms  sd_across_seeds_median  rmse
+      0.0 oracle log_amp         age          285        5  1.540     -0.027          1.541  0.896     0.201                   0.167 0.310
+      0.0 oracle log_amp    hardy[1]          285        5  0.784      0.304          1.316  0.099     0.364                   0.293 0.558
+      0.0 oracle log_amp sex[female]          285        5  0.999      0.314          1.008  0.431     0.385                   0.275 0.544
+      0.0 oracle   mesor         age          350        5  1.000      0.001          0.992  0.992     0.014                   0.027 0.030
+      0.0 oracle   mesor    hardy[1]          350        5  1.024     -0.005          1.026  0.961     0.029                   0.059 0.063
+      0.0 oracle   mesor sex[female]          350        5  1.018     -0.006          1.019  0.969     0.024                   0.062 0.060
+      0.0 oracle   phase         age          285        5  0.959      0.032          0.959  0.829     0.255                   0.343 0.512
+      0.0 oracle   phase    hardy[1]          285        5  1.151      0.030          1.151  0.681     0.648                   0.738 1.405
+      0.0 oracle   phase sex[female]          285        5  0.985      0.021          0.985  0.549     0.428                   0.695 1.008
+      0.0 shared log_amp         age          285        5  1.467     -0.009          1.469  0.885     0.193                   0.164 0.299
+      0.0 shared log_amp    hardy[1]          285        5  1.015      0.328          1.753  0.156     0.378                   0.284 0.503
+      0.0 shared log_amp sex[female]          285        5  0.798      0.378          0.838  0.404     0.444                   0.292 0.546
+      0.0 shared   mesor         age          350        5  0.984      0.000          0.922  0.983     0.031                   0.029 0.042
+      0.0 shared   mesor    hardy[1]          350        5  1.001      0.000          0.996  0.956     0.032                   0.061 0.065
+      0.0 shared   mesor sex[female]          350        5  0.978      0.008          0.985  0.955     0.044                   0.059 0.070
+      0.0 shared   phase         age          285        5  0.767      0.026          0.767  0.794     0.298                   0.347 0.500
+      0.0 shared   phase    hardy[1]          285        5  0.765      0.004          0.765  0.689     0.511                   0.677 0.944
+      0.0 shared   phase sex[female]          285        5  0.795      0.012          0.795  0.517     0.426                   0.596 0.895
+      0.0 tissue log_amp         age          285        5  0.997     -0.002          0.999  0.821     0.178                   0.099 0.229
+      0.0 tissue log_amp    hardy[1]          285        5 -0.563      0.221          0.227 -0.129     0.272                   0.161 0.333
+      0.0 tissue log_amp sex[female]          285        5  0.605      0.323          0.648  0.411     0.405                   0.163 0.451
+      0.0 tissue   mesor         age          350        5  0.951      0.003          0.874  0.976     0.039                   0.031 0.050
+      0.0 tissue   mesor    hardy[1]          350        5  0.959      0.003          0.950  0.955     0.037                   0.056 0.064
+      0.0 tissue   mesor sex[female]          350        5  0.945      0.016          0.954  0.946     0.056                   0.058 0.077
+      0.0 tissue   phase         age          285        5  0.398      0.011          0.398  0.640     0.531                   0.264 0.608
+      0.0 tissue   phase    hardy[1]          285        5  0.213      0.018          0.213  0.325     0.961                   0.458 1.133
+      0.0 tissue   phase sex[female]          285        5  0.437     -0.018          0.437  0.394     0.600                   0.450 0.784
+      1.0 oracle log_amp         age          285        5  1.518     -0.001          1.520  0.880     0.206                   0.170 0.321
+      1.0 oracle log_amp    hardy[1]          285        5  1.661      0.218          1.800  0.166     0.405                   0.292 0.630
+      1.0 oracle log_amp sex[female]          285        5  1.008      0.395          1.058  0.518     0.447                   0.250 0.530
+      1.0 oracle   mesor         age          350        5  0.982      0.003          0.984  0.991     0.016                   0.027 0.031
+      1.0 oracle   mesor    hardy[1]          350        5  1.016      0.002          1.022  0.963     0.026                   0.055 0.061
+      1.0 oracle   mesor sex[female]          350        5  1.017     -0.009          1.018  0.971     0.024                   0.054 0.058
+      1.0 oracle   phase         age          285        5  1.006      0.034          1.006  0.803     0.265                   0.374 0.588
+      1.0 oracle   phase    hardy[1]          285        5  1.359      0.055          1.359  0.701     0.909                   0.763 1.608
+      1.0 oracle   phase sex[female]          285        5  0.745     -0.010          0.745  0.454     0.460                   0.708 0.997
+      1.0 shared log_amp         age          285        5  1.475      0.009          1.478  0.878     0.198                   0.188 0.309
+      1.0 shared log_amp    hardy[1]          285        5  0.528      0.301          1.255  0.083     0.365                   0.245 0.476
+      1.0 shared log_amp sex[female]          285        5  0.817      0.470          0.896  0.417     0.533                   0.243 0.610
+      1.0 shared   mesor         age          350        5  0.973      0.002          0.927  0.985     0.030                   0.029 0.040
+      1.0 shared   mesor    hardy[1]          350        5  0.997      0.004          0.993  0.955     0.033                   0.056 0.066
+      1.0 shared   mesor sex[female]          350        5  0.975      0.007          0.984  0.955     0.043                   0.056 0.070
+      1.0 shared   phase         age          285        5  0.905      0.012          0.905  0.796     0.276                   0.335 0.547
+      1.0 shared   phase    hardy[1]          285        5  0.728      0.021          0.728  0.633     0.534                   0.710 1.049
+      1.0 shared   phase sex[female]          285        5  0.568     -0.060          0.568  0.423     0.500                   0.607 0.871
+      1.0 tissue log_amp         age          285        5  1.002     -0.003          1.004  0.832     0.165                   0.122 0.221
+      1.0 tissue log_amp    hardy[1]          285        5 -1.101      0.214         -0.386 -0.248     0.260                   0.172 0.334
+      1.0 tissue log_amp sex[female]          285        5  0.472      0.357          0.536  0.331     0.445                   0.167 0.489
+      1.0 tissue   mesor         age          350        5  0.950      0.003          0.889  0.978     0.036                   0.031 0.048
+      1.0 tissue   mesor    hardy[1]          350        5  0.957      0.007          0.952  0.953     0.038                   0.054 0.065
+      1.0 tissue   mesor sex[female]          350        5  0.942      0.015          0.952  0.946     0.057                   0.055 0.077
+      1.0 tissue   phase         age          285        5  0.363      0.004          0.363  0.563     0.570                   0.233 0.656
+      1.0 tissue   phase    hardy[1]          285        5  0.149      0.020          0.149  0.259     1.041                   0.472 1.150
+      1.0 tissue   phase sex[female]          285        5  0.508     -0.042          0.508  0.442     0.534                   0.499 0.770

@@ -1,0 +1,42 @@
+{
+  "tissue": "Adipose - Subcutaneous",
+  "file": "adipose_subcutaneous",
+  "n_samples": 663,
+  "n_context_genes": 2012,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 12,
+  "train_seconds": 118.5,
+  "epochs": 300,
+  "final_elbo": 26828.9951171875,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[1]",
+    "hardy[2]",
+    "hardy[3]",
+    "hardy[4]",
+    "hardy__missing"
+  ],
+  "chiral_sign": 1,
+  "chiral_offset_h": -4.404872478796617,
+  "chiral_median_abs_error_h": 5.07832752504752,
+  "chiral_mean_abs_error_h": 5.497327247762081,
+  "chiral_resultant": 0.10423814022158864,
+  "chiral_n": 650,
+  "total_seconds": 130.3
+}

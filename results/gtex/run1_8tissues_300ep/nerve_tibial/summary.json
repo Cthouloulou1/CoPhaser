@@ -1,0 +1,42 @@
+{
+  "tissue": "Nerve - Tibial",
+  "file": "nerve_tibial",
+  "n_samples": 619,
+  "n_context_genes": 2010,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 12,
+  "train_seconds": 175.5,
+  "epochs": 300,
+  "final_elbo": 2.5923527288327735e+21,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[1]",
+    "hardy[2]",
+    "hardy[3]",
+    "hardy[4]",
+    "hardy__missing"
+  ],
+  "chiral_sign": 1,
+  "chiral_offset_h": -4.141809247523895,
+  "chiral_median_abs_error_h": 5.682951300814548,
+  "chiral_mean_abs_error_h": 5.863985783508181,
+  "chiral_resultant": 0.030255720782148433,
+  "chiral_n": 610,
+  "total_seconds": 180.3
+}

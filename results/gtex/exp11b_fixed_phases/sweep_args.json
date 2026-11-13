@@ -1,0 +1,24 @@
+{
+  "tissues": "None",
+  "clocks": "['mouse', 'learned']",
+  "subsets": "['all', 'fast']",
+  "seeds": "[0, 1]",
+  "epochs": "300",
+  "jobs": "10",
+  "threads": "6",
+  "exp10": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy",
+  "outdir": "results/gtex/exp11b_fixed_phases",
+  "fixed_phases": "True",
+  "covariate_phase": "False",
+  "extra": "[]",
+  "learned_clocks": {
+    "adipose_subcutaneous": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/adipose_subcutaneous/all_seed0/adipose_subcutaneous/model.pt",
+    "artery_tibial": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/artery_tibial/1-2_seed0/artery_tibial/model.pt",
+    "lung": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/lung/1-2_seed1/lung/model.pt",
+    "muscle_skeletal": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/muscle_skeletal/3-4_seed0/muscle_skeletal/model.pt",
+    "nerve_tibial": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/nerve_tibial/0_seed0/nerve_tibial/model.pt",
+    "skin_not_sun_exposed_suprapubic": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/skin_not_sun_exposed_suprapubic/0_seed0/skin_not_sun_exposed_suprapubic/model.pt",
+    "skin_sun_exposed_lower_leg": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/skin_sun_exposed_lower_leg/3-4_seed1/skin_sun_exposed_lower_leg/model.pt",
+    "thyroid": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/thyroid/0_seed1/thyroid/model.pt"
+  }
+}

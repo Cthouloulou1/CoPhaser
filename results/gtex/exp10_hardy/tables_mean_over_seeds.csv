@@ -1,0 +1,99 @@
+# stage1_n (rows: tissue; columns: death-type group the clock was learned on)
+tissue_file,all,0,1-2,3-4
+adipose_subcutaneous,663.0,352.0,197.0,102.0
+artery_tibial,663.0,369.0,188.0,94.0
+lung,578.0,299.0,182.0,95.0
+muscle_skeletal,803.0,424.0,234.0,133.0
+nerve_tibial,619.0,327.0,185.0,98.0
+skin_not_sun_exposed_suprapubic,604.0,314.0,183.0,107.0
+skin_sun_exposed_lower_leg,701.0,352.0,220.0,120.0
+thyroid,653.0,358.0,196.0,97.0
+
+# stage1_grid_before_h (rows: tissue; columns: death-type group the clock was learned on)
+tissue_file,all,0,1-2,3-4
+adipose_subcutaneous,3.393,3.258,3.062,2.527
+artery_tibial,3.139,3.047,2.912,2.654
+lung,3.638,4.123,2.869,3.86
+muscle_skeletal,4.271,4.208,2.598,3.325
+nerve_tibial,3.603,3.331,3.174,2.388
+skin_not_sun_exposed_suprapubic,3.406,3.644,2.594,2.874
+skin_sun_exposed_lower_leg,3.672,3.649,3.545,2.976
+thyroid,3.066,2.996,2.291,3.103
+
+# stage1_grid_after_h (rows: tissue; columns: death-type group the clock was learned on)
+tissue_file,all,0,1-2,3-4
+adipose_subcutaneous,3.015,3.797,4.019,3.089
+artery_tibial,3.597,2.978,3.415,3.993
+lung,4.173,3.748,3.413,4.741
+muscle_skeletal,4.413,4.19,3.456,3.581
+nerve_tibial,4.021,3.623,3.854,3.22
+skin_not_sun_exposed_suprapubic,4.282,3.911,3.32,3.937
+skin_sun_exposed_lower_leg,4.275,4.118,3.097,3.663
+thyroid,3.65,3.164,1.703,4.295
+
+# stage1_encoder_h (rows: tissue; columns: death-type group the clock was learned on)
+tissue_file,all,0,1-2,3-4
+adipose_subcutaneous,4.898,4.497,4.154,4.692
+artery_tibial,4.349,5.05,4.694,4.336
+lung,5.178,4.926,5.134,4.855
+muscle_skeletal,4.717,5.138,3.252,4.438
+nerve_tibial,4.968,4.809,4.74,4.063
+skin_not_sun_exposed_suprapubic,4.99,5.369,5.435,4.297
+skin_sun_exposed_lower_leg,5.098,4.829,5.155,4.758
+thyroid,4.458,4.926,4.599,4.465
+
+# stage2_grid_after_h (rows: tissue; columns: death-type group the clock was learned on)
+tissue_file,all,0,1-2,3-4
+adipose_subcutaneous,2.913,3.907,3.87,3.341
+artery_tibial,3.811,3.072,3.34,4.112
+lung,4.214,3.977,3.58,4.152
+muscle_skeletal,4.243,4.047,4.459,4.134
+nerve_tibial,3.994,3.787,3.915,3.712
+skin_not_sun_exposed_suprapubic,4.167,3.797,3.928,4.145
+skin_sun_exposed_lower_leg,4.505,4.173,3.681,3.692
+thyroid,3.676,3.1,2.93,3.778
+
+# stage2_encoder_h (rows: tissue; columns: death-type group the clock was learned on)
+tissue_file,all,0,1-2,3-4
+adipose_subcutaneous,4.52,4.13,4.808,4.46
+artery_tibial,4.601,4.302,4.924,4.79
+lung,4.957,5.079,4.844,5.019
+muscle_skeletal,4.724,4.776,4.83,4.758
+nerve_tibial,4.863,4.597,4.78,5.035
+skin_not_sun_exposed_suprapubic,5.12,4.846,4.669,5.155
+skin_sun_exposed_lower_leg,5.091,5.206,5.188,4.591
+thyroid,4.068,4.074,4.537,4.274
+
+# stage2_grid_on_hardy0_h (rows: tissue; columns: death-type group the clock was learned on)
+tissue_file,all,0,1-2,3-4
+adipose_subcutaneous,3.317,4.293,4.07,4.05
+artery_tibial,3.772,3.391,3.536,4.394
+lung,4.15,4.066,3.564,4.321
+muscle_skeletal,4.476,4.811,4.553,4.826
+nerve_tibial,4.843,4.215,3.793,4.343
+skin_not_sun_exposed_suprapubic,4.284,4.197,4.925,4.477
+skin_sun_exposed_lower_leg,4.436,4.732,4.321,4.065
+thyroid,3.733,3.83,3.339,3.921
+
+# stage2_grid_on_hardy1-2_h (rows: tissue; columns: death-type group the clock was learned on)
+tissue_file,all,0,1-2,3-4
+adipose_subcutaneous,2.33,2.942,3.843,2.597
+artery_tibial,3.838,2.228,2.926,3.562
+lung,4.159,3.694,3.451,3.962
+muscle_skeletal,3.951,3.004,4.129,2.676
+nerve_tibial,2.75,3.618,3.66,2.619
+skin_not_sun_exposed_suprapubic,3.469,3.223,2.854,3.734
+skin_sun_exposed_lower_leg,4.255,3.668,2.768,2.874
+thyroid,3.174,1.651,1.782,2.86
+
+# stage2_grid_on_hardy3-4_h (rows: tissue; columns: death-type group the clock was learned on)
+tissue_file,all,0,1-2,3-4
+adipose_subcutaneous,3.118,4.263,3.075,3.284
+artery_tibial,3.864,3.569,3.854,4.074
+lung,4.548,3.805,3.689,4.063
+muscle_skeletal,4.266,4.563,4.858,4.312
+nerve_tibial,3.563,2.886,4.287,3.666
+skin_not_sun_exposed_suprapubic,4.707,4.356,3.625,4.667
+skin_sun_exposed_lower_leg,4.804,3.74,3.843,3.92
+thyroid,5.163,3.717,4.092,4.617
+

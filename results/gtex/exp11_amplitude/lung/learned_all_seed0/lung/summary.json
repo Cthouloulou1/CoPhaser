@@ -1,0 +1,219 @@
+{
+  "tissue": "Lung",
+  "file": "lung",
+  "n_samples": 578,
+  "n_context_genes": 2011,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 14,
+  "train_seconds": 193.0,
+  "epochs": 300,
+  "rhythmic_likelihood_weight": 0.21853441753541641,
+  "non_rhythmic_likelihood_weight": 0.21853441753541641,
+  "decoder_frozen": true,
+  "final_elbo": 3128.218465169271,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[1]",
+    "hardy[2]",
+    "hardy[3]",
+    "hardy[4]",
+    "hardy__missing"
+  ],
+  "grid_prior_kappa_median": 5.361821519170711,
+  "grid_prior_aligned_h": 3.769979034709073,
+  "MI_weight": 50,
+  "entropy_weight_factor": 50,
+  "grid_refresh_every": 10,
+  "grid_refresh_use_z": false,
+  "decoder_phase_from_grid": true,
+  "grid_refresh_log": [
+    [
+      10,
+      0.5,
+      5.66
+    ],
+    [
+      20,
+      0.25,
+      5.87
+    ],
+    [
+      30,
+      0.25,
+      5.86
+    ],
+    [
+      40,
+      0.0,
+      5.86
+    ],
+    [
+      50,
+      0.0,
+      5.88
+    ],
+    [
+      60,
+      0.0,
+      5.92
+    ],
+    [
+      70,
+      0.0,
+      5.87
+    ],
+    [
+      80,
+      0.0,
+      5.89
+    ],
+    [
+      90,
+      0.25,
+      5.96
+    ],
+    [
+      100,
+      0.25,
+      5.91
+    ],
+    [
+      110,
+      0.25,
+      6.17
+    ],
+    [
+      120,
+      0.25,
+      6.54
+    ],
+    [
+      130,
+      0.25,
+      6.93
+    ],
+    [
+      140,
+      0.25,
+      6.84
+    ],
+    [
+      150,
+      0.25,
+      7.18
+    ],
+    [
+      160,
+      0.25,
+      7.48
+    ],
+    [
+      170,
+      0.5,
+      9.03
+    ],
+    [
+      180,
+      0.25,
+      8.92
+    ],
+    [
+      190,
+      0.25,
+      8.55
+    ],
+    [
+      200,
+      0.0,
+      8.75
+    ],
+    [
+      210,
+      0.25,
+      8.7
+    ],
+    [
+      220,
+      0.25,
+      10.01
+    ],
+    [
+      230,
+      0.25,
+      10.03
+    ],
+    [
+      240,
+      0.25,
+      10.89
+    ],
+    [
+      250,
+      0.25,
+      9.54
+    ],
+    [
+      260,
+      0.25,
+      9.59
+    ],
+    [
+      270,
+      0.25,
+      10.16
+    ],
+    [
+      280,
+      0.25,
+      10.82
+    ],
+    [
+      290,
+      0.25,
+      10.87
+    ]
+  ],
+  "phase_prior_anneal_epochs": 100000,
+  "phase_prior_weight": 2.0,
+  "phase_prior_kappa": "auto",
+  "grid_final_noz_aligned_h": 3.6771411099320934,
+  "grid_final_z_aligned_h": 3.86028957778321,
+  "keep_hardy": null,
+  "reference_from_model": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/lung/1-2_seed1/lung/model.pt",
+  "encoder_hardy0_n": 299,
+  "encoder_hardy0_median_abs_error_h": 5.435017606259669,
+  "encoder_hardy1-2_n": 180,
+  "encoder_hardy1-2_median_abs_error_h": 5.050476035820676,
+  "encoder_hardy3-4_n": 95,
+  "encoder_hardy3-4_median_abs_error_h": 5.1995035316557825,
+  "grid_final_noz_hardy0_n": 299,
+  "grid_final_noz_hardy0_median_abs_error_h": 3.5579229164116972,
+  "grid_final_noz_hardy1-2_n": 180,
+  "grid_final_noz_hardy1-2_median_abs_error_h": 3.4093731181347824,
+  "grid_final_noz_hardy3-4_n": 95,
+  "grid_final_noz_hardy3-4_median_abs_error_h": 4.540935706903306,
+  "chiral_sign": -1,
+  "chiral_offset_h": 5.176989964023561,
+  "chiral_median_abs_error_h": 5.159473272343899,
+  "chiral_mean_abs_error_h": 5.497254901574587,
+  "chiral_resultant": 0.10654851222023658,
+  "chiral_n": 574,
+  "chiral_eval_on": "all samples",
+  "total_seconds": 217.0
+}

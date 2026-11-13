@@ -1,0 +1,210 @@
+{
+  "tissue": "Adipose - Subcutaneous",
+  "file": "adipose_subcutaneous",
+  "n_samples": 197,
+  "n_context_genes": 2009,
+  "clock_genes": [
+    "ARNTL",
+    "NPAS2",
+    "CRY1",
+    "CRY2",
+    "PER1",
+    "PER2",
+    "PER3",
+    "NR1D1",
+    "NR1D2",
+    "CLOCK",
+    "RORA",
+    "TEF",
+    "DBP",
+    "CIART"
+  ],
+  "n_prior_genes": 14,
+  "train_seconds": 91.1,
+  "epochs": 300,
+  "rhythmic_likelihood_weight": 0.22626742391686644,
+  "non_rhythmic_likelihood_weight": 0.22626742391686644,
+  "decoder_frozen": true,
+  "final_elbo": 3095.1055297851562,
+  "covariates": [
+    "age",
+    "sex[female]",
+    "hardy[2]"
+  ],
+  "grid_prior_kappa_median": 4.527002275096611,
+  "grid_prior_aligned_h": 2.162538732268208,
+  "MI_weight": 50,
+  "entropy_weight_factor": 50,
+  "grid_refresh_every": 10,
+  "grid_refresh_use_z": false,
+  "decoder_phase_from_grid": true,
+  "grid_refresh_log": [
+    [
+      10,
+      0.25,
+      4.63
+    ],
+    [
+      20,
+      0.25,
+      4.73
+    ],
+    [
+      30,
+      0.75,
+      5.0
+    ],
+    [
+      40,
+      0.0,
+      4.96
+    ],
+    [
+      50,
+      0.0,
+      5.06
+    ],
+    [
+      60,
+      0.0,
+      5.0
+    ],
+    [
+      70,
+      0.0,
+      5.0
+    ],
+    [
+      80,
+      0.0,
+      5.01
+    ],
+    [
+      90,
+      0.0,
+      5.09
+    ],
+    [
+      100,
+      0.0,
+      5.03
+    ],
+    [
+      110,
+      0.0,
+      4.88
+    ],
+    [
+      120,
+      0.0,
+      4.91
+    ],
+    [
+      130,
+      0.25,
+      5.0
+    ],
+    [
+      140,
+      0.25,
+      5.49
+    ],
+    [
+      150,
+      0.25,
+      5.42
+    ],
+    [
+      160,
+      0.25,
+      5.11
+    ],
+    [
+      170,
+      0.5,
+      5.69
+    ],
+    [
+      180,
+      0.25,
+      5.51
+    ],
+    [
+      190,
+      0.25,
+      5.96
+    ],
+    [
+      200,
+      0.25,
+      5.34
+    ],
+    [
+      210,
+      0.25,
+      5.63
+    ],
+    [
+      220,
+      0.25,
+      5.08
+    ],
+    [
+      230,
+      0.0,
+      4.98
+    ],
+    [
+      240,
+      0.25,
+      5.14
+    ],
+    [
+      250,
+      0.25,
+      5.57
+    ],
+    [
+      260,
+      0.25,
+      5.34
+    ],
+    [
+      270,
+      0.25,
+      5.65
+    ],
+    [
+      280,
+      0.0,
+      5.14
+    ],
+    [
+      290,
+      0.25,
+      5.17
+    ]
+  ],
+  "phase_prior_anneal_epochs": 100000,
+  "phase_prior_weight": 2.0,
+  "phase_prior_kappa": "auto",
+  "grid_final_noz_aligned_h": 2.366243246172665,
+  "grid_final_z_aligned_h": 2.2641430797856326,
+  "keep_hardy": [
+    "1",
+    "2"
+  ],
+  "reference_from_model": "/workspaces/eyerly/CoPhaser/results/gtex/exp10_hardy/stage1/adipose_subcutaneous/all_seed0/adipose_subcutaneous/model.pt",
+  "encoder_hardy1-2_n": 197,
+  "encoder_hardy1-2_median_abs_error_h": 5.20182990374072,
+  "grid_final_noz_hardy1-2_n": 197,
+  "grid_final_noz_hardy1-2_median_abs_error_h": 2.366243246172665,
+  "chiral_sign": -1,
+  "chiral_offset_h": 7.439443830675999,
+  "chiral_median_abs_error_h": 5.201829869055051,
+  "chiral_mean_abs_error_h": 5.326353593051991,
+  "chiral_resultant": 0.13854907892203291,
+  "chiral_n": 197,
+  "chiral_eval_on": "all samples",
+  "total_seconds": 103.1
+}

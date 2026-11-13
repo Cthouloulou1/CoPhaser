@@ -1,0 +1,24 @@
+{
+  "n_cells": 21374,
+  "n_rhythmic": 24,
+  "epochs": 200,
+  "adam_beta2": 0.999,
+  "z_input": "raw",
+  "seed": 1,
+  "covariates": [
+    "mito"
+  ],
+  "covariate_columns": [
+    "mito"
+  ],
+  "train_seconds": 561.9,
+  "final_elbo": 1340.9089965820312,
+  "encoder_mad_notebook_h": 1.7986057504531117,
+  "encoder_median_error_mean_offset_h": 1.8026656101359302,
+  "grid_mad_notebook_h": 1.750000000000003,
+  "grid_median_error_mean_offset_h": 1.9142653047299274,
+  "theta_resultant": 0.09325102716684341,
+  "lambda_median": 1.07280433177948,
+  "encoder_input_abs_mean_per_gene_median": 0.2163613736629486,
+  "encoder_input_sd_per_gene_median": 0.38740307092666626
+}
