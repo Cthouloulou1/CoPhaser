@@ -39,6 +39,19 @@ class Trainer:
         # optional informative prior on the phase, annealed to a flat prior during training
         phase_prior_anneal_epochs=50,
         phase_prior_weight=2.0,
+        # optional: re-estimate the phase prior on a grid with the current decoder every k epochs
+        phase_prior_refresh_every: int = None,
+        phase_prior_refresh_kwargs: dict = None,
+        phase_prior_refresh_kappa="auto",
+        # optional: the decoder sees the prior phase instead of the encoder's sample
+        decoder_phase_from_prior: bool = False,
+        # optional L2 penalty on the covariate effects W_c (model.covariate_mean_decoder)
+        covariate_l2_weight=0.0,
+        # optional L2 penalty on the covariate amplitude effects (model.covariate_amp_decoder)
+        covariate_amp_l2_weight=0.0,
+        covariate_phase_l2_weight=0.0,
+        # Adam (beta1, beta2). Use beta2=0.99 for deep (bulk) data, see docstring.
+        adam_betas: Tuple[float, float] = (0.9, 0.999),
     ):
         """
         Trainer class to handle training of CoPhaser model. Sorted by expected impact on results with:
@@ -94,8 +107,42 @@ class Trainer:
             Needed only for quality_score()/quality_metrics(), by default None
         phase_prior_anneal_epochs : int, optional
             Epoch at which the phase prior becomes flat, by default 50.
+        phase_prior_refresh_every : int or None, optional
+            If set, every that many epochs (from epoch k on) the per-cell phase prior is
+            replaced by model.grid_phase(**phase_prior_refresh_kwargs), i.e. the maximum-
+            likelihood phase under the current decoder. Pair it with a large
+            phase_prior_anneal_epochs, otherwise the refreshed prior is annealed away too.
+            Requires a phase prior at the start of training (model.add_phase_prior).
+            None (default): the prior is fixed.
+        phase_prior_refresh_kwargs : dict or None, optional
+            Arguments of model.grid_phase for the refresh (n_points, use_z, dispersion, ...).
+        phase_prior_refresh_kappa : "auto" or float, optional
+            Concentration of the refreshed prior: "auto" = per-cell kappa from the grid
+            posterior, or one number for every cell.
+        decoder_phase_from_prior : bool, optional
+            If True, the generative model uses the prior phase of each cell instead of the
+            encoder's sample (cells without prior keep the encoder's phase): with
+            phase_prior_refresh_every this alternates grid estimation of the phases and
+            fitting of the decoder, the encoder being trained alongside by the prior term.
+            Default False.
         phase_prior_weight : float, optional
             How strongly the prior counts in the loss, by default 2.
+        covariate_l2_weight : float, optional
+            Weight of an L2 penalty (mean of squared entries) on the covariate effects
+            W_c, if the model has covariates. By default 0 (no penalty).
+        covariate_amp_l2_weight : float, optional
+            Same for the covariate amplitude effects (model.covariate_amp_decoder).
+            By default 0 (no penalty).
+        covariate_phase_l2_weight : float, optional
+            Same for the covariate phase delays (identifiable part, in radians,
+            model.covariate_phase_weight()). By default 0 (no penalty).
+        adam_betas : tuple of float, optional
+            Adam's (beta1, beta2), by default torch's (0.9, 0.999). On deep data (bulk,
+            hundreds of counts per gene) the first epochs produce very large gradients;
+            with beta2=0.999 Adam remembers them for ~1000 steps and its steps stay far
+            too small for hundreds of epochs (NB dispersion stuck, effects shrunk, poor
+            phases). beta2=0.99 (memory ~100 steps) fixes this; on single-cell data it
+            made no difference in our tests.
         """
 
         self.model = model
@@ -117,6 +164,20 @@ class Trainer:
         self.cycle = cycle
         self.phase_prior_anneal_epochs = phase_prior_anneal_epochs
         self.phase_prior_weight = phase_prior_weight
+        if phase_prior_refresh_every is not None and int(phase_prior_refresh_every) < 1:
+            raise ValueError("phase_prior_refresh_every must be a positive integer or None.")
+        if phase_prior_refresh_kappa != "auto" and float(phase_prior_refresh_kappa) < 0:
+            raise ValueError("phase_prior_refresh_kappa must be 'auto' or non-negative.")
+        self.phase_prior_refresh_every = phase_prior_refresh_every
+        self.phase_prior_refresh_kwargs = dict(phase_prior_refresh_kwargs or {})
+        self.phase_prior_refresh_kappa = phase_prior_refresh_kappa
+        self.decoder_phase_from_prior = decoder_phase_from_prior
+        # (epoch, median |change| of the prior phase in rad, median kappa) per refresh
+        self.phase_prior_refresh_log = []
+        self.covariate_l2_weight = covariate_l2_weight
+        self.covariate_amp_l2_weight = covariate_amp_l2_weight
+        self.covariate_phase_l2_weight = covariate_phase_l2_weight
+        self.adam_betas = tuple(adam_betas)
 
     def quality_score(self):
         """
@@ -279,6 +340,11 @@ class Trainer:
         """
 
         self._check_data_loaded()
+        if (self.decoder_phase_from_prior or self.phase_prior_refresh_every) and not self._has_phase_prior():
+            raise ValueError(
+                "decoder_phase_from_prior / phase_prior_refresh_every need a phase prior: "
+                "call model.add_phase_prior (e.g. with model.grid_phase()) before training."
+            )
         n_cells = len(self.model.library_size)
         if subsample is not None and int(subsample) >= n_cells:
             subsample = None
@@ -299,7 +365,7 @@ class Trainer:
         self.model.to(device)
         # with a subsample, the loader is rebuilt every epoch below
         data_loader = None if subsample is not None else self._create_dataloader(batch_size)
-        optimizer = torch.optim.Adam(self.model.parameters(), lr=lr)
+        optimizer = torch.optim.Adam(self.model.parameters(), lr=lr, betas=self.adam_betas)
         mine_net, mine_optimizer = self._init_mine_network(device)
 
         n_skipped = 0  # optimizer steps skipped because the loss was not finite
@@ -311,6 +377,11 @@ class Trainer:
             losses_epoch = {}
 
             self._maybe_unfreeze_layers(epoch)
+
+            if self.phase_prior_refresh_every and epoch > 0 and epoch % int(self.phase_prior_refresh_every) == 0:
+                self._refresh_phase_prior(epoch, silent)
+                if subsample is None:
+                    data_loader = self._create_dataloader(batch_size)
 
             if subsample is not None:
                 data_loader = self._create_dataloader(
@@ -331,6 +402,8 @@ class Trainer:
                     inputs["rhythmic_genes"],
                     inputs["library_size"],
                     epoch,
+                    covariates=inputs["covariates"],
+                    theta_override=self._decoder_phase(inputs),
                 )
 
                 loss_dict = self.loss_fn(
@@ -373,6 +446,27 @@ class Trainer:
                     phase_prior_weight=self.phase_prior_weight,
                 )
                 loss = loss_dict["total_loss"]
+                if self.covariate_l2_weight > 0 and hasattr(self.model, "covariate_mean_decoder"):
+                    l2_cov = self.covariate_l2_weight * (
+                        self.model.covariate_mean_decoder.weight**2
+                    ).mean()
+                    loss = loss + l2_cov
+                    loss_dict["total_loss"] = loss
+                    loss_dict["covariate_l2"] = l2_cov
+                if self.covariate_amp_l2_weight > 0 and hasattr(self.model, "covariate_amp_decoder"):
+                    l2_amp = self.covariate_amp_l2_weight * (
+                        self.model.covariate_amp_decoder.weight**2
+                    ).mean()
+                    loss = loss + l2_amp
+                    loss_dict["total_loss"] = loss
+                    loss_dict["covariate_amp_l2"] = l2_amp
+                if self.covariate_phase_l2_weight > 0 and hasattr(self.model, "covariate_phase_decoder"):
+                    l2_phase = self.covariate_phase_l2_weight * (
+                        self.model.covariate_phase_weight() ** 2
+                    ).mean()
+                    loss = loss + l2_phase
+                    loss_dict["total_loss"] = loss
+                    loss_dict["covariate_phase_l2"] = l2_phase
                 self.record_loss_batches(
                     losses_batch=loss_dict, losses_epoch=losses_epoch
                 )
@@ -418,6 +512,8 @@ class Trainer:
                 f"Warning: {n_skipped} optimizer step(s) were skipped because the loss "
                 "was not finite. The run finished, but check it before trusting it."
             )
+        # Full per-epoch history, kept whatever `silent` is (the return value below is not).
+        self.losses_history = {k: list(v) for k, v in losses_training.items()}
         if not silent:
             self.plot_losses(losses_training)
         else:
@@ -449,6 +545,7 @@ class Trainer:
             self.model.batch_keys if self.model.batch_corrected else None,
             self.model.phase_prior if self._has_phase_prior() else None,
             self.model.phase_prior_kappa if self._has_phase_prior() else None,
+            getattr(self.model, "covariates", None),
         )
         if indices is not None:
             dataset = Subset(dataset, indices.tolist())
@@ -483,8 +580,10 @@ class Trainer:
             batch_keys,
             phase_prior,
             phase_prior_kappa,
+            covariates,
         ) = [x.to(device) for x in batch]
         return {
+            "covariates": None if covariates.nelement() == 0 else covariates,
             "rhythmic_genes": rhythmic_genes,
             "variable_genes": variable_genes,
             "library_size": library_size,
@@ -494,6 +593,29 @@ class Trainer:
                 None if phase_prior_kappa.nelement() == 0 else phase_prior_kappa
             ),
         }
+
+    def _decoder_phase(self, inputs):
+        """Prior phase for the generative model (NaN = no prior on that cell), or None."""
+        if not self.decoder_phase_from_prior or inputs["phase_prior"] is None:
+            return None
+        kappa = inputs["phase_prior_kappa"]
+        return torch.where(kappa > 0, inputs["phase_prior"], torch.full_like(inputs["phase_prior"], float("nan")))
+
+    def _refresh_phase_prior(self, epoch, silent=True):
+        """Replace the per-cell phase prior by the grid estimate under the current decoder."""
+        old = self.model.phase_prior.detach().cpu().numpy()
+        gp = self.model.grid_phase(**self.phase_prior_refresh_kwargs)
+        if self.phase_prior_refresh_kappa == "auto":
+            kappa = gp["kappa"]
+        else:
+            kappa = np.full(len(gp["theta"]), float(self.phase_prior_refresh_kappa))
+        self.model.phase_prior = torch.tensor(gp["theta"], dtype=torch.float32)
+        self.model.phase_prior_kappa = torch.tensor(kappa, dtype=torch.float32)
+        change = float(np.median(np.abs(np.angle(np.exp(1j * (gp["theta"] - old))))))
+        self.phase_prior_refresh_log.append((epoch, change, float(np.median(kappa))))
+        if not silent:
+            print(f"epoch {epoch}: phase prior refreshed by grid, median change "
+                  f"{change * 24 / (2 * np.pi):.2f} h, median kappa {np.median(kappa):.2f}")
 
     def _has_phase_prior(self):
         return bool(getattr(self.model, "phase_prior_loaded", False))

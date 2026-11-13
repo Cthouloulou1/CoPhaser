@@ -16,4 +16,5 @@ cophaser_runs/
 *.log
 automatic_tunning/
 build/
-CLAUDE.md
+!reference/*.csv
+results/

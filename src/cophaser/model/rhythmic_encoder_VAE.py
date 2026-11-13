@@ -64,13 +64,23 @@ class RhythmicEncoderVAE(FreezableModule):
         mu_z=None,
         _lambda=None,
         use_mu_z=True,
+        covariate_shift=None,
+        covariate_log_amp=None,
     ):
+        # Mean shift explained by observed covariates (log scale, rhythmic genes). Unlike
+        # mu_z it is always applied: covariates are observed, and the shift starts at 0.
+        if covariate_shift is not None:
+            library_size = library_size * torch.exp(covariate_shift)
         if use_mu_z:
             counts_norm_center = (
                 torch.log1p(counts / (library_size * torch.exp(mu_z)) * 1e4) - self.b
             ) / _lambda.view(-1, 1)
         else:
             counts_norm_center = torch.log1p(counts / library_size * 1e4) - self.b
+        # Amplitude change explained by observed covariates (exp(gamma . c), rhythmic genes),
+        # removed like lambda; it starts at 1.
+        if covariate_log_amp is not None:
+            counts_norm_center = counts_norm_center * torch.exp(-covariate_log_amp)
         return counts_norm_center
 
     def forward(
@@ -82,6 +92,8 @@ class RhythmicEncoderVAE(FreezableModule):
         use_mu_z_encoder,
         epoch=-1,
         use_max_posterior=False,
+        covariate_shift=None,
+        covariate_log_amp=None,
     ):
         library_size = library_size.view(-1, 1)
 
@@ -91,6 +103,8 @@ class RhythmicEncoderVAE(FreezableModule):
             mu_Z,
             _lambda,
             use_mu_z_encoder,
+            covariate_shift=covariate_shift,
+            covariate_log_amp=covariate_log_amp,
         )
         mu, x_projected = self._mean_forward(x_norm)
         if epoch != -1:

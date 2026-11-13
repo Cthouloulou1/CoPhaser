@@ -31,6 +31,7 @@ class SpaceWrapper(torch.nn.Module):
         space_field=None,
         generative_field=None,
         index_field=None,
+        covariates_batch=None,
     ):
         super().__init__()
         self.model = model
@@ -38,6 +39,7 @@ class SpaceWrapper(torch.nn.Module):
         self.generative_field = generative_field
         self.index_field = index_field
         self.lib_batch = lib_batch
+        self.covariates_batch = covariates_batch
 
     def forward(
         self,
@@ -46,8 +48,12 @@ class SpaceWrapper(torch.nn.Module):
     ):
         rhythmic_genes = variable_genes[:, self.model.rhythmic_gene_indices]
 
+        covariates = self.covariates_batch
+        if covariates is not None and covariates.shape[0] != variable_genes.shape[0]:
+            # IntegratedGradients may stack several interpolation steps of the batch
+            covariates = covariates.repeat(variable_genes.shape[0] // covariates.shape[0], 1)
         generative_outputs, space_outputs = self.model.forward(
-            variable_genes, rhythmic_genes, self.lib_batch, epoch
+            variable_genes, rhythmic_genes, self.lib_batch, epoch, covariates=covariates
         )
         if self.generative_field is not None:
             if self.index_field is not None:
@@ -81,12 +87,15 @@ def compute_feature_importance(
     means = x_variable.mean(axis=0)
     means = means.unsqueeze(0).expand(batch_size, -1)
     library_size = model.library_size.to(device)
+    covariates = getattr(model, "covariates", None)
+    covariates = None if covariates is None else covariates.to(device)
 
     n_input = x_variable.shape[1]
     running_attr = torch.zeros((mu_dim, n_input), device=device)
     if mask_cells is not None:
         x_variable = x_variable[mask_cells]
         library_size = library_size[mask_cells]
+        covariates = None if covariates is None else covariates[mask_cells]
     dataloader = DataLoader(torch.arange(len(x_variable)), batch_size=batch_size)
 
     for batch_idxs in dataloader:
@@ -99,6 +108,7 @@ def compute_feature_importance(
             space_field=space_field,
             generative_field=generative_field,
             index_field=index_field,
+            covariates_batch=None if covariates is None else covariates[batch_idxs],
         ).to(device)
         ig = IntegratedGradients(wrapper)
         for i in range(mu_dim):
