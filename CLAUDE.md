@@ -5,7 +5,8 @@
 - Réponds-moi en français. Code, commentaires, docstrings et messages de commit en anglais (c'est la convention du dépôt).
 - Avant toute modification qui touche plusieurs fichiers, résume le plan en quelques lignes et attends mon accord.
 - Ne jamais `git push`. Commits locaux seulement si je les demande.
-- Git (2026-11-13) : travail sur la branche locale `covariates` ; remote `cthouloulou` = https://github.com/Cthouloulou1/CoPhaser (public), poussé par l'utilisateur lui-même (`git push -u cthouloulou covariates:main`, pas d'identifiants GitHub sur le nœud). Auteur des commits : `Cthouloulou1 <165209161+Cthouloulou1@users.noreply.github.com>` (adresse noreply, ne pas exposer l'e-mail), co-auteur Claude. `origin` = dépôt d'origine gityves/CoPhaser. Notebooks de `tutorials/` non commités (sorties réexécutées seulement).
+- Git (2026-11-13) : travail sur la branche locale `covariates` ; remote `cthouloulou` = https://github.com/Cthouloulou1/CoPhaser (public), poussé par l'utilisateur lui-même (`git push -u cthouloulou covariates:main`, pas d'identifiants GitHub sur le nœud). Auteur des commits : `Cthouloulou1 <enzo.yerly@epfl.ch>` (adresse publique acceptée depuis le 2026-11-26 ; les commits antérieurs utilisent l'adresse noreply), co-auteur Claude.
+- **Circuit de travail (depuis le 2026-11-26, nouveau laptop Windows)** : Claude édite et commite dans le clone local (`C:\Users\enzoy\Documents\EPFL\circa\CoPhaser`, branche `main`, `origin` = Cthouloulou1/CoPhaser) ; l'utilisateur pousse ; Claude fait `git pull` et lance tests/runs sur le serveur via `ssh haas005 '…'` (alias dans `~/.ssh/config`, VPN EPFL requis). Serveur : `haas005.rcp.epfl.ch`, dépôt `/workspaces/eyerly/CoPhaser` (branche `covariates` qui suit `cthouloulou/main`), env `conda activate CoPhaser_Env`. Pas de Python sur le laptop : rien ne s'exécute en local. Runs longs dans `screen`, threads plafonnés (`OMP_NUM_THREADS`). `origin` = dépôt d'origine gityves/CoPhaser. Notebooks de `tutorials/` non commités (sorties réexécutées seulement).
 - Le dépôt n'a pas de dossier `tests/` : on en crée un (pytest). Chaque étape ci-dessous doit se terminer par un test qui passe.
 - Toute modification doit être rétrocompatible : défauts `covariates=None`, anciens checkpoints `.pt` toujours chargeables.
 - Distingue ce qui est vérifié dans le code de ce qui est une hypothèse, et dis-le.
@@ -22,7 +23,7 @@ Mesurer ce que l'âge, le sexe et la maladie changent au cycle circadien : nivea
 - `Paper/paper_data/sample_metadata.txt` contient une colonne `CT` par échantillon, probablement la phase inférée par CHIRAL (hypothèse). Ce serait une base de comparaison directe.
 - Dans CHIRAL, `tau2` et `sigma2` sont des hyperparamètres globaux, pas par gène : les colonnes `tau` et `sigma_uv` du CSV ne viennent sans doute pas directement de CHIRAL (hypothèse).
 
-**Calcul** : le nœud courant (`haas005…rcp.epfl.ch`) n'a ni client SLURM ni GPU. Le cluster SLURM et ses GPU restent à identifier.
+**Calcul** : le nœud courant (`haas005.rcp.epfl.ch`, 96 cœurs) n'a ni client SLURM ni GPU. Le cluster SLURM et ses GPU restent à identifier.
 
 **Statut de l'horloge murine** : c'est un exemple de départ, pas un absolu. Elle sert à vérifier que ce qu'on construit est sensé et biologiquement plausible (phases, amplitudes et ordre des gènes cohérents). Le code ne doit pas en dépendre : toute référence (ou aucune, décodeur appris) doit pouvoir être utilisée.
 
