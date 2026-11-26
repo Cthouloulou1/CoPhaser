@@ -80,6 +80,12 @@ def parse_args():
     p.add_argument("--keep-hardy", nargs="*", default=None,
                    help="keep only these death types (DTHHRDY values, e.g. 1 2); 'hardy' is dropped from "
                         "the covariates if a single level remains")
+    p.add_argument("--merge-hardy", nargs="*", default=None,
+                   help="merge these death types (DTHHRDY values, e.g. 1 2) into one 'hardy' level named "
+                        "after them joined by '-' (e.g. '1-2'); missing values stay missing")
+    p.add_argument("--hardy-reference", default=None,
+                   help="reference level of 'hardy' (e.g. 1, or 1-2 with --merge-hardy 1 2); "
+                        "default: first sorted level (0, ventilator)")
     p.add_argument("--reference-from-model", type=Path, default=None,
                    help="decoder clock = A/B coefficients of the clock genes of a trained model.pt (frozen), "
                         "e.g. a clock learned on a subset of donors")
@@ -205,6 +211,25 @@ def clock_from_model(path, clock):
     return pd.DataFrame(W[idx], index=genes, columns=cols)
 
 
+def merge_levels(values, levels):
+    """Categorical column as strings with the given levels merged into one level named
+    '-'.join(levels) (e.g. '1-2'); missing values stay missing."""
+    s = pd.Series(values, dtype="object")
+    s = s.where(s.isna(), s.astype(str))
+    return s.where(~s.isin([str(v) for v in levels]), "-".join(str(v) for v in levels))
+
+
+def covariate_reference(covs, hardy_reference=None):
+    """Reference levels of the categorical covariates: male for sex, hardy_reference for hardy
+    (None: the package default, first sorted level)."""
+    ref = {}
+    if "sex" in covs:
+        ref["sex"] = "male"
+    if "hardy" in covs and hardy_reference is not None:
+        ref["hardy"] = str(hardy_reference)
+    return ref or None
+
+
 def errors_by_hardy(theta, chiral_eval, hardy):
     """Median |error| (h) vs CHIRAL per death-type group, after the alignment fitted on all samples."""
     cmp = circular_compare(theta, chiral_eval)
@@ -273,6 +298,12 @@ def train_tissue(path, args, outdir):
         ad = ad[(ad.obs["hardy"].astype(str) != "0").to_numpy()].copy()
     if args.keep_hardy:
         ad = ad[ad.obs["hardy"].astype(str).isin(args.keep_hardy).to_numpy()].copy()
+    if "hardy" in ad.obs:
+        ad.obs["hardy_raw"] = ad.obs["hardy"].astype(str)  # original levels, for errors_by_hardy
+    if args.merge_hardy:
+        ad.obs["hardy"] = merge_levels(ad.obs["hardy"], args.merge_hardy)
+        print(f"[{name}] hardy levels {args.merge_hardy} merged: "
+              f"{ad.obs['hardy'].value_counts(dropna=False).to_dict()}", flush=True)
     covs = list(args.covariates)
     if "hardy" in covs and ad.obs["hardy"].astype(str).nunique() < 2:
         covs.remove("hardy")
@@ -304,7 +335,7 @@ def train_tissue(path, args, outdir):
     cat = [c for c in covs if c in ("sex", "hardy")]
     model.load_anndata(ad, layer_to_use="counts", library_size_field="library_size",
                        covariate_keys=covs or None, categorical_covariates=cat or None,
-                       covariate_reference={"sex": "male"} if "sex" in covs else None,
+                       covariate_reference=covariate_reference(covs, args.hardy_reference),
                        covariate_amplitude=args.covariate_amplitude and bool(covs),
                        covariate_phase=args.covariate_phase and bool(covs),
                        covariate_phase_reference=args.covariate_phase_reference,
@@ -398,9 +429,11 @@ def train_tissue(path, args, outdir):
     summary["bootstrap_seed"] = args.bootstrap_seed
     summary["covariate_encoder_detach"] = bool(args.covariate_encoder_detach)
     summary["use_lambda"] = not args.no_lambda
+    summary["merge_hardy"] = args.merge_hardy
+    summary["hardy_reference"] = args.hardy_reference
     summary["reference_from_model"] = str(args.reference_from_model) if args.reference_from_model else None
     if has_chiral:
-        hardy = ad.obs["hardy"].astype(str).to_numpy()
+        hardy = ad.obs["hardy_raw" if "hardy_raw" in ad.obs else "hardy"].astype(str).to_numpy()
         for k, th in (("encoder", theta), ("grid_final_noz", grids["grid_final_noz"]["theta"])):
             for grp, v in errors_by_hardy(th, chiral_eval, hardy).items():
                 summary[f"{k}_hardy{grp}_n"] = v["n"]

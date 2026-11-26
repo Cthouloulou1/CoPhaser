@@ -44,6 +44,9 @@ def parse_args():
                         "are drawn, so one table serves every replicate")
     p.add_argument("--covariate-encoder-detach", action="store_true",
                    help="passed to gtex_train.py: only the generative model trains the covariate effects")
+    p.add_argument("--no-lambda", action="store_true", help="passed to gtex_train.py")
+    p.add_argument("--merge-hardy", nargs="*", default=None, help="passed to gtex_train.py")
+    p.add_argument("--hardy-reference", default=None, help="passed to gtex_train.py")
     p.add_argument("--subset", default="all", choices=list(SUBSETS))
     p.add_argument("--epochs", type=int, default=300)
     p.add_argument("--jobs", type=int, default=10)
@@ -104,6 +107,12 @@ def main():
                 cmd += ["--phase-table", str(args.phase_table.resolve())]
             if args.covariate_encoder_detach:
                 cmd += ["--covariate-encoder-detach"]
+            if args.no_lambda:
+                cmd += ["--no-lambda"]
+            if args.merge_hardy:
+                cmd += ["--merge-hardy"] + [str(v) for v in args.merge_hardy]
+            if args.hardy_reference is not None:
+                cmd += ["--hardy-reference", str(args.hardy_reference)]
             if SUBSETS[args.subset]:
                 cmd += ["--keep-hardy"] + SUBSETS[args.subset]
             jobs.append((f"{tissue} boot{b}", cmd, out))
