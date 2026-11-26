@@ -17,6 +17,7 @@ cophaser_runs/
 automatic_tunning/
 build/
 !reference/*.csv
+!reference/**/*.csv
 # results/: keep the lightweight outputs (figures, summaries, logs); drop models,
 # per-replicate bootstrap runs, per-run simulation outputs and large per-run tables
 !results/

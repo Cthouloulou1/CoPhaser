@@ -4,8 +4,12 @@ Train CoPhaser on GTEx tissues (one model per tissue) with observed covariates.
 For each tissue AnnData built by gtex_prepare.py:
   - rhythmic genes: cophaser.gene_sets.HUMAN_CIRCADIAN_GENE_SET present in the data
   - context genes: the --n-hvg most variable expressed genes + rhythmic genes
-  - decoder initialised from the reference clock (mouse, Bmal1 -> ARNTL), unfrozen at
-    epoch 10 (circadian defaults): it only gives a starting orientation
+  - decoder initialised from the reference clock, unfrozen at epoch 10 (circadian defaults)
+    unless --freeze-decoder. Default reference: the human clock of the tissue fitted on the
+    CHIRAL phases (reference/human_chiral/<tissue>.csv, scripts/gtex_human_clock.py). The
+    mouse example clock (reference/clock_reference_learned.csv, Bmal1 -> ARNTL) is no longer
+    the default since 2026-11-26 (amplitudes 3-6x too large for human bulk data, worse
+    phases, artefactual covariate effects); pass it with --reference to reproduce old runs
   - covariates: age (continuous, bin midpoint), sex (reference male), hardy (categorical)
     -> linear mean shift W_c (step 4)
   - Adam beta2 = 0.99 (deep bulk data, see CLAUDE.md)
@@ -53,7 +57,10 @@ def parse_args():
     p.add_argument("--tissue-dir", type=Path, default=REPO_ROOT / "data" / "gtex_v8" / "tissues")
     p.add_argument("--tissues", nargs="*", default=[], help="file stems in --tissue-dir")
     p.add_argument("--all", action="store_true", help="every .h5ad in --tissue-dir")
-    p.add_argument("--reference", type=Path, default=REPO_ROOT / "reference" / "clock_reference_learned.csv")
+    p.add_argument("--reference", type=Path, default=None,
+                   help="reference clock table (gene, amp, phase, ...); default: <--human-dir>/<tissue>.csv")
+    p.add_argument("--human-dir", type=Path, default=REPO_ROOT / "reference" / "human_chiral",
+                   help="human clocks fitted on the CHIRAL phases, one <tissue>.csv per tissue")
     p.add_argument("--no-reference", action="store_true", help="random decoder initialisation")
     p.add_argument("--n-hvg", type=int, default=2000)
     p.add_argument("--min-mean-count", type=float, default=5.0, help="drop genes with lower mean count")
@@ -285,6 +292,17 @@ def phase_table_lookup(obs, table, donor_key="donor"):
     return theta, kappa, np.isfinite(theta) & np.isfinite(kappa)
 
 
+def reference_path(args, tissue):
+    """Reference clock of a tissue: --reference if given, else the tissue's human clock."""
+    if args.reference is not None:
+        return Path(args.reference)
+    path = Path(args.human_dir) / f"{tissue}.csv"
+    if not path.exists():
+        raise FileNotFoundError(f"no human clock for {tissue!r} ({path}): build it with scripts/gtex_human_clock.py "
+                                "or pass --reference")
+    return path
+
+
 def train_tissue(path, args, outdir):
     t_start = time.time()
     name = path.stem
@@ -324,7 +342,7 @@ def train_tissue(path, args, outdir):
     elif args.reference_from_model is not None:
         fourier = clock_from_model(args.reference_from_model, clock)
     elif not args.no_reference:
-        fourier = load_reference_clock(args.reference, rename_map={"Bmal1": "ARNTL"}, n_harm=args.n_harm)
+        fourier = load_reference_clock(reference_path(args, name), rename_map={"Bmal1": "ARNTL"}, n_harm=args.n_harm)
 
     model = CoPhaser(rhythmic_gene_names=clock, context_genes=context,
                      **dict(CYCLE_TRAINER_DEFAULTS["circadian"]["model"], n_harm=args.n_harm, z_input=args.z_input,
@@ -432,6 +450,8 @@ def train_tissue(path, args, outdir):
     summary["merge_hardy"] = args.merge_hardy
     summary["hardy_reference"] = args.hardy_reference
     summary["reference_from_model"] = str(args.reference_from_model) if args.reference_from_model else None
+    summary["reference"] = (None if (args.no_reference or args.human_reference_from_chiral or args.reference_from_model)
+                            else str(reference_path(args, name)))
     if has_chiral:
         hardy = ad.obs["hardy_raw" if "hardy_raw" in ad.obs else "hardy"].astype(str).to_numpy()
         for k, th in (("encoder", theta), ("grid_final_noz", grids["grid_final_noz"]["theta"])):

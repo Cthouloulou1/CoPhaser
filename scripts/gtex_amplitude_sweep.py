@@ -6,7 +6,7 @@ per-gene phase delays).
 Jobs: tissues x clocks x donor subsets x seeds, each one gtex_train.py process with
   --covariate-amplitude --auto-likelihood-weights --grid-phase-prior
   --decoder-phase-from-grid --grid-refresh-every 10 --phase-prior-anneal-epochs 100000
-Clocks:
+Clocks (default: human; the mouse clock is kept only to reproduce exp. 11-13):
   mouse    the example mouse clock, frozen (--freeze-decoder)
   human    the human clock of the tissue fitted on the CHIRAL phases (reference/human_chiral,
            scripts/gtex_human_clock.py), frozen
@@ -33,12 +33,14 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 CLOCK_GENES = ["ARNTL", "NPAS2", "CRY1", "CRY2", "PER1", "PER2", "PER3", "NR1D1", "NR1D2", "CLOCK", "RORA",
                "TEF", "DBP", "CIART"]
 SUBSETS = {"all": None, "fast": ["1", "2"]}
+MOUSE_CLOCK = REPO_ROOT / "reference" / "clock_reference_learned.csv"  # explicit: no longer gtex_train's default
 
 
 def parse_args():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--tissues", nargs="*", default=None)
-    p.add_argument("--clocks", nargs="*", default=["mouse", "learned"], choices=["mouse", "learned", "human"])
+    p.add_argument("--clocks", nargs="*", default=["human"], choices=["mouse", "learned", "human"],
+                   help="default human since 2026-11-26 (exp. 11/12 used mouse and learned)")
     p.add_argument("--human-dir", type=Path, default=REPO_ROOT / "reference" / "human_chiral",
                    help="human clocks from CHIRAL (scripts/gtex_human_clock.py), <tissue>.csv")
     p.add_argument("--subsets", nargs="*", default=list(SUBSETS), choices=list(SUBSETS))
@@ -69,7 +71,7 @@ def clock_args(clock, tissue, learned, human_dir):
     """gtex_train.py arguments for a frozen clock: mouse example, learned (exp. 10) or human
     (cosinor on the CHIRAL phases of all donors of the tissue)."""
     if clock == "mouse":
-        return ["--freeze-decoder"]
+        return ["--reference", str(MOUSE_CLOCK), "--freeze-decoder"]
     if clock == "learned":
         return ["--reference-from-model", str(learned[tissue])]
     return ["--reference", str(human_dir / f"{tissue}.csv"), "--freeze-decoder"]

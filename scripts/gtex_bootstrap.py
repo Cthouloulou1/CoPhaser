@@ -6,8 +6,9 @@ For every tissue and replicate b = 0 .. B-1, one gtex_train.py process with
   --bootstrap-seed b --seed b          (donors resampled with replacement; own training seed)
   --covariate-amplitude --covariate-phase --auto-likelihood-weights --grid-phase-prior
   --decoder-phase-from-grid --phase-prior-anneal-epochs 100000   (fixed grid phases)
-  --reference-from-model <learned clock of exp. 10>  (--clock mouse: --freeze-decoder;
-  --clock human: --reference reference/human_chiral/<tissue>.csv --freeze-decoder)
+  --reference reference/human_chiral/<tissue>.csv --freeze-decoder   (--clock human, default
+  since 2026-11-26; --clock learned: --reference-from-model <learned clock of exp. 10>;
+  --clock mouse: the mouse example clock, frozen; both kept to reproduce exp. 13/13b)
 Each replicate recomputes its grid phases (once, before training), so the intervals include
 the phase uncertainty and the optimisation noise. --phase-table (step 9): phases shared by the
 tissues of a donor, read from a table instead (same for every replicate: frozen clock).
@@ -36,7 +37,7 @@ def parse_args():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--tissues", nargs="*", default=None)
     p.add_argument("--replicates", type=int, default=40)
-    p.add_argument("--clock", default="learned", choices=["mouse", "learned", "human"])
+    p.add_argument("--clock", default="human", choices=["mouse", "learned", "human"])
     p.add_argument("--human-dir", type=Path, default=REPO_ROOT / "reference" / "human_chiral")
     p.add_argument("--phase-table", type=Path, default=None,
                    help="donor phases shared across tissues (scripts/gtex_shared_phase.py), passed to "

@@ -87,7 +87,9 @@ class Sweep:
 
     def stage1(self, tissue, group, seed):
         out = self.args.outdir / "stage1" / tissue / f"{group}_seed{seed}"
+        # exp. 10 started from the mouse example clock (gtex_train.py's default until 2026-11-26)
         cmd = [sys.executable, "scripts/gtex_train.py", "--tissues", tissue, "--seed", str(seed),
+               "--reference", str(REPO_ROOT / "reference" / "clock_reference_learned.csv"),
                "--outdir", str(out)] + self.common()
         if GROUPS[group]:
             cmd += ["--keep-hardy"] + GROUPS[group]
