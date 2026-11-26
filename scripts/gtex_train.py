@@ -123,6 +123,9 @@ def parse_args():
     p.add_argument("--covariate-encoder-detach", action="store_true",
                    help="detach the covariate corrections of the rhythmic encoder input, so that only the "
                         "generative model trains the effects (no leak of the phase prior / entropy losses)")
+    p.add_argument("--no-lambda", action="store_true",
+                   help="disable the per-sample amplitude factor lambda(z) (use_lambda=False); with a frozen "
+                        "clock, lambda collapses to its lower bound and biases binary amplitude effects")
     p.add_argument("--seed", type=int, default=0)
     p.add_argument("--threads", type=int, default=8)
     p.add_argument("--outdir", type=Path, default=None)
@@ -293,7 +296,8 @@ def train_tissue(path, args, outdir):
         fourier = load_reference_clock(args.reference, rename_map={"Bmal1": "ARNTL"}, n_harm=args.n_harm)
 
     model = CoPhaser(rhythmic_gene_names=clock, context_genes=context,
-                     **dict(CYCLE_TRAINER_DEFAULTS["circadian"]["model"], n_harm=args.n_harm, z_input=args.z_input))
+                     **dict(CYCLE_TRAINER_DEFAULTS["circadian"]["model"], n_harm=args.n_harm, z_input=args.z_input,
+                            use_lambda=not args.no_lambda))
     n_prior = 0
     if args.human_reference_from_chiral or args.reference_from_model is not None or not args.no_reference:
         n_prior = int(DecoderPrior.load_fourier_coefficients_prior(fourier, model, freeze_defined_weights=True).sum())
@@ -393,6 +397,7 @@ def train_tissue(path, args, outdir):
     summary["keep_hardy"] = args.keep_hardy
     summary["bootstrap_seed"] = args.bootstrap_seed
     summary["covariate_encoder_detach"] = bool(args.covariate_encoder_detach)
+    summary["use_lambda"] = not args.no_lambda
     summary["reference_from_model"] = str(args.reference_from_model) if args.reference_from_model else None
     if has_chiral:
         hardy = ad.obs["hardy"].astype(str).to_numpy()

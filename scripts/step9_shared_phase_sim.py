@@ -86,6 +86,7 @@ def parse_args():
     p.add_argument("--grid-points", type=int, default=96)
     p.add_argument("--min-amp", type=float, default=0.15, help="report phase/amplitude effects of genes above")
     p.add_argument("--epochs", type=int, default=300)
+    p.add_argument("--no-lambda", action="store_true", help="pass --no-lambda to gtex_train.py")
     p.add_argument("--jobs", type=int, default=10)
     p.add_argument("--threads", type=int, default=6)
     p.add_argument("--prepare-only", action="store_true", help="simulate and report phase errors, no training")
@@ -196,6 +197,8 @@ def train_cmd(args, seed, jitter, mode, tissue):
            "--outdir", str(out)]
     if mode != "tissue":
         cmd += ["--phase-table", str(d / f"phases_{mode}.csv")]
+    if args.no_lambda:
+        cmd += ["--no-lambda"]
     return cmd, out / tissue
 
 
