@@ -34,6 +34,8 @@ peak phase = atan2(c, b), i.e. the log-mean peaks at theta = phase. For covariat
       d log amp = (b b'_k + c c'_k) / amp^2,   d phase = (b c'_k - c b'_k) / amp^2
 with delta-method standard errors. Covariates should be centred (continuous) or 0/1 coded
 (categorical, reference level = 0), so that (b, c) is the rhythm of the reference group.
+project_rhythm_change measures the same changes along the gene's average rhythm instead
+(used by the global test over a gene set, scripts/gtex_global_rhythms.py).
 
 Everything is vectorised over genes (torch, float64): all genes share the design matrix.
 """
@@ -240,6 +242,23 @@ def rhythm_change(b, c, db, dc, cov4, binary):
     se_lr = np.sqrt(np.einsum("gi,gij,gj->g", g_lr, cov4, g_lr))
     se_ps = np.sqrt(np.einsum("gi,gij,gj->g", g_ps, cov4, g_ps))
     return lr, se_lr, ps, se_ps
+
+
+def project_rhythm_change(amp, phase, db, dc):
+    """Change (db, dc) of a rhythm's cos / sin coefficients, split along and across a
+    reference direction (amplitude amp, peak phase in rad), e.g. the average rhythm of the gene
+    over all samples (amp_avg, phase_avg_h / H) and the interaction coefficients of a covariate.
+
+    Returns (rel_amp, shift): rel_amp = (u . d) / amp, the relative amplitude change (first
+    order: d log amp), and shift = (u_perp . d) / amp, the peak shift in rad (> 0: later peak),
+    with u = (cos phase, sin phase), u_perp = (-sin phase, cos phase). For a binary covariate
+    and the average direction, rel_amp ~ (amp_1 - amp_0) / amp_avg ~ log(amp_1 / amp_0).
+    Unlike rhythm_change on the reference group's rhythm, the average direction is estimated
+    on all samples and is nearly uncorrelated with the interaction estimates, so that rel_amp
+    has no regression-to-the-mean bias when nothing changes. Arrays broadcast.
+    """
+    cu, su = np.cos(phase), np.sin(phase)
+    return (cu * db + su * dc) / amp, (cu * dc - su * db) / amp
 
 
 def bh(p):
