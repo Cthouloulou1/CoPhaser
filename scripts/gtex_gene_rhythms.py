@@ -17,6 +17,18 @@ Caveats: the phase error (~2 h) attenuates amplitudes; it is larger for ventilat
 simulation, scripts/step10_sim.py). The clock genes gave the phases: their own results are
 optimistic (circular).
 
+Robustness (2026-11-26): the likelihood ratio tests over-reject on GTEx (10-23 % of p < 0.05
+with permuted phases), driven by extreme samples. Use the *_rob tests (sandwich HC3 Wald,
+cophaser.gene_rhythms) and check them against --permute-phases. Flags per gene:
+  top1_share   share of the gene's total CPM carried by its top 1 % samples (median ~0.02;
+               cross-tissue contamination such as pancreas enzymes, keratins, heart or muscle
+               genes reaches 0.15-0.9); spiky = top1_share > --max-top-share
+  group_ratio_k  for a 0/1 covariate k: mean CPM of the less expressing group / the other's;
+               below --min-group-ratio (e.g. Y genes for sex) the rhythm of one group is
+               undefined: p_diffrhythm(_rob)_k and p_diffrhythm_any(_rob) are set to NaN
+  strong       q_rhythm_rob < 0.05, amp_avg >= --min-amp (peak/trough >= exp(2 amp)), not
+               spiky, not a clock gene
+
 Outputs in --outdir: <tissue>.csv.gz (one row per gene; q-values within the tissue),
 summary.csv (one row per tissue), args.json.
 """
@@ -55,6 +67,12 @@ def parse_args(argv=None):
     p.add_argument("--nuisance", nargs="*", default=["ischemic_time", "rin"])
     p.add_argument("--age-center", type=float, default=50.0)
     p.add_argument("--age-scale", type=float, default=10.0)
+    p.add_argument("--max-top-share", type=float, default=0.15,
+                   help="flag genes whose top 1 %% samples carry more of the total CPM (contamination)")
+    p.add_argument("--min-group-ratio", type=float, default=0.1,
+                   help="binary covariates: no rhythm-change test when one group expresses the gene less than "
+                        "this fraction of the other (e.g. Y-linked genes for sex)")
+    p.add_argument("--min-amp", type=float, default=0.2, help="amp_avg threshold of the 'strong' rhythmic genes")
     p.add_argument("--chunk", type=int, default=2000)
     p.add_argument("--jobs", type=int, default=2, help="tissues fitted in parallel")
     p.add_argument("--threads", type=int, default=8, help="torch threads per job")
@@ -85,6 +103,43 @@ def encode(obs, args):
         x = np.where(np.isfinite(x), x, np.nanmean(x))
         nui[m] = (x - x.mean()) / x.std()
     return cov, nui
+
+
+def top_share(cpm, frac=0.01):
+    """Share of each gene's total CPM carried by its top `frac` samples. cpm (n, G)."""
+    k = max(1, int(np.ceil(frac * cpm.shape[0])))
+    top = -np.partition(-cpm, k - 1, axis=0)[:k]
+    return top.sum(0) / np.maximum(cpm.sum(0), 1e-12)
+
+
+def group_ratio(cpm, x):
+    """For a 0/1 covariate x: mean CPM of the less expressing group / that of the other group."""
+    x = np.asarray(x, float)
+    m1, m0 = cpm[x == 1].mean(0), cpm[x == 0].mean(0)
+    return np.minimum(m0, m1) / np.maximum(np.maximum(m0, m1), 1e-12)
+
+
+def flag_genes(res, cpm, cov, args):
+    """Add top1_share / spiky and, per binary covariate, group_ratio_k; void the rhythm-change
+    tests of a covariate for genes expressed in only one of its groups."""
+    res = res.copy()
+    res["top1_share"] = top_share(cpm)
+    res["spiky"] = res["top1_share"] > args.max_top_share
+    limited_any = np.zeros(len(res), bool)
+    for k in cov.columns:
+        x = cov[k].to_numpy(float)
+        if not set(np.unique(x)) <= {0.0, 1.0}:
+            continue
+        res[f"group_ratio_{k}"] = group_ratio(cpm, x)
+        limited = (res[f"group_ratio_{k}"] < args.min_group_ratio).to_numpy()
+        limited_any |= limited
+        for c in [f"p_diffrhythm_{k}", f"p_diffrhythm_rob_{k}"]:
+            if c in res:
+                res.loc[limited, c] = np.nan
+    for c in ["p_diffrhythm_any", "p_diffrhythm_any_rob"]:
+        if c in res:
+            res.loc[limited_any, c] = np.nan
+    return res
 
 
 def run_tissue(path, args):
@@ -122,24 +177,35 @@ def run_tissue(path, args):
 
     cov, nui = encode(ad.obs, args)
     res = fit_gene_rhythms(Y, lib, theta, cov, nui, genes=genes, chunk=args.chunk)
+    res = flag_genes(res, Y / lib[:, None] * 1e6, cov, args)
     res = add_qvalues(res)
     res.insert(1, "tissue", name)
     res["is_clock"] = res["gene"].isin(clock)
     res["in_hvg"] = res["gene"].isin(context)
+    res["strong"] = (res["q_rhythm_rob"] < 0.05) & (res["amp_avg"] >= args.min_amp) & ~res["spiky"] & ~res["is_clock"]
     args.outdir.mkdir(parents=True, exist_ok=True)
     res.to_csv(args.outdir / f"{name}.csv.gz", index=False)
 
     s = dict(tissue=name, permuted=args.permute_phases is not None,
              n_samples_all=n_all, n_samples=int(ad.n_obs), n_genes=len(genes),
              frac_p_rhythm_05=float((res["p_rhythm"] < 0.05).mean()),
+             frac_p_rhythm_rob_05=float((res["p_rhythm_rob"] < 0.05).mean()),
              n_hvg=int(res["in_hvg"].sum()), not_converged=int((~res["converged"]).sum()),
+             n_spiky=int(res["spiky"].sum()),
              rhythmic_q05=int((res["q_rhythm"] < 0.05).sum()),
+             rhythmic_q05_rob=int((res["q_rhythm_rob"] < 0.05).sum()),
+             rhythmic_strong=int(res["strong"].sum()),
              rhythmic_q05_hvg=int(((res["q_rhythm"] < 0.05) & res["in_hvg"]).sum()),
-             clock_rhythmic_q05=int(((res["q_rhythm"] < 0.05) & res["is_clock"]).sum()), n_clock=len(clock),
+             clock_rhythmic_q05=int(((res["q_rhythm"] < 0.05) & res["is_clock"]).sum()),
+             clock_rhythmic_q05_rob=int(((res["q_rhythm_rob"] < 0.05) & res["is_clock"]).sum()), n_clock=len(clock),
              seconds=round(time.time() - t0, 1))
     for k in cov.columns:
         s[f"diffrhythm_q05_{k}"] = int((res[f"q_diffrhythm_{k}"] < 0.05).sum())
+        s[f"diffrhythm_q05_rob_{k}"] = int((res[f"q_diffrhythm_rob_{k}"] < 0.05).sum())
+        if f"group_ratio_{k}" in res:
+            s[f"n_limited_{k}"] = int((res[f"group_ratio_{k}"] < args.min_group_ratio).sum())
         s[f"mesor_q05_{k}"] = int((res[f"q_mesor_{k}"] < 0.05).sum())
+        s[f"mesor_q05_rob_{k}"] = int((res[f"q_mesor_rob_{k}"] < 0.05).sum())
         clk = res[res["is_clock"] & (res["amp"] >= 0.15)]
         s[f"clock_median_log_amp_ratio_{k}"] = float(np.median(clk[f"log_amp_ratio_{k}"])) if len(clk) else np.nan
     for k, v in cov.items():

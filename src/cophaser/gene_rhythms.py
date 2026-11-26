@@ -18,6 +18,12 @@ Tests (likelihood ratio, dispersion fixed at its estimate under the full model, 
   diff rhythm   all b', c' = 0
 and Wald tests of the mesor effects beta_k in the full model.
 
+Robust versions (robust=True, columns *_rob): Wald tests with the sandwich (Huber-White, HC3)
+covariance of the coefficients instead of the inverse Fisher information. They stay valid
+when the NB variance is wrong for some samples (outliers, cross-tissue contamination, heavier
+tails), which makes the likelihood ratio tests over-reject on real bulk data (GTEx: 10-23 %
+of p < 0.05 with permuted phases). max_cook: largest Cook's distance of a sample (full model).
+
 Rhythm parameters (same convention as the CoPhaser decoder): amp = hypot(b, c) (log units),
 peak phase = atan2(c, b), i.e. the log-mean peaks at theta = phase. For covariate k:
   binary (values 0/1): rhythm of the group x_k = 1 (other covariates at 0) vs the reference:
@@ -107,6 +113,37 @@ def fit_nb_glm(Y, X, offset, alpha, beta0=None, max_iter=100, tol=1e-7, ridge=1e
     w = mu / (1 + alpha * mu)
     cov = torch.linalg.inv((w.T @ XX).reshape(G, p, p) + ridge * eye)
     return beta, cov, nb_loglik(Y, mu, alpha), converged
+
+
+def sandwich_cov(Y, X, offset, beta, alpha, cov, hc3=True, min_one_minus_h=1e-3):
+    """Sandwich (Huber-White) covariance of the NB GLM coefficients: cov . meat . cov with
+    meat = sum_i u_i^2 x_i x_i^T, u_i = (y_i - mu_i) / (1 + alpha mu_i) (score of sample i
+    along x_i). Valid when the variance function is wrong. hc3: u_i / (1 - h_i), h_i the
+    leverage of sample i in the weighted IRLS fit, so that one influential sample cannot hide
+    its own residual (MacKinnon & White's HC3).
+
+    Y (n, G), X (n, p), offset (n,), beta (G, p), alpha (G,), cov (G, p, p) = inverse Fisher
+    information of the same fit. Returns the covariance (G, p, p) and the leverages (n, G).
+    """
+    n, G = Y.shape
+    p = X.shape[1]
+    _, mu = _eta_mu(X, beta, offset)
+    w = mu / (1 + alpha * mu)
+    u = (Y - mu) / (1 + alpha * mu)
+    h = w * torch.einsum("ni,gij,nj->ng", X, cov, X)
+    if hc3:
+        u = u / (1 - h).clamp_min(min_one_minus_h)
+    XX = (X[:, :, None] * X[:, None, :]).reshape(n, p * p)
+    meat = ((u**2).T @ XX).reshape(G, p, p)
+    return cov @ meat @ cov, h
+
+
+def wald_p(beta, cov, idx):
+    """Wald test of beta[:, idx] = 0 for every gene. beta (G, p), cov (G, p, p) arrays."""
+    b = beta[:, idx]
+    V = cov[:, idx][:, :, idx]
+    stat = np.einsum("gi,gij,gj->g", b, np.linalg.pinv(V), b)
+    return chi2.sf(stat, len(idx))
 
 
 def estimate_dispersion(Y, mu, log_alpha_range=(-10.0, 3.0), n_grid=27, n_refine=16):
@@ -236,6 +273,7 @@ def fit_gene_rhythms(
     chunk=2000,
     n_dispersion_rounds=2,
     max_iter=100,
+    robust=True,
 ):
     """Fit the rhythm GLMs gene by gene (vectorised) and return one row per gene.
 
@@ -244,9 +282,12 @@ def fit_gene_rhythms(
     nuisance: DataFrame (n, m), mesor-only covariates. interact: covariates whose rhythm
     changes are tested (default: all of `covariates`).
 
-    Columns: gene, mean_count, alpha, converged, a, b, c, amp, phase, phase_h, p_rhythm,
-    p_diffrhythm_any, and per covariate k: mesor_k, mesor_se_k, p_mesor_k, db_k, dc_k,
-    p_diffrhythm_k, log_amp_ratio_k (+ _se), phase_shift_h_k (+ _se). No multiple-testing
+    Columns: gene, mean_count, alpha, converged, a, b, c, amp, phase, phase_h, amp_avg,
+    phase_avg_h, p_rhythm, p_diffrhythm_any, and per covariate k: mesor_k, mesor_se_k,
+    p_mesor_k, db_k, dc_k, p_diffrhythm_k, log_amp_ratio_k (+ _se), phase_shift_h_k (+ _se).
+    With robust=True also max_cook, p_rhythm_rob, p_diffrhythm_any_rob, and per k:
+    mesor_se_rob_k, p_mesor_rob_k, p_diffrhythm_rob_k, log_amp_ratio_se_rob_k,
+    phase_shift_se_h_rob_k (sandwich HC3 covariance, Wald tests). No multiple-testing
     correction here (see bh).
     """
     Y = np.asarray(Y, float)
@@ -322,6 +363,26 @@ def fit_gene_rhythms(
             lr, se_lr, ps, se_ps = rhythm_change(b, c, db, dc, cov4, binary[k])
             r[f"log_amp_ratio_{k}"], r[f"log_amp_ratio_se_{k}"] = lr, se_lr
             r[f"phase_shift_h_{k}"], r[f"phase_shift_se_h_{k}"] = ps * H, se_ps * H
+        if robust:
+            rcov, lev = sandwich_cov(Yc, Xt, off, beta, alpha, cov)
+            rcov1, _ = sandwich_cov(Yc, Xt[:, no_inter], off, beta1, alpha, cov1)
+            rcov, rcov1 = rcov.numpy(), rcov1.numpy()
+            _, mu = _eta_mu(Xt, beta, off)
+            pearson2 = (Yc - mu) ** 2 / (mu + alpha * mu**2)
+            cook = pearson2 / p * lev / (1 - lev).clamp_min(1e-3) ** 2
+            r["max_cook"] = cook.max(0).values.numpy()
+            r["p_rhythm_rob"] = wald_p(b1n, rcov1, [i_cos, i_sin])
+            if inter_all:
+                r["p_diffrhythm_any_rob"] = wald_p(bn, rcov, inter_all)
+            for k, j in blocks["mesor"].items():
+                se = np.sqrt(rcov[:, j, j])
+                r[f"mesor_se_rob_{k}"], r[f"p_mesor_rob_{k}"] = se, 2 * norm.sf(np.abs(bn[:, j] / se))
+            for k in interact:
+                jc, js = blocks["interaction"][k]
+                idx = [rh[0], rh[1], jc, js]
+                r[f"p_diffrhythm_rob_{k}"] = wald_p(bn, rcov, [jc, js])
+                _, se_lr, _, se_ps = rhythm_change(b, c, bn[:, jc], bn[:, js], rcov[:, idx][:, :, idx], binary[k])
+                r[f"log_amp_ratio_se_rob_{k}"], r[f"phase_shift_se_h_rob_{k}"] = se_lr, se_ps * H
         out.append(r)
     res = pd.concat(out, ignore_index=True)
     res.attrs["design_columns"] = names

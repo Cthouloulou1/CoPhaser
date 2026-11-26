@@ -60,11 +60,39 @@ def test_coefficients_and_standard_errors_are_calibrated():
 def test_null_pvalues_are_uniform():
     Y, lib, theta, cov, nui, *_ = simulate(n=300, G=400, rhythmic=False, effects=False, seed=1)
     res = gene_rhythms(Y, lib, theta, cov, nui)
-    for col in ["p_rhythm", "p_diffrhythm_sex", "p_diffrhythm_age", "p_mesor_sex"]:
+    for col in ["p_rhythm", "p_diffrhythm_sex", "p_diffrhythm_age", "p_mesor_sex",
+                "p_rhythm_rob", "p_diffrhythm_rob_sex", "p_diffrhythm_rob_age", "p_mesor_rob_sex"]:
         frac = (res[col] < 0.05).mean()
         assert 0.02 <= frac <= 0.09, (col, frac)
     q = add_qvalues(res)
     assert (q["q_rhythm"] < 0.05).sum() <= 3
+
+
+def test_sandwich_matches_model_based_errors_when_the_model_is_right():
+    Y, lib, theta, cov, nui, *_ = simulate(n=800, G=60, seed=6)
+    res = gene_rhythms(Y, lib, theta, cov, nui)
+    for k in ["age", "sex"]:
+        ratio = res[f"mesor_se_rob_{k}"] / res[f"mesor_se_{k}"]
+        assert 0.9 < np.median(ratio) < 1.15, (k, np.median(ratio))
+        ratio = res[f"log_amp_ratio_se_rob_{k}"] / res[f"log_amp_ratio_se_{k}"]
+        assert 0.9 < np.median(ratio) < 1.2, (k, np.median(ratio))
+    assert (res["p_rhythm_rob"] < 1e-6).mean() > 0.95
+    assert np.isfinite(res["max_cook"]).all()
+
+
+def test_robust_tests_resist_outlier_samples():
+    """Null genes (no rhythm, no effect) with 3 extreme samples each (as cross-tissue
+    contamination): the likelihood ratio test over-rejects, the sandwich Wald test does not."""
+    Y, lib, theta, cov, nui, *_ = simulate(n=400, G=400, rhythmic=False, effects=False, seed=5)
+    rng = np.random.default_rng(5)
+    for g in range(Y.shape[1]):
+        i = rng.choice(Y.shape[0], 3, replace=False)
+        Y[i, g] = Y[i, g] * 30 + 50
+    res = gene_rhythms(Y, lib, theta, cov, nui)
+    lrt, rob = (res["p_rhythm"] < 0.05).mean(), (res["p_rhythm_rob"] < 0.05).mean()
+    assert lrt > 0.1, lrt
+    assert 0.005 <= rob <= 0.08, rob  # 2026-11-26: LRT 0.80, robust 0.012 (HC3 slightly conservative)
+    assert res["max_cook"].median() > 1
 
 
 def test_binary_amplitude_and_phase_change():
@@ -137,6 +165,33 @@ def test_gtex_encoding_fast_deaths_reference():
     assert np.allclose(cov["sex"], [0, 1, 1, 0])
     assert np.allclose(cov[["hardy[0]", "hardy[4]"]].to_numpy(), [[1, 0], [0, 0], [0, 0], [0, 1]])
     assert np.isfinite(nui.to_numpy()).all() and np.allclose(nui.mean(), 0)
+
+
+def test_gtex_flags_contamination_and_one_group_genes():
+    import sys
+    from pathlib import Path
+
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+    from gtex_gene_rhythms import flag_genes, group_ratio, parse_args, top_share
+
+    rng = np.random.default_rng(7)
+    n = 200
+    sex = (np.arange(n) % 2).astype(float)
+    cpm = rng.gamma(20, 1, (n, 3))
+    cpm[:2, 1] = 5000  # 1 % of the samples carry most of gene 1 (contamination-like): 1e4 / (1e4 + 198 x 20)
+    cpm[sex == 1, 2] = 0.01  # gene 2 barely expressed in women (Y-linked-like)
+    share = top_share(cpm)
+    assert share[0] < 0.05 and 0.6 < share[1] < 0.8
+    ratio = group_ratio(cpm, sex)
+    assert ratio[0] > 0.8 and ratio[2] < 0.01
+    res = pd.DataFrame({"gene": ["a", "b", "c"], "p_diffrhythm_sex": 0.01, "p_diffrhythm_rob_sex": 0.01,
+                        "p_diffrhythm_age": 0.01, "p_diffrhythm_any": 0.01, "p_diffrhythm_any_rob": 0.01})
+    cov = pd.DataFrame({"age": rng.normal(0, 1, n), "sex": sex})
+    out = flag_genes(res, cpm, cov, parse_args([]))
+    assert out["spiky"].tolist() == [False, True, False]
+    assert out["p_diffrhythm_rob_sex"].isna().tolist() == [False, False, True]
+    assert out["p_diffrhythm_any_rob"].isna().tolist() == [False, False, True]
+    assert out["p_diffrhythm_age"].notna().all() and "group_ratio_age" not in out
 
 
 def test_bh():
