@@ -6,7 +6,7 @@ one tissue's counts for the gene profiles).
 
 Sources: results/gtex/exp14_shared_phase (phase errors), exp13*/exp17b (bootstrap effects),
 results/step9/sim{,_nolambda} (lambda bias), results/step10/sim (GLM validation),
-results/step10/gtex/shared_ref12{,_perm0} (GLM on GTEx), data/gtex_v8/tissues (counts).
+results/step10/gtex/robust_ref12{,_perm0} (GLM on GTEx, robust tests), data/gtex_v8/tissues (counts).
 
 Usage, from the repository root:
     python scripts/presentation_figures.py [--out results/presentation] [--only fig01 fig07 ...]
@@ -63,7 +63,7 @@ def circ_mean_h(h):
 
 
 def load_glm(tissue, cols=None, perm=False):
-    sub = "shared_ref12_perm0" if perm else "shared_ref12"
+    sub = "robust_ref12_perm0" if perm else "robust_ref12"
     return pd.read_csv(R / "step10" / "gtex" / sub / f"{tissue}.csv.gz", usecols=cols)
 
 
@@ -244,25 +244,29 @@ def fig05_sim_power(out):
 
 
 def fig06_pvalues(out):
-    """GTEx: rhythm p-values with the shared phases and with permuted phases (negative control)."""
-    tis = ["thyroid", "lung", "artery_tibial"]
-    fig, axes = plt.subplots(1, 3, figsize=(11, 3.6), sharey=True)
+    """GTEx: robust rhythm p-values with the shared phases and with permuted phases (negative control)."""
+    fig, axes = plt.subplots(2, 4, figsize=(12, 5.6), sharex=True, sharey=True)
     bins = np.linspace(0, 1, 21)
-    for ax, t in zip(axes, tis):
-        r = load_glm(t, ["p_rhythm"]).p_rhythm.dropna()
-        p = load_glm(t, ["p_rhythm"], perm=True).p_rhythm.dropna()
-        ax.hist(r, bins, density=True, histtype="step", color=C1, lw=2, label="Shared phases")
-        ax.hist(p, bins, density=True, histtype="step", color=C2, lw=2, label="Phases permuted (negative control)")
+    cols = ["p_rhythm_rob", "q_rhythm_rob"]
+    for ax, t in zip(axes.ravel(), TISSUES):
+        r = load_glm(t, cols).dropna(subset=["p_rhythm_rob"])
+        p = load_glm(t, cols, perm=True).dropna(subset=["p_rhythm_rob"])
+        ax.hist(r.p_rhythm_rob, bins, density=True, histtype="step", color=C1, lw=2, label="Shared phases")
+        ax.hist(p.p_rhythm_rob, bins, density=True, histtype="step", color=C2, lw=2,
+                label="Phases permuted (negative control)")
         ax.axhline(1, color=INK, lw=1)
         ax.set_yscale("log")
         ax.set_xlim(0, 1)
-        ax.set_title(SHORT[t])
-        ax.set_xlabel("p-value (rhythm, LRT 2 df)")
-        ax.text(0.97, 0.95, f"p < 0.05: {(r < 0.05).mean():.0%} vs {(p < 0.05).mean():.0%}\n(expected 5%)",
-                transform=ax.transAxes, ha="right", va="top", color=INK, fontsize=9)
-    axes[0].set_ylabel("Density (uniform = 1)")
-    h, lab = axes[0].get_legend_handles_labels()
-    fig.legend(h, lab, loc="upper center", ncol=2, bbox_to_anchor=(0.5, 1.08))
+        ax.set_title(SHORT[t], fontsize=10)
+        ax.text(0.97, 0.95, f"p < 0.05: {(r.p_rhythm_rob < 0.05).mean():.0%} vs {(p.p_rhythm_rob < 0.05).mean():.0%}\n"
+                f"q < 0.05: {int((r.q_rhythm_rob < 0.05).sum()):,} vs {int((p.q_rhythm_rob < 0.05).sum())} genes",
+                transform=ax.transAxes, ha="right", va="top", color=INK, fontsize=8)
+    for ax in axes[1]:
+        ax.set_xlabel("p-value (rhythm, robust Wald 2 df)")
+    for ax in axes[:, 0]:
+        ax.set_ylabel("Density (uniform = 1)")
+    h, lab = axes[0, 0].get_legend_handles_labels()
+    fig.legend(h, lab, loc="upper center", ncol=2, bbox_to_anchor=(0.5, 1.05))
     fig.tight_layout()
     save(fig, out, "fig06_pvalues_real_vs_permuted")
 
@@ -283,7 +287,7 @@ def fig07_clock_peaks(out):
         y = len(genes) - 1 - i
         s = d[d.gene == g]
         x = order[g] + wrap_h(s.phase_avg_h - order[g])
-        sig = (s.q_rhythm < 0.05).to_numpy()
+        sig = (s.q_rhythm_rob < 0.05).to_numpy()
         size = 12 + 220 * s.amp_avg.clip(upper=0.8).to_numpy()
         ax.scatter(x[sig], np.full(sig.sum(), y), s=size[sig], color=MUTED, alpha=0.6, edgecolor=SURF, linewidth=1, zorder=2)
         ax.scatter(x[~sig], np.full((~sig).sum(), y), s=size[~sig], facecolor="none", edgecolor=MUTED, linewidth=1, zorder=2)
@@ -302,17 +306,18 @@ def fig07_clock_peaks(out):
     save(fig, out, "fig07_clock_peak_times")
 
 
-def rhythmic(d, amp_min=0.2):
-    return d[(d.q_rhythm < 0.05) & (d.amp_avg >= amp_min) & (~d.is_clock)]
+def rhythmic(d):
+    """'strong' genes of gtex_gene_rhythms.py: q_rhythm_rob < 0.05, amp_avg >= 0.2, not spiky, not clock."""
+    return d[d.strong.astype(bool)]
 
 
 def fig08_counts(out):
     """GTEx: number of rhythmic non-clock genes per tissue."""
-    cols = ["gene", "q_rhythm", "amp_avg", "phase_avg_h", "is_clock"]
+    cols = ["gene", "q_rhythm_rob", "amp_avg", "phase_avg_h", "is_clock", "strong"]
     rows = []
     for t in TISSUES:
         d = load_glm(t, cols)
-        rows.append(dict(tissue=t, n=len(d), q05=int((d.q_rhythm < 0.05).sum()), strong=len(rhythmic(d))))
+        rows.append(dict(tissue=t, n=len(d), q05=int((d.q_rhythm_rob < 0.05).sum()), strong=len(rhythmic(d))))
     c = pd.DataFrame(rows).set_index("tissue").loc[TISSUES[::-1]]
     fig, ax = plt.subplots(figsize=(8, 4))
     y = np.arange(len(c))
@@ -322,14 +327,14 @@ def fig08_counts(out):
     ax.set_yticks(y, [SHORT[t] for t in c.index])
     ax.grid(axis="y", visible=False)
     ax.set_xlim(0, c.strong.max() * 2.1)
-    ax.set_xlabel("Rhythmic genes (q < 0.05 and peak/trough ≥ 1.5), clock genes excluded")
+    ax.set_xlabel("Rhythmic genes (robust q < 0.05, peak/trough ≥ 1.5), clock and contamination-like genes excluded")
     ax.set_title("Rhythmic genes beyond the clock, per tissue")
     save(fig, out, "fig08_rhythmic_counts")
 
 
 def fig09_peak_distribution(out):
     """GTEx: peak times of the rhythmic non-clock genes, with the DBP and ARNTL peaks as landmarks."""
-    cols = ["gene", "q_rhythm", "amp_avg", "phase_avg_h", "is_clock"]
+    cols = ["gene", "q_rhythm_rob", "amp_avg", "phase_avg_h", "is_clock", "strong"]
     fig, axes = plt.subplots(2, 4, figsize=(12, 5.2), sharex=True)
     for ax, t in zip(axes.ravel(), TISSUES):
         d = load_glm(t, cols)
@@ -348,7 +353,8 @@ def fig09_peak_distribution(out):
         ax.set_xlabel("Peak time (h, CHIRAL frame)")
     for ax in axes[:, 0]:
         ax.set_ylabel("Genes")
-    fig.suptitle("Peak times of rhythmic non-clock genes (q < 0.05, peak/trough ≥ 1.5)", x=0.01, ha="left")
+    fig.suptitle("Peak times of rhythmic non-clock genes (robust q < 0.05, peak/trough ≥ 1.5, contamination-like excluded)",
+                 x=0.01, ha="left")
     fig.tight_layout()
     save(fig, out, "fig09_peak_time_distribution")
 
@@ -362,7 +368,7 @@ def glm_clock_effects():
             for _, r in g.iterrows():
                 rows.append(dict(tissue=t, k=k, gene=r.gene, amp=r.amp, lar=r[f"log_amp_ratio_{k}"],
                                  lar_se=r[f"log_amp_ratio_se_{k}"], shift=r[f"phase_shift_h_{k}"],
-                                 q=r[f"q_diffrhythm_{k}"]))
+                                 q=r[f"q_diffrhythm_rob_{k}"]))
     return pd.DataFrame(rows)
 
 
@@ -470,7 +476,7 @@ def fig12_profiles(out, tissue="thyroid"):
             ax.errorbar(mid + off, mu, yerr=se, fmt="o", ms=5, color=col, mec=SURF, mew=1, elinewidth=1.2, zorder=3)
             if not by_group:
                 curve = r.amp_avg * np.cos(tt / H - r.phase_avg_h / H)
-                note = f"peak/trough ×{np.exp(2 * r.amp_avg):.2f}, peak at {r.phase_avg_h % 24:.1f} h, q = {r.q_rhythm:.1g}"
+                note = f"peak/trough ×{np.exp(2 * r.amp_avg):.2f}, peak at {r.phase_avg_h % 24:.1f} h, q = {r.q_rhythm_rob:.1g}"
             else:
                 b, c = r.b, r.c
                 if lab.startswith("Ventilator"):
@@ -478,7 +484,7 @@ def fig12_profiles(out, tissue="thyroid"):
                 curve = b * np.cos(tt / H) + c * np.sin(tt / H)
             ax.plot(tt, curve / np.log(2), color=col, lw=2, zorder=2, label=lab)
         if by_group:
-            lar, sh, q = r["log_amp_ratio_hardy[0]"], r["phase_shift_h_hardy[0]"], r["q_diffrhythm_hardy[0]"]
+            lar, sh, q = r["log_amp_ratio_hardy[0]"], r["phase_shift_h_hardy[0]"], r["q_diffrhythm_rob_hardy[0]"]
             note = f"Hardy 0: amplitude ×{np.exp(lar):.2f}, shift {sh:+.1f} h, q = {q:.1g}"
             ax.legend(loc="lower left", fontsize=8)
         ax.text(0.03, 0.97, note, transform=ax.transAxes, va="top", color=INK, fontsize=8)
