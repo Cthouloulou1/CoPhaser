@@ -499,10 +499,51 @@ def fig12_profiles(out, tissue="thyroid"):
     save(fig, out, "fig12_gene_profiles")
 
 
+def fig13_encoder_vs_grid(out):
+    """Phase error of CoPhaser's encoder vs the likelihood grid: bulk GTEx (exp. 7A) vs single-cell aorta."""
+    import json
+
+    rows = []
+    for t in ["artery_tibial", "lung"]:
+        s = json.loads((R / "gtex" / "exp7A_hr_anneal50" / t / "summary.json").read_text())
+        rows.append(dict(label=f"{SHORT[t]}\n(GTEx bulk, human)", enc=[s["chiral_median_abs_error_h"]],
+                         grid=[s["grid_final_noz_aligned_h"]]))
+    aorta = [json.loads((R / "aorta" / d / "summary.json").read_text()) for d in ["paper_seed0", "paper_seed1"]]
+    rows.append(dict(label="Aorta\n(single-cell, mouse)", enc=[a["encoder_mad_notebook_h"] for a in aorta],
+                     grid=[a["grid_mad_notebook_h"] for a in aorta]))
+    fig, ax = plt.subplots(figsize=(8, 3.6))
+    y = np.arange(len(rows))[::-1]
+    for yi, r in zip(y, rows):
+        e, g = np.mean(r["enc"]), np.mean(r["grid"])
+        ax.hlines(yi, min(e, g), max(e, g), color=AXIS, lw=2, zorder=1)
+        close = abs(e - g) < 0.3
+        dot(ax, e, yi + (0.09 if close else 0), C2, s=70)
+        dot(ax, g, yi - (0.09 if close else 0), C1, s=70)
+        if close:
+            ax.text(max(e, g) + 0.15, yi, f"encoder {e:.1f} h ≈ grid {g:.1f} h", va="center", color=INK2, fontsize=9)
+        else:
+            ax.text(e, yi + 0.22, f"{e:.1f} h", ha="center", color=INK2, fontsize=9)
+            ax.text(g, yi + 0.22, f"{g:.1f} h", ha="center", color=INK2, fontsize=9)
+    ax.scatter([], [], s=70, color=C2, label="CoPhaser encoder")
+    ax.scatter([], [], s=70, color=C1, label="Maximum-likelihood grid (same model)")
+    ax.axvline(6, color=MUTED, lw=1, zorder=1)
+    ax.text(5.95, y.max() + 0.45, "random phases", color=MUTED, ha="right", fontsize=8)
+    ax.set_xlim(0, 6.4)
+    ax.set_ylim(-0.6, len(rows) - 0.2)
+    ax.set_yticks(y, [r["label"] for r in rows])
+    ax.grid(axis="y", visible=False)
+    ax.set_xlabel("Median phase error (h; GTEx vs CHIRAL on held-out donors, aorta vs sampling time)")
+    ax.set_title("On bulk data the likelihood holds the phase, but the encoder misses it")
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.22), ncol=2)
+    fig.text(0.5, -0.2, "GTEx: exp. 7A (human clock frozen, grid phases as an annealed prior), after alignment. "
+             "Aorta: paper settings, seeds 0-1 averaged.", ha="center", color=MUTED, fontsize=8)
+    save(fig, out, "fig13_encoder_vs_grid")
+
+
 FIGURES = {f.__name__.split("_")[0]: f for f in [
     fig01_phase_error, fig02_cry1_sex, fig03_lambda_bias, fig04_sim_recovery, fig05_sim_power, fig06_pvalues,
     fig07_clock_peaks, fig08_counts, fig09_peak_distribution, fig10_cophaser_vs_glm, fig11_clock_effects,
-    fig12_profiles]}
+    fig12_profiles, fig13_encoder_vs_grid]}
 
 
 def main(argv=None):
